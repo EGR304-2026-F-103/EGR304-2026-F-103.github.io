@@ -1,32 +1,22 @@
----
-title: Home
-tags:
-- tag1
-- tag2
----
-<center>
-<font size="8">Project Name<br>
-<font size="5">Team ###<br>
-**Submission: month, DD, YYYY**<br>
-Semester and Year<br>
-<font size="4">Arizona State University<br>
-**EGR 304**<br>
-Professor Name<br>
-  
-
-</center>
+# Home
+[FILL: Project Name]
+Team 103
+Duotao Gao, Gabriel Toneser Facchin, Zice Sun
+**Submission: [FILL: Sep 3rd, 2026]**
+Fall 2026
+Arizona State University
+**EGR 304**
+Zane Reynolds
 
 ## Team Introduction
-> This will be updated as part of the preparation for the External Review.<br>
->    * This needs to be updated to reflect a team introduction.<br>
->    * Content should also help an unfamiliar reader navigate to areas of interest.
-
+> This will be updated as part of the preparation for the External Review.
+> * This needs to be updated to reflect a team introduction.
+> * Content should also help an unfamiliar reader navigate to areas of interest.
 
 ## Team Members Datasheet links
 
-| **Team Member**        |**Ind Datasheet Links** |
-| ---------------------- | -----------------------|
-| Name #1                | [JohnDoe.GitHub](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/) |
-| Name #2                | link |
-| Name #3                | link |
-| Name #4                | link |
+| **Team Member**       | **Ind Datasheet Links**   |
+| --------------------- | ------------------------- |
+| Duotao Gao            | [FILL: datasheet site URL] |
+| Gabriel Toneser Facchin | [FILL: datasheet site URL] |
+| Zice Sun              | [empcity21.github]https://empcity21.github.io/Empcity21_EGR304_F26_Datasheet.github.io/ |

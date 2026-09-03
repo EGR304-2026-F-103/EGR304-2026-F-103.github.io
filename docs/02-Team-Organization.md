@@ -1,18 +1,58 @@
----
-title: Team Organization
-tags:
-- tag1
-- tag2
----
+# Team Organization
+
+<!--
+=============================================================================
+THIS IS THE MAIN-BODY PAGE. Worth 15 of the 50 points (qualitative, judged
+from the exported PDF).
+
+Tone: "high level," written the way a report to upper management would be.
+All working detail lives in the Appendix and is linked from here.
+
+The assignment explicitly warns against pasting the statements in with no
+surrounding prose. The graded difference is the "connective tissue": short
+report text explaining HOW the team arrived at each statement.
+
+Charter  = what THE TEAM is here to achieve / what counts as success for us.
+Mission  = why THE PRODUCT should exist. Different object. Keep them distinct.
+=============================================================================
+-->
 
 ## Team Charter
 
-From the ... which can be reviewed in ["Appendix: Team Organization"](https://embedded-systems-design.github.io/EGR304TeamTemplate/Appendix/App-Team-Org/), the team's charter formed to be (showing ASU's Charter as an Example):
+> "[FILL: the team's charter statement — one consolidated paragraph, distilled
+> from the shared goals in the appendix]"
 
-> "ASU is a comprehensive public research university, measured not by whom it excludes, but by whom it includes and how they succeed; advancing research and discovery of public value; and assuming fundamental responsibility for the economic, social, cultural and overall health of the communities it serves." (ASU's Charter)
+<!--
+Now 2-4 sentences of connective tissue. Things worth covering:
+  - When and how the team met to develop this.
+  - Each member listed individual goals first; these are the commonalities
+    that emerged.
+  - Why the wording landed where it did — what was deliberately included
+    or left out.
+  - How the team intends to actually use the charter when making decisions
+    later in the semester.
+  - A pointer into the appendix so the reader can see the underlying work.
+-->
+
+[FILL: connective tissue paragraph]
+
+The full set of shared goals from which this charter was distilled is
+documented in [Appendix: Team Organization](Appendix/App-Team-Org.md).
 
 ## Product Mission Statement
 
-Describe the distilled purpose, function, or reason for your product to exist. From this form a team mission statement. Google's mission statement is:
+> "[FILL: the product mission statement — one sentence]"
 
- > "Google's mission is to organize the world's information and make it universally accessible and useful."
+<!--
+2-4 sentences of supporting context. Things worth covering:
+  - The distilled purpose / function / reason the product exists.
+  - The assumptions the team is working from at this stage: product type
+    (physical device), technology (embedded systems), intended market or
+    user.
+  - Explicitly note that this is about the product, not about the team's
+    own definition of success — that distinction shows you understood the
+    difference between a charter and a mission.
+  - What would have to be true for the product to be fulfilling this mission.
+-->
+
+[FILL: supporting context paragraph]

@@ -1,89 +1,381 @@
----
-title: "Appendix: Team Organization"
-tags:
-- tag1
-- tag2
----
+# Appendix: Team Organization
+
+<!--
+=============================================================================
+Worth 15 of the 50 points (qualitative, judged from the exported PDF).
+
+Section order matches the assignment's Required Checklist. Do not reorder.
+"Team Coordination & Accountability" is required by the checklist but was NOT
+in the course template — it has been added here.
+
+Delete every [FILL: ...] marker. Anything still bracketed at submission time
+shows up in the exported PDF.
+=============================================================================
+-->
 
 ## Team Goals
 
-List at least five shared goals that reflect a successful product with regard to EGR3X4. Focus on team / product goals that are deeper than "getting an A".
+<!--
+At least FIVE shared goals. The assignment is explicit that these must go
+deeper than "getting an A" and should be metrics of success for the PRODUCT
+and the TEAM.
+
+Suggested process (10 min): each member writes their own list first, then
+find the overlap. The overlap is the raw material for the charter on the
+main Team Organization page.
+
+Prompts from the assignment — does success here mean:
+  - eventually selling units of a product?
+  - being able to better demonstrate your knowledge to others?
+  - a strong new addition to your engineering portfolio?
+  - furthering a personal passion?
+  - making new professional connections?
+Industry-flavored phrasing is welcome, e.g. "go from opportunity
+identification to a shippable unit within N months."
+-->
+
+1. [FILL: goal 1]
+2. [FILL: goal 2]
+3. [FILL: goal 3]
+4. [FILL: goal 4]
+5. [FILL: goal 5]
+
+[FILL: one or two sentences naming the commonalities across these goals and
+how they were consolidated into the team charter]
 
 ## Communication Channels
 
-_**Appendix Table 1**: Team Member Communication Modes_
+***Appendix Table 1**: Team Member Communication Modes*
 
-|Name                 | First Choice Communication | Second Choice Communication | Third Choice Communication |
-|---------------------|----------------------------|-----------------------------|----------------------------|
-|Member 1 |  ? | ? | ? |
-|Member 2 |  ? | ? | ? |
-|Member 3 |  ? | ? | ? |
-|Member 4 |  ? | ? | ? |
+| Name             | First Choice Communication | Second Choice Communication | Third Choice Communication |
+| ---------------- | -------------------------- | --------------------------- | -------------------------- |
+| [FILL: Member 1] | [FILL]                     | [FILL]                      | [FILL]                     |
+| [FILL: Member 2] | [FILL]                     | [FILL]                      | [FILL]                     |
+| [FILL: Member 3] | [FILL]                     | [FILL]                      | [FILL]                     |
+| [FILL: Member 4] | [FILL]                     | [FILL]                      | [FILL]                     |
 
 ### Main Method for Group Communication
 
-Based on the information provided on in the "Team Member Communication Modes," the group primary method of communication is ......
- 
+Based on the information provided in Appendix Table 1, the group's primary
+method of communication is [FILL: channel].
+
+[FILL: one or two sentences on why this channel won out and what the fallback
+is when it fails]
+
 ## Communication Procedures
 
-1. How will your team communicate?
-2. How will you handle instructor correspondence? Who is responsible? How will that be communicated with/back to the group?
+<!--
+Two questions must be answered. The assignment warns: do NOT adopt too many
+different media — it creates chaos. Address both asynchronous and synchronous
+needs, and state the response-time expectation attached to each mode.
+-->
+
+**1. How will the team communicate?**
+
+[FILL: name the channels and what each is for. Distinguish asynchronous
+(day-to-day updates, file sharing) from synchronous (decisions, debugging
+sessions). State the expected response time for each — e.g. "messages on X
+are answered within N hours on weekdays."]
+
+**2. How will instructor correspondence be handled?**
+
+[FILL: name the single person responsible, how they will reach the
+instructor, and how the outcome gets relayed back to the team and where it
+is recorded.]
+
+<!--
+Syllabus constraints to build into this answer: post questions to the Canvas
+discussion board; do NOT send emails through Canvas; prefix the subject line
+of any email to the teaching team with [ESD].
+-->
+
+**Shared file storage.** The team maintains a shared Google Docs folder for
+project work: [FILL: folder name / link]. File naming follows the convention
+provided by the teaching team.
 
 ## Meeting Schedule
 
-_**Appendix Table 2**: Weekly Schedule_
+<!--
+Two hard requirements from the assignment:
+  1. Identify AT LEAST FOUR hours per week shared by the whole team OUTSIDE
+     of class time.
+  2. Select a weekly recurring meeting slot and add it to the team's agreed
+     scheduling tool.
 
-| Time | Sunday | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday |
-| :------: | :----: | :----: | :----: | :----: | :----: | :----: | :-----: |
-| 8:00 AM | - | - | M | - | M | - | - |
-| 9:00 AM | - | F | M | - | M | - | - |
-| 10:00 AM | - | B | M | - | M | - | - |
-| 11:00 AM | - | B | M | - | M | - | - |
-| 12:00 PM | Z | B, Z | M | - | M | - | - |
-| 1:00 PM | Z, F |  | M | - | M | - | - |
-| 2:00 PM | Z, F | - | M | - | M | - | - |
-| 3:00 PM | Z | - | M | - | M | - | - |
-| 4:00 PM | - | - | M | - | M | - | - |
-| 5:00 PM | - | - | M | - | M | - | - |
-| 6:00 PM | - | - | M | - | M | - | - |
-| 7:00 PM | - | - | M | - | M | - | - |
-| 8:00 PM | - | - | M | - | M | - | - |
-| 9:00 PM | - | - | M | - | M | - | - |
+Mark hours you are CERTAIN you are unavailable across the whole semester:
+other classes, work shifts, transit, meals, family commitments.
 
-_**Table Legend for Appendix Table 2**_
+Zice's fixed conflicts, for reference when filling this in:
+  Mon/Wed 10:30-11:45      EGR 304
+  Tue/Thu 10:30-11:45      EGR 455 (Tuesdays are lab, runs to 13:15)
+  Mon/Wed/Fri 12:20-13:10  TEM 230
+-->
 
-| Name | Abbreviation |
-| ----- | :------: |
-| Bill | B |
-| Mary | M |
-| Zane | Z |
-| Felicity | F |
+***Appendix Table 2**: Weekly Schedule*
 
+| Time     | Sunday | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday |
+| -------- | ------ | ------ | ------- | --------- | -------- | ------ | -------- |
+| 8:00 AM  |        |        |         |           |          |        |          |
+| 9:00 AM  |        |        |         |           |          |        |          |
+| 10:00 AM |        |        |         |           |          |        |          |
+| 11:00 AM |        |        |         |           |          |        |          |
+| 12:00 PM |        |        |         |           |          |        |          |
+| 1:00 PM  |        |        |         |           |          |        |          |
+| 2:00 PM  |        |        |         |           |          |        |          |
+| 3:00 PM  |        |        |         |           |          |        |          |
+| 4:00 PM  |        |        |         |           |          |        |          |
+| 5:00 PM  |        |        |         |           |          |        |          |
+| 6:00 PM  |        |        |         |           |          |        |          |
+| 7:00 PM  |        |        |         |           |          |        |          |
+| 8:00 PM  |        |        |         |           |          |        |          |
+| 9:00 PM  |        |        |         |           |          |        |          |
+
+***Table Legend for Appendix Table 2***
+
+| Name             | Abbreviation |
+| ---------------- | ------------ |
+| [FILL: Member 1] | [FILL]       |
+| [FILL: Member 2] | [FILL]       |
+| [FILL: Member 3] | [FILL]       |
+| [FILL: Member 4] | [FILL]       |
+
+**Shared availability.** The team has [FILL: N] hours of common availability
+outside of class time: [FILL: list the blocks].
+
+**Recurring meeting slot.** [FILL: day and time], held [FILL: location or
+platform].
 
 ## Meeting Coordination
 
-1. What method will you use to remind yourselves of meetings (a shared calendar?)
-1. How will your team go about changing or adding meeting times?
-1. What's the preferred format for meetings (face-to-face or virtually)?
-1. Are there any other procedures that your team feels are necessary?
+**1. How will the team be reminded of meetings?**
+
+[FILL: shared calendar, channel reminder, etc. Name the specific tool.]
+
+**2. How will meeting times be changed or added?**
+
+[FILL: who can propose a change, how much notice is required, what counts as
+agreement.]
+
+**3. Preferred meeting format?**
+
+[FILL: face-to-face or virtual, and when the other one is used instead.]
+
+**4. Any other procedures the team feels are necessary?**
+
+[FILL: e.g. agenda posted N hours ahead, minutes filed to the shared folder,
+quorum rules, what happens if someone cannot attend.]
 
 ## Roles & Responsibilities
 
-_**Appendix Table 2**: Project Roles and Duties_
+***Appendix Table 3**: Project Roles and Duties*
 
-| **Role**          | **Duties**                                                                                                                                |
-| :---------------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
-| Meeting leader    | Schedules team meetings, creates and distributes an agenda for each meeting, and runs each meeting                                        |
-| Meeting recorder  | Takes minutes of each team meeting, including attendance, and records action items and to whom they are assigned                          |
-| Assignment leader | Coordinates the team's work on a given assignment to Canvas before the due date                                                           |
-| Project monitor   | Tracks the team's progress relative to the project schedule (Gantt chart) and keeps team members apprised of deadlines and project status |
+<!--
+Keep the four required roles. Add any additional roles the team identifies.
+Fill in who holds each role FIRST — roles must rotate later.
+-->
+
+| **Role**                         | **Duties**                                                                                                                                | **Initially held by** |
+| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
+| Meeting leader                   | Schedules team meetings, creates and distributes an agenda for each meeting, and runs each meeting                                        | [FILL]                |
+| Meeting recorder                 | Takes minutes of each team meeting, including attendance, and records action items and to whom they are assigned                          | [FILL]                |
+| Assignment leader                | Coordinates the team's work on a given assignment to Canvas before the due date                                                           | [FILL]                |
+| Project monitor                  | Tracks the team's progress relative to the project schedule (Gantt chart) and keeps team members apprised of deadlines and project status | [FILL]                |
+| [FILL: optional additional role] | [FILL: duties]                                                                                                                            | [FILL]                |
+
+<!--
+The assignment requires a WRITTEN PROCESS in addition to the table, answering
+six questions. Roles must rotate so every member participates fully — a
+static assignment for the whole semester will lose points.
+-->
+
+**How often will project roles change?**
+
+[FILL: rotation cadence and the schedule.]
+
+**How will you decide who is assigned to each role?**
+
+[FILL: the selection method — rotation order, preference, skill fit, etc.]
+
+**How will team members help one another meet their responsibilities?**
+
+[FILL]
+
+**How will you identify and respond to situations in which the team must
+adjust roles and responsibilities?**
+
+[FILL: what triggers a mid-cycle change and who decides.]
+
+**How will you track team activities and milestones?**
+
+[FILL: the tool and who maintains it.]
+
+**How will you assign technical responsibilities to the team members?**
+
+[FILL: how technical work is divided, and how you avoid one person holding
+too many roles at once — see the conflict-of-interest note below.]
+
+<!--
+Syllabus constraint worth designing around: every team member must lead the
+design of at least one acceptable embedded hardware/software subsystem, or
+they receive no credit for the project. Divide technical responsibilities
+accordingly.
+-->
+
+## Team Coordination & Accountability
+
+<!--
+REQUIRED by the assignment checklist but NOT present in the course template.
+Two clusters of questions.
+-->
+
+### Ensuring quality and completion
+
+**How will you ensure assignments are submitted before deadlines and that
+each member has signed off on each submission?**
+
+[FILL: internal deadline ahead of the real one, sign-off mechanism, who
+performs the final Canvas submission and verifies it succeeded.]
+
+<!--
+Syllabus specifics worth building into the answer:
+  - It is the team's responsibility to verify each Canvas submission
+    succeeded; the syllabus recommends screenshotting each one as evidence.
+  - Submissions that are gradeable but incorrectly formatted lose 25%.
+  - Absolutely no submissions accepted after 23:59 on December 7, 2026.
+-->
+
+**How will you ensure each member has the knowledge and skill required for
+each assignment, and how will you adjust if not?**
+
+[FILL: how gaps get surfaced early, pairing, and what happens when someone is
+not equipped for an assigned task.]
+
+**How will design review feedback be distributed to and acted on by every
+member?**
+
+[FILL: who captures the feedback, where it is recorded, how it becomes action
+items with owners.]
+
+### Accountability
+
+**How will you address missed contributions, assignments, or actions?**
+
+[FILL]
+
+**How will you hold one another accountable to the expectations in this
+charter?**
+
+[FILL]
+
+**How will you recognize that a team member is underperforming?**
+
+[FILL: the observable signals, not just a feeling.]
+
+**How will you help an underperforming team member improve?**
+
+[FILL: the supportive step that comes before any escalation.]
+
+**What are the consequences if an underperforming team member does not
+improve?**
+
+[FILL: the escalation path and at what point the instructor is involved.]
+
+<!--
+The pink slip is a defined mechanism in the syllabus, not a metaphor: a team
+member may be nominated for one by emailing the professor during a team
+evaluation week. At the professor's discretion the slip is issued or the
+student is removed from the team. A student who receives one must meet with
+the professor to agree a remediation plan and also receives an Academic
+Status Report. A student removed from a team completes the project alone.
+Describe when the team would actually invoke this.
+-->
 
 ## Conflict Recognition & Resolution
 
-Need to add content!!
+<!--
+The assignment asks the team to READ the five points below together, DISCUSS
+them, and SUMMARIZE its findings. The summary is what gets graded — the five
+points are the prompt, not the answer.
 
+  1. Recognize and openly acknowledge disagreement when it occurs.
+  2. Controversy is normal; opinions will differ, especially early on.
+  3. Conflicts of interest arise from ill-structured roles and
+     responsibilities and should be AVOIDED — they typically happen when one
+     person takes on too many roles.
+  4. Resolve conflicts that occur during the semester within the team.
+  5. Determine when a problem should be escalated to the instructor.
+
+Point 3 connects directly back to Roles & Responsibilities. Cross-referencing
+the two sections shows the discussion actually happened.
+-->
+
+[FILL: the team's summary. Cover how disagreement gets surfaced rather than
+suppressed, how the team distinguishes a normal difference of opinion from a
+structural conflict of interest, the in-team resolution process, and the
+specific threshold at which a problem goes to the instructor.]
 
 ## Signatures
 
-Need to add content!!
+<!--
+Electronic signatures of each team member, plus the team number. Typed name
+and date is acceptable.
+-->
 
+**Team 103**
+
+| Team Member      | Signature | Date   |
+| ---------------- | --------- | ------ |
+| Duotao Gao       | [FILL]    | [FILL] |
+| Gabriel Toneser Facchin | [FILL]    | [FILL] |
+| Zice Sun         | Zice Sun  | 9/3/2026 |
+| [FILL: Member 4] | [FILL]    | [FILL] |
+
+## AI Use Disclosure
+
+<!--
+Required by the EGR 304 syllabus: any assignment not explicitly identified as
+having used generative AI is assumed to be entirely original work. The
+disclosure must state what the tool was used for AND include the full text of
+the queries, attached at the end of the assignment.
+
+Every team member who used a generative AI tool on this assignment must be
+listed. Only Zice Sun's use is recorded below — the other three members must
+add their own entries, or state that they used none, before submission.
+-->
+
+Generative AI (Claude, Anthropic) was used by Zice Sun for the following
+purposes on this assignment:
+
+- Retrieving and summarizing the requirements of the Team Organization,
+  Charter, and Repository assignment from the course website, and
+  cross-checking them against the course syllabus.
+- Diagnosing a repository naming error — the forked repository did not follow
+  the required `<team-org-name>.github.io` convention — and identifying the
+  GitHub organization and Pages settings that needed to be verified.
+- Generating the blank structural outline (headings, tables, and prompt
+  questions) for this appendix page and for the Home and Team Organization
+  pages.
+
+No charter statement, mission statement, team goal, communication procedure,
+schedule entry, role assignment, accountability policy, or conflict
+resolution policy on this page or in the main report was generated by AI. All
+such content was written by the team.
+
+**Full query text:**
+
+> 1. I'm working on the EGR 304 team organization assignment now. I've
+>    already created the organization and forked the repo.
+>    [link to the team repository]
+>    [link to the Team Organization, Charter, and Repository assignment page]
+>
+> 2. Chrome is open now.
+>
+> 3. I've fixed the repo name. Now walk me through the assignment
+>    requirements item by item — what to do, and which files to change.
+>
+> 4. Give me the complete skeleton files for `docs/index.md` and the others.
+>
+> 5. What do you mean? I have to attach the AI conversation?
+
+[FILL: the other three members' AI use disclosures, or a statement that they
+used none]
