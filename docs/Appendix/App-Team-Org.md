@@ -172,7 +172,8 @@ Fill in who holds each role FIRST — roles must rotate later.
 | Meeting leader                   | Schedules team meetings, creates and distributes an agenda for each meeting, and runs each meeting                                        | Zice Sun              |
 | Meeting recorder                 | Takes minutes of each team meeting, including attendance, and records action items and to whom they are assigned                          | [FILL]                |
 | Assignment leader                | Coordinates the team's work on a given assignment to Canvas before the due date                                                           | [FILL]                |
-| Project monitor                  | Tracks the team's progress relative to the project schedule (Gantt chart) and keeps team members apprised of deadlines and project status | [FILL]                |
+| Project monitor                  | Tracks the team's progress relative to the project schedule (Gantt chart) and keeps team members apprised of deadlines and project status | Duotao Gao                |
+| [FILL: optional additional role] | [FILL: duties]                                                                                                                            | [FILL]                |
 
 <!--
 The assignment requires a WRITTEN PROCESS in addition to the table, answering
