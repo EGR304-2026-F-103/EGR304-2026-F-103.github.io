@@ -36,8 +36,8 @@ identification to a shippable unit within N months."
 
 1. A strong addition to engineering skill development
 2. Improve teamwork, communication, and project management skills
-3. [FILL: goal 3]
-4. [FILL: goal 4]
+3. Successfully design and build a functional engineering project
+4. Develop practical problem-solving and technical skills
 5. [FILL: goal 5]
 
 [FILL: one or two sentences naming the commonalities across these goals and
@@ -47,11 +47,11 @@ how they were consolidated into the team charter]
 
 ***Appendix Table 1**: Team Member Communication Modes*
 
-| Name             | First Choice Communication | Second Choice Communication | Third Choice Communication |
-| ---------------- | -------------------------- | --------------------------- | -------------------------- |
-| Duotao Gao | textmessage                     | Discord                      | Email                     |
-| Zice Sun   | textmessage                     | Discord                      | Email                     |
-| [FILL: Member 3] | [FILL]                     | [FILL]                      | [FILL]                     |
+| Name                    | First Choice Communication | Second Choice Communication | Third Choice Communication |
+| ----------------        | -------------------------- | --------------------------- | -------------------------- |
+| Duotao Gao              | text message               | Discord                     | Email                      |
+| Zice Sun                | text message               | Discord                     | Email                      |
+| Gabriel Toneser Facchin | text message               | Discord                     | Email                      |
 
 ### Main Method for Group Communication
 
@@ -129,11 +129,11 @@ Zice's fixed conflicts, for reference when filling this in:
 
 ***Table Legend for Appendix Table 2***
 
-| Name             | Abbreviation |
-| ---------------- | ------------ |
-| Duotao Gao       | DG           |
-| Zice Sun         | ZS           |
-| [FILL: Member 3] | [FILL]       |
+| Name                    | Abbreviation |
+| ----------------------- | ------------ |
+| Duotao Gao              | DG           |
+| Zice Sun                | ZS           |
+| Gabriel Toneser Facchin | GF           |
 
 **Shared availability.** The team has [FILL: N] hours of common availability
 outside of class time: [FILL: list the blocks].
@@ -170,9 +170,9 @@ Fill in who holds each role FIRST — roles must rotate later.
 | **Role**                         | **Duties**                                                                                                                                | **Initially held by** |
 | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
 | Meeting leader                   | Schedules team meetings, creates and distributes an agenda for each meeting, and runs each meeting                                        | Zice Sun              |
-| Meeting recorder                 | Takes minutes of each team meeting, including attendance, and records action items and to whom they are assigned                          | [FILL]                |
+| Meeting recorder                 | Takes minutes of each team meeting, including attendance, and records action items and to whom they are assigned                          | Gabriel               |
 | Assignment leader                | Coordinates the team's work on a given assignment to Canvas before the due date                                                           | [FILL]                |
-| Project monitor                  | Tracks the team's progress relative to the project schedule (Gantt chart) and keeps team members apprised of deadlines and project status | Duotao Gao                |
+| Project monitor                  | Tracks the team's progress relative to the project schedule (Gantt chart) and keeps team members apprised of deadlines and project status | Duotao Gao            |
 | [FILL: optional additional role] | [FILL: duties]                                                                                                                            | [FILL]                |
 
 <!--
@@ -336,12 +336,12 @@ and date is acceptable.
 
 **Team 103**
 
-| Team Member      | Signature | Date   |
-| ---------------- | --------- | ------ |
-| Duotao Gao       | Duotao Gao    | 9/3/2026 |
-| Gabriel Toneser Facchin | [FILL]    | [FILL] |
-| Zice Sun         | Zice Sun  | 9/3/2026 |
-| [FILL: Member 4] | [FILL]    | [FILL] |
+| Team Member             | Signature        | Date   |
+| ----------------------- | ---------------- | ------ |
+| Duotao Gao              | Duotao Gao       | 9/3/2026 |
+| Gabriel Toneser Facchin | Gabriel Facchin  | 9/4/2026 |
+| Zice Sun                | Zice Sun         | 9/3/2026 |
+| [FILL: Member 4]        | [FILL]    | [FILL] |
 
 ## AI Use Disclosure
 
