@@ -49,7 +49,7 @@ how they were consolidated into the team charter]
 
 | Name             | First Choice Communication | Second Choice Communication | Third Choice Communication |
 | ---------------- | -------------------------- | --------------------------- | -------------------------- |
-| [FILL: Member 1] | [FILL]                     | [FILL]                      | [FILL]                     |
+| Duotao Gao | textmessage                     | Discord                      | Email                     |
 | [FILL: Member 2] | [FILL]                     | [FILL]                      | [FILL]                     |
 | [FILL: Member 3] | [FILL]                     | [FILL]                      | [FILL]                     |
 | [FILL: Member 4] | [FILL]                     | [FILL]                      | [FILL]                     |
@@ -325,7 +325,7 @@ and date is acceptable.
 
 | Team Member      | Signature | Date   |
 | ---------------- | --------- | ------ |
-| Duotao Gao       | Duotao Gao    | [9/3/2026 |
+| Duotao Gao       | Duotao Gao    | 9/3/2026 |
 | Gabriel Toneser Facchin | [FILL]    | [FILL] |
 | Zice Sun         | Zice Sun  | 9/3/2026 |
 | [FILL: Member 4] | [FILL]    | [FILL] |
