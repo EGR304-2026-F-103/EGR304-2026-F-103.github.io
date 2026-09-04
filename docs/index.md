@@ -17,6 +17,6 @@ Zane Reynolds
 
 | **Team Member**       | **Ind Datasheet Links**   |
 | --------------------- | ------------------------- |
-| Duotao Gao            | [FILL: datasheet site URL] |
+| Duotao Gao            | [duotaoga.github] https://duotaogao.github.io/duotaogao_EGR304_Fall-26-.github.io/|
 | Gabriel Toneser Facchin | [FILL: datasheet site URL] |
 | Zice Sun              | [empcity21.github]https://empcity21.github.io/Empcity21_EGR304_F26_Datasheet.github.io/ |
