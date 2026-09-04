@@ -233,9 +233,11 @@ Two clusters of questions.
 **How will you ensure assignments are submitted before deadlines and that
 each member has signed off on each submission?**
 
-[FILL: internal deadline ahead of the real one, sign-off mechanism, who
-performs the final Canvas submission and verifies it succeeded.]
-
+The team will set the internal deadline at least 10 hours before the official deadline. 
+Before submission, all members will check and confirm the final version, 
+including confirming that the submission format meets the requirements. 
+One designated member is responsible for submitting the assignment to the Canvas,
+while another member is responsible for confirming the successful submission and saving a screenshot as proof.
 <!--
 Syllabus specifics worth building into the answer:
   - It is the team's responsibility to verify each Canvas submission
@@ -247,38 +249,57 @@ Syllabus specifics worth building into the answer:
 **How will you ensure each member has the knowledge and skill required for
 each assignment, and how will you adjust if not?**
 
-[FILL: how gaps get surfaced early, pairing, and what happens when someone is
-not equipped for an assigned task.]
+The team will assign tasks based on each member's skills and experience.
+If members need help or are unsure how to complete the assigned tasks, 
+they should communicate with the team as early as possible. 
+For some more complex tasks, when conditions permit, 
+another member will conduct the inspection or test.
+If a member does not possess the skills required to complete the task, 
+the team will offer assistance or, where appropriate, reallocate some of the tasks.
 
 **How will design review feedback be distributed to and acted on by every
 member?**
 
-[FILL: who captures the feedback, where it is recorded, how it becomes action
-items with owners.]
+One team member will be responsible for collecting and organizing the feedback from each design review. 
+Feedback will be recorded in the team's shared workspace and communicated to all members.
+The team will discuss these feedbacks and convert the necessary modifications into specific action tasks, 
+which will then be assigned to the corresponding team members.
 
 ### Accountability
 
 **How will you address missed contributions, assignments, or actions?**
 
-[FILL]
+If a team member fails to complete the task within the agreed time, 
+the team will first ask the member for the reason and then set a new deadline and plan. 
+If necessary, tasks can be reallocated to ensure that the entire project proceeds as planned.
 
 **How will you hold one another accountable to the expectations in this
 charter?**
 
-[FILL]
+The team will regularly check the project progress and openly communicate any issues. 
+Each member should comply with the responsibilities and requirements stipulated in the team charter. 
+If a member fails to meet these requirements, the team will first discuss the issue with that member and jointly seek a solution.
 
 **How will you recognize that a team member is underperforming?**
 
-[FILL: the observable signals, not just a feeling.]
+Observable signs of underperforming include: 
+repeatedly missing deadlines, being absent from team meetings without prior notice, 
+not replying to team messages, submitting incomplete or substandard work, 
+and persistently failing to complete assigned tasks.
 
 **How will you help an underperforming team member improve?**
 
-[FILL: the supportive step that comes before any escalation.]
+The team will first communicate with the member to understand the problem and provide necessary assistance. 
+We can further clarify the tasks, offer technical support and assistance in adjusting the workload, 
+or set smaller phased deadlines to help the member improve their performance.
 
 **What are the consequences if an underperforming team member does not
 improve?**
 
-[FILL: the escalation path and at what point the instructor is involved.]
+If the member does not improve after receiving assistance, 
+the team will discuss the problem with the member again and record the relevant situation. 
+If the problem persists and affects the team 's progress, 
+the team will contact instructor for guidance and to take further measures.
 
 <!--
 The pink slip is a defined mechanism in the syllabus, not a metaphor: a team
