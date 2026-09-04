@@ -325,7 +325,7 @@ and date is acceptable.
 
 | Team Member      | Signature | Date   |
 | ---------------- | --------- | ------ |
-| Duotao Gao       | [FILL]    | [FILL] |
+| Duotao Gao       | Duotao Gao    | [9/3/2026 |
 | Gabriel Toneser Facchin | [FILL]    | [FILL] |
 | Zice Sun         | Zice Sun  | 9/3/2026 |
 | [FILL: Member 4] | [FILL]    | [FILL] |
