@@ -34,8 +34,8 @@ Industry-flavored phrasing is welcome, e.g. "go from opportunity
 identification to a shippable unit within N months."
 -->
 
-1. [FILL: goal 1]
-2. [FILL: goal 2]
+1. A strong addition to engineering skill development
+2. Improve teamwork, communication, and project management skills
 3. [FILL: goal 3]
 4. [FILL: goal 4]
 5. [FILL: goal 5]
@@ -50,17 +50,17 @@ how they were consolidated into the team charter]
 | Name             | First Choice Communication | Second Choice Communication | Third Choice Communication |
 | ---------------- | -------------------------- | --------------------------- | -------------------------- |
 | Duotao Gao | textmessage                     | Discord                      | Email                     |
-| [FILL: Member 2] | [FILL]                     | [FILL]                      | [FILL]                     |
+| Zice Sun   | textmessage                     | Discord                      | Email                     |
 | [FILL: Member 3] | [FILL]                     | [FILL]                      | [FILL]                     |
-| [FILL: Member 4] | [FILL]                     | [FILL]                      | [FILL]                     |
 
 ### Main Method for Group Communication
 
 Based on the information provided in Appendix Table 1, the group's primary
-method of communication is [FILL: channel].
+method of communication is text message.
 
-[FILL: one or two sentences on why this channel won out and what the fallback
-is when it fails]
+This method is the easiest and ensures all communication are notified on-time. Even
+though it lacks the potential to share screen and send large files, it is perfect
+as the primary method of communication.
 
 ## Communication Procedures
 
@@ -71,17 +71,14 @@ needs, and state the response-time expectation attached to each mode.
 -->
 
 **1. How will the team communicate?**
-
-[FILL: name the channels and what each is for. Distinguish asynchronous
-(day-to-day updates, file sharing) from synchronous (decisions, debugging
-sessions). State the expected response time for each — e.g. "messages on X
-are answered within N hours on weekdays."]
+Asynchronous communication will take place on Discord, messages on Discord
+are answered within 12 hours on weekdays.
+Synchronous communication will take place on text messages, messages on text
+group are answered within 8 hours on weekdays.
 
 **2. How will instructor correspondence be handled?**
 
-[FILL: name the single person responsible, how they will reach the
-instructor, and how the outcome gets relayed back to the team and where it
-is recorded.]
+Zice Sun will be responsible for communicating with the instructor on behalf of the team. Email and office hours will be used when direct correspondence is necessary. The response and outcome will be shared with the team through the group text message and recorded in the team's shared Google Docs folder.
 
 <!--
 Syllabus constraints to build into this answer: post questions to the Canvas
@@ -90,7 +87,7 @@ of any email to the teaching team with [ESD].
 -->
 
 **Shared file storage.** The team maintains a shared Google Docs folder for
-project work: [FILL: folder name / link]. File naming follows the convention
+project work: [EGR 304 Team 103 Project](https://docs.google.com/document/d/1PXPfTr-Ng3O1yyW3ScTXkjhSZ1DXG5AXmTGjqIRnVy8/edit?tab=t.0). File naming follows the convention
 provided by the teaching team.
 
 ## Meeting Schedule
@@ -134,36 +131,32 @@ Zice's fixed conflicts, for reference when filling this in:
 
 | Name             | Abbreviation |
 | ---------------- | ------------ |
-| [FILL: Member 1] | [FILL]       |
-| [FILL: Member 2] | [FILL]       |
+| Duotao Gao       | DG           |
+| Zice Sun         | ZS           |
 | [FILL: Member 3] | [FILL]       |
-| [FILL: Member 4] | [FILL]       |
 
 **Shared availability.** The team has [FILL: N] hours of common availability
 outside of class time: [FILL: list the blocks].
 
-**Recurring meeting slot.** [FILL: day and time], held [FILL: location or
-platform].
+**Recurring meeting slot.** [FILL: day and time], held on Discord.
 
 ## Meeting Coordination
 
 **1. How will the team be reminded of meetings?**
 
-[FILL: shared calendar, channel reminder, etc. Name the specific tool.]
+Recurring meetings will be added to a shared Google Calendar with notifications enabled for all team members.
 
 **2. How will meeting times be changed or added?**
 
-[FILL: who can propose a change, how much notice is required, what counts as
-agreement.]
+Any team member may propose a meeting change through the group text message. Changes should normally be proposed at least 24 hours in advance, and the new meeting time must be agreed upon by all three team members.
 
 **3. Preferred meeting format?**
 
-[FILL: face-to-face or virtual, and when the other one is used instead.]
+Virtual meetings through Discord are preferred for Recurring team meetings. Face-to-face meetings will be used when physical prototyping, testing, or other hands-on work is required.
 
 **4. Any other procedures the team feels are necessary?**
 
-[FILL: e.g. agenda posted N hours ahead, minutes filed to the shared folder,
-quorum rules, what happens if someone cannot attend.]
+A meeting agenda will be posted at least 12 hours before each scheduled meeting. Meeting minutes and assigned action items will be saved in the shared project folder after the meeting. If a member cannot attend, they should notify the team in advance and review the meeting notes afterward.
 
 ## Roles & Responsibilities
 
@@ -176,11 +169,10 @@ Fill in who holds each role FIRST — roles must rotate later.
 
 | **Role**                         | **Duties**                                                                                                                                | **Initially held by** |
 | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
-| Meeting leader                   | Schedules team meetings, creates and distributes an agenda for each meeting, and runs each meeting                                        | [FILL]                |
+| Meeting leader                   | Schedules team meetings, creates and distributes an agenda for each meeting, and runs each meeting                                        | Zice Sun              |
 | Meeting recorder                 | Takes minutes of each team meeting, including attendance, and records action items and to whom they are assigned                          | [FILL]                |
 | Assignment leader                | Coordinates the team's work on a given assignment to Canvas before the due date                                                           | [FILL]                |
 | Project monitor                  | Tracks the team's progress relative to the project schedule (Gantt chart) and keeps team members apprised of deadlines and project status | [FILL]                |
-| [FILL: optional additional role] | [FILL: duties]                                                                                                                            | [FILL]                |
 
 <!--
 The assignment requires a WRITTEN PROCESS in addition to the table, answering
@@ -190,20 +182,19 @@ static assignment for the whole semester will lose points.
 
 **How often will project roles change?**
 
-[FILL: rotation cadence and the schedule.]
+Project roles will rotate every two weeks. At the end of each two-week period, the roles will shift among the three team members so that everyone has experience with different responsibilities. The member talomg two roles will also rotate to avoid repeatedly placing extra workload on the same person.
 
 **How will you decide who is assigned to each role?**
 
-[FILL: the selection method — rotation order, preference, skill fit, etc.]
+Roles will primarily be assigned using a rotation order, while  skills, preferences, and availability may also be considered. Any changes to the regular rotation will be discussed and agreed upon by the team.
 
 **How will team members help one another meet their responsibilities?**
 
-[FILL]
+Team members will regularly check on each other's progress and provide help when someone encounters a technical or scheduling problem. Members will work together on complicated tasks and review each other's work before submissions.
 
-**How will you identify and respond to situations in which the team must
-adjust roles and responsibilities?**
+**How will you identify and respond to situations in which the team must adjust roles and responsibilities?**
 
-[FILL: what triggers a mid-cycle change and who decides.]
+Roles may be adjusted if a member is unavailable, has an unexpected workload, repeatedly misses deadlines, or if a task requires skills better suited to another member. The team will discuss the situation and decide on the adjustment together.
 
 **How will you track team activities and milestones?**
 
