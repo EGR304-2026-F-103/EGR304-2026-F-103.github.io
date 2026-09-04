@@ -134,7 +134,7 @@ Zice's fixed conflicts, for reference when filling this in:
 
 | Name             | Abbreviation |
 | ---------------- | ------------ |
-| [FILL: Member 1] | [FILL]       |
+| Duotao Gao | DG       |
 | [FILL: Member 2] | [FILL]       |
 | [FILL: Member 3] | [FILL]       |
 | [FILL: Member 4] | [FILL]       |
@@ -179,7 +179,7 @@ Fill in who holds each role FIRST — roles must rotate later.
 | Meeting leader                   | Schedules team meetings, creates and distributes an agenda for each meeting, and runs each meeting                                        | [FILL]                |
 | Meeting recorder                 | Takes minutes of each team meeting, including attendance, and records action items and to whom they are assigned                          | [FILL]                |
 | Assignment leader                | Coordinates the team's work on a given assignment to Canvas before the due date                                                           | [FILL]                |
-| Project monitor                  | Tracks the team's progress relative to the project schedule (Gantt chart) and keeps team members apprised of deadlines and project status | [FILL]                |
+| Project monitor                  | Tracks the team's progress relative to the project schedule (Gantt chart) and keeps team members apprised of deadlines and project status | Duotao Gao                |
 | [FILL: optional additional role] | [FILL: duties]                                                                                                                            | [FILL]                |
 
 <!--
