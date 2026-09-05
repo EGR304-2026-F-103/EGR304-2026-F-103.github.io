@@ -1,11 +1,18 @@
 # Home
-[FILL: Project Name]
+Team 103 Embedded Systems Design Project
+
 Team 103
+
 Duotao Gao, Gabriel Toneser Facchin, Zice Sun
+
 **Submission: Sep 3rd, 2026**
+
 Fall 2026
+
 Arizona State University
+
 **EGR 304**
+
 Zane Reynolds
 
 ## Team Introduction
