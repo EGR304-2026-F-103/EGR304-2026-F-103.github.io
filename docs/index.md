@@ -1,19 +1,19 @@
+<div align="center" markdown>
+
 # Home
-Team 103 Embedded Systems Design Project
 
-Team 103
+## Team 103 Embedded Systems Design Project
 
-Duotao Gao, Gabriel Toneser Facchin, Zice Sun
+**Team 103**  
+Duotao Gao · Gabriel Toneser Facchin · Zice Sun  
 
-**Submission: Sep 3rd, 2026**
+**Prepared:** September 3, 2026  
+**Fall 2026**  
+Arizona State University  
+**EGR 304**  
+Instructor: Zane Reynolds  
 
-Fall 2026
-
-Arizona State University
-
-**EGR 304**
-
-Zane Reynolds
+</div>
 
 ## Team Introduction
 > This will be updated as part of the preparation for the External Review.
