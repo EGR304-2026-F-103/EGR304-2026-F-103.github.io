@@ -114,28 +114,17 @@ Zice's fixed conflicts, for reference when filling this in:
 | Time     | Sunday | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday |
 | -------- | ------ | ------ | ------- | --------- | -------- | ------ | -------- |
 | 8:00 AM  |        |        |         |           |          |        |          |
-| 9:00 AM  |        |        |         |           |          |        |          |
-| 10:00 AM |        |        |         |           |          |        |          |
-| 11:00 AM |        |        |         |           |          |        |          |
-| 12:00 PM |        |        |         |           |          |        |          |
-| 1:00 PM  |        |        |         |           |          |        |          |
-| 2:00 PM  |        |   ZS   |   ZS    |           |    ZS    |   ZS   |          |
-| 3:00 PM  |        |   ZS   |   ZS    |           |    ZS    |   ZS   |          |
-| 4:00 PM  |        |   ZS   |   ZS    |           |    ZS    |   ZS   |          |
-| 5:00 PM  |        |   ZS   |   ZS    |           |    ZS    |   ZS   |          |
-| 6:00 PM  |        |   ZS   |   ZS    |           |    ZS    |   ZS   |          |
-| 7:00 PM  |        |   ZS   |   ZS    |           |    ZS    |   ZS   |          |
-| 9:00 AM  |        |        |     DG    |           |   DG       |        |          |
-| 10:00 AM |        |   ZS DG  |   ZS DG GF  |    ZS DG    |    ZS DG GF  |   ZS   |          |
-| 11:00 AM |        |   ZS DG  |   ZS DG GF |    ZS DG    |    ZS DG GF  |   ZS   |          |
-| 12:00 PM |        |   ZS DG  |   ZS DG   |    ZS DG    |    ZS DG   |   ZS   |          |
-| 1:00 PM  |        |   ZS   |   ZS DG   |    ZS     |    ZS DG   |   ZS   |          |
-| 2:00 PM  |        |        |      DG   |           |     DG     |        |          |
-| 3:00 PM  |        |   DG     |   DG      |   DG        |    DG      |        |          |
-| 4:00 PM  |        |   DG     |         |     DG      |          |  DG      |          |
-| 5:00 PM  |        |   DG  GF   |  GF       |    DG   GF    |  GF        |  DG      |          |
-| 6:00 PM  |        |        |         |           |          |   DG     |          |
-| 7:00 PM  |        |        |         |           |          |        |          |
+| 9:00 AM  |        |        |     DG    |         |   DG       |        |          |
+| 10:00 AM |        |        |  ZS DG GF  |        |    ZS DG GF  |      |          |
+| 11:00 AM |        |        |  ZS DG GF |         |    ZS DG GF  |      |          |
+| 12:00 PM |        |   DG   |   DG   |    DG     |    ZS DG   |      |          |
+| 1:00 PM  |        |        |   DG   |            |    ZS DG   |      |          |
+| 2:00 PM  |        |        |      DG |    ZS   |     DG     |        |          |
+| 3:00 PM  |        | ZS DG     |   ZS DG      |   ZS DG        |    DG      |        |          |
+| 4:00 PM  |        | ZS DG     |    ZS     |     ZS DG      |          |  DG      |          |
+| 5:00 PM  |        | ZS DG GF   |  ZS GF          | ZS DG GF |  ZS GF |  DG      |          |
+| 6:00 PM  |        |        |         |           |          |  ZS DG GF  |          |
+| 7:00 PM  |        |        |         |           |          |  ZS DG GF      |          |
 | 8:00 PM  |        |        |         |           |          |        |          |
 | 9:00 PM  |        |        |         |           |          |        |          |
 
@@ -148,7 +137,7 @@ Zice's fixed conflicts, for reference when filling this in:
 | Gabriel Toneser Facchin | GF           |
 
 **Shared availability.** The team has 4 hours of common availability
-outside of class time: [FILL: list the blocks].
+outside of class time: M W 10:30 AM - 11:45 AM.
 
 **Recurring meeting slot.** Friday, 6:00-7:00PM, held on Discord.
 
