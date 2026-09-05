@@ -114,16 +114,16 @@ Zice's fixed conflicts, for reference when filling this in:
 | Time     | Sunday | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday |
 | -------- | ------ | ------ | ------- | --------- | -------- | ------ | -------- |
 | 8:00 AM  |        |        |         |           |          |        |          |
-| 9:00 AM  |        |        |         |           |          |        |          |
-| 10:00 AM |        |   ZS   |   ZS    |    ZS     |    ZS    |   ZS   |          |
-| 11:00 AM |        |   ZS   |   ZS    |    ZS     |    ZS    |   ZS   |          |
-| 12:00 PM |        |   ZS   |   ZS    |    ZS     |    ZS    |   ZS   |          |
-| 1:00 PM  |        |   ZS   |   ZS    |    ZS     |    ZS    |   ZS   |          |
-| 2:00 PM  |        |        |         |           |          |        |          |
-| 3:00 PM  |        |        |         |           |          |        |          |
-| 4:00 PM  |        |        |         |           |          |        |          |
-| 5:00 PM  |        |        |         |           |          |        |          |
-| 6:00 PM  |        |        |         |           |          |        |          |
+| 9:00 AM  |        |        |     DG    |           |   DG       |        |          |
+| 10:00 AM |        |   ZS DG  |   ZS DG   |    ZS DG    |    ZS DG   |   ZS   |          |
+| 11:00 AM |        |   ZS DG  |   ZS DG   |    ZS DG    |    ZS DG   |   ZS   |          |
+| 12:00 PM |        |   ZS DG  |   ZS DG   |    ZS DG    |    ZS DG   |   ZS   |          |
+| 1:00 PM  |        |   ZS   |   ZS DG   |    ZS     |    ZS DG   |   ZS   |          |
+| 2:00 PM  |        |        |      DG   |           |     DG     |        |          |
+| 3:00 PM  |        |   DG     |   DG      |   DG        |    DG      |        |          |
+| 4:00 PM  |        |   DG     |         |     DG      |          |  DG      |          |
+| 5:00 PM  |        |   DG     |         |    DG       |          |  DG      |          |
+| 6:00 PM  |        |        |         |           |          |   DG     |          |
 | 7:00 PM  |        |        |         |           |          |        |          |
 | 8:00 PM  |        |        |         |           |          |        |          |
 | 9:00 PM  |        |        |         |           |          |        |          |
