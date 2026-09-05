@@ -184,7 +184,7 @@ static assignment for the whole semester will lose points.
 
 **How often will project roles change?**
 
-Project roles will rotate every two weeks. At the end of each two-week period, the roles will shift among the three team members so that everyone has experience with different responsibilities. The member talomg two roles will also rotate to avoid repeatedly placing extra workload on the same person.
+Project roles will rotate every two weeks. At the end of each two-week period, the roles will shift among the three team members so that everyone has experience with different responsibilities. The member taking two roles will also rotate to avoid repeatedly placing extra workload on the same person.
 
 **How will you decide who is assigned to each role?**
 
@@ -228,7 +228,7 @@ each member has signed off on each submission?**
 The team will set the internal deadline at least 10 hours before the official deadline. 
 Before submission, all members will check and confirm the final version, 
 including confirming that the submission format meets the requirements. 
-One designated member is responsible for submitting the assignment to the Canvas,
+One designated member is responsible for submitting the assignment to Canvas,
 while another member is responsible for confirming the successful submission and saving a screenshot as proof.
 <!--
 Syllabus specifics worth building into the answer:
@@ -291,7 +291,7 @@ improve?**
 If the member does not improve after receiving assistance, 
 the team will discuss the problem with the member again and record the relevant situation. 
 If the problem persists and affects the team's progress, 
-the team will contact instructor for guidance and to take further measures.
+the team will contact the instructor for guidance and to take further measures.
 
 <!--
 The pink slip is a defined mechanism in the syllabus, not a metaphor: a team
