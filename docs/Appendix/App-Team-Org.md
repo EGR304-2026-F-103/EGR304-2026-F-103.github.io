@@ -115,14 +115,14 @@ Zice's fixed conflicts, for reference when filling this in:
 | -------- | ------ | ------ | ------- | --------- | -------- | ------ | -------- |
 | 8:00 AM  |        |        |         |           |          |        |          |
 | 9:00 AM  |        |        |     DG    |           |   DG       |        |          |
-| 10:00 AM |        |   ZS DG  |   ZS DG   |    ZS DG    |    ZS DG   |   ZS   |          |
-| 11:00 AM |        |   ZS DG  |   ZS DG   |    ZS DG    |    ZS DG   |   ZS   |          |
+| 10:00 AM |        |   ZS DG  |   ZS DG GF  |    ZS DG    |    ZS DG GF  |   ZS   |          |
+| 11:00 AM |        |   ZS DG  |   ZS DG GF |    ZS DG    |    ZS DG GF  |   ZS   |          |
 | 12:00 PM |        |   ZS DG  |   ZS DG   |    ZS DG    |    ZS DG   |   ZS   |          |
 | 1:00 PM  |        |   ZS   |   ZS DG   |    ZS     |    ZS DG   |   ZS   |          |
 | 2:00 PM  |        |        |      DG   |           |     DG     |        |          |
 | 3:00 PM  |        |   DG     |   DG      |   DG        |    DG      |        |          |
 | 4:00 PM  |        |   DG     |         |     DG      |          |  DG      |          |
-| 5:00 PM  |        |   DG     |         |    DG       |          |  DG      |          |
+| 5:00 PM  |        |   DG  GF   |  GF       |    DG   GF    |  GF        |  DG      |          |
 | 6:00 PM  |        |        |         |           |          |   DG     |          |
 | 7:00 PM  |        |        |         |           |          |        |          |
 | 8:00 PM  |        |        |         |           |          |        |          |
