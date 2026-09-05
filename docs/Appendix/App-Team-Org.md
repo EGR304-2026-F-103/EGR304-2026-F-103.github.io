@@ -392,3 +392,14 @@ purposes on this assignment:
   information needs to be filled in for each section.
 
 AI is only used to help understand problems, and all content was written by the team.
+
+**Full query text:**
+
+> 1. I am currently completing the Team Organization and Charter assignment for EGR304.
+>    [Screenshot of the assignment page]
+> 2. Please explain what needs to be written for each question in the assignment.
+>
+> 3. Please explain what information needs to be filled in for each part.
+
+[FILL: the other three members' AI use disclosures, or a statement that they
+used none]
