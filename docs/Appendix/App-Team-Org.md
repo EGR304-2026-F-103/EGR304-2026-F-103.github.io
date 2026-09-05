@@ -136,7 +136,7 @@ Zice's fixed conflicts, for reference when filling this in:
 | Zice Sun                | ZS           |
 | Gabriel Toneser Facchin | GF           |
 
-**Shared availability.** The team has 4 hours of common availability
+**Shared availability.** The team has 8 hours of common availability
 outside of class time: M W 10:30 AM - 11:45 AM.
 
 **Recurring meeting slot.** Friday, 6:00-7:00PM, held on Discord.
