@@ -392,6 +392,3 @@ purposes on this assignment:
   information needs to be filled in for each section.
 
 AI is only used to help understand problems, and all content was written by the team.
-
-[FILL: the other three members' AI use disclosures, or a statement that they
-used none]
