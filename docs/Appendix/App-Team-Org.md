@@ -125,6 +125,17 @@ Zice's fixed conflicts, for reference when filling this in:
 | 5:00 PM  |        |   ZS   |   ZS    |           |    ZS    |   ZS   |          |
 | 6:00 PM  |        |   ZS   |   ZS    |           |    ZS    |   ZS   |          |
 | 7:00 PM  |        |   ZS   |   ZS    |           |    ZS    |   ZS   |          |
+| 9:00 AM  |        |        |     DG    |           |   DG       |        |          |
+| 10:00 AM |        |   ZS DG  |   ZS DG GF  |    ZS DG    |    ZS DG GF  |   ZS   |          |
+| 11:00 AM |        |   ZS DG  |   ZS DG GF |    ZS DG    |    ZS DG GF  |   ZS   |          |
+| 12:00 PM |        |   ZS DG  |   ZS DG   |    ZS DG    |    ZS DG   |   ZS   |          |
+| 1:00 PM  |        |   ZS   |   ZS DG   |    ZS     |    ZS DG   |   ZS   |          |
+| 2:00 PM  |        |        |      DG   |           |     DG     |        |          |
+| 3:00 PM  |        |   DG     |   DG      |   DG        |    DG      |        |          |
+| 4:00 PM  |        |   DG     |         |     DG      |          |  DG      |          |
+| 5:00 PM  |        |   DG  GF   |  GF       |    DG   GF    |  GF        |  DG      |          |
+| 6:00 PM  |        |        |         |           |          |   DG     |          |
+| 7:00 PM  |        |        |         |           |          |        |          |
 | 8:00 PM  |        |        |         |           |          |        |          |
 | 9:00 PM  |        |        |         |           |          |        |          |
 
@@ -384,6 +395,14 @@ such content was written by the team.
 > 4. Give me the complete skeleton files for `docs/index.md` and the others.
 >
 > 5. What do you mean? I have to attach the AI conversation?
+
+Generative AI (Chat GPT) was used by Duotao Gao for the following 
+purposes on this assignment:
+
+- Explain the questions on the assignment page and confirm what
+  information needs to be filled in for each section.
+
+AI is only used to help understand problems, and all content was written by the team.
 
 [FILL: the other three members' AI use disclosures, or a statement that they
 used none]
