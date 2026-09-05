@@ -38,10 +38,10 @@ identification to a shippable unit within N months."
 2. Improve teamwork, communication, and project management skills
 3. Successfully design and build a functional engineering project
 4. Develop practical problem-solving and technical skills
-5. [FILL: goal 5]
+5. Produce professional documentation that can be used in our engineering portfolios
 
-[FILL: one or two sentences naming the commonalities across these goals and
-how they were consolidated into the team charter]
+Our goals mainly focus on technical development, teamwork, project quality, and professional growth. These common 
+goals were combined into the team charter to guide how we work together and measure our success throughout the project.
 
 ## Communication Channels
 
@@ -71,6 +71,7 @@ needs, and state the response-time expectation attached to each mode.
 -->
 
 **1. How will the team communicate?**
+
 Asynchronous communication will take place on Discord, messages on Discord
 are answered within 12 hours on weekdays.
 Synchronous communication will take place on text messages, messages on text
@@ -114,10 +115,10 @@ Zice's fixed conflicts, for reference when filling this in:
 | -------- | ------ | ------ | ------- | --------- | -------- | ------ | -------- |
 | 8:00 AM  |        |        |         |           |          |        |          |
 | 9:00 AM  |        |        |         |           |          |        |          |
-| 10:00 AM |        |        |         |           |          |        |          |
-| 11:00 AM |        |        |         |           |          |        |          |
-| 12:00 PM |        |        |         |           |          |        |          |
-| 1:00 PM  |        |        |         |           |          |        |          |
+| 10:00 AM |        |   ZS   |   ZS    |    ZS     |    ZS    |   ZS   |          |
+| 11:00 AM |        |   ZS   |   ZS    |    ZS     |    ZS    |   ZS   |          |
+| 12:00 PM |        |   ZS   |   ZS    |    ZS     |    ZS    |   ZS   |          |
+| 1:00 PM  |        |   ZS   |   ZS    |    ZS     |    ZS    |   ZS   |          |
 | 2:00 PM  |        |        |         |           |          |        |          |
 | 3:00 PM  |        |        |         |           |          |        |          |
 | 4:00 PM  |        |        |         |           |          |        |          |
@@ -135,10 +136,10 @@ Zice's fixed conflicts, for reference when filling this in:
 | Zice Sun                | ZS           |
 | Gabriel Toneser Facchin | GF           |
 
-**Shared availability.** The team has [FILL: N] hours of common availability
+**Shared availability.** The team has 4 hours of common availability
 outside of class time: [FILL: list the blocks].
 
-**Recurring meeting slot.** [FILL: day and time], held on Discord.
+**Recurring meeting slot.** Friday, 6:00-7:00PM, held on Discord.
 
 ## Meeting Coordination
 
@@ -171,9 +172,8 @@ Fill in who holds each role FIRST — roles must rotate later.
 | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
 | Meeting leader                   | Schedules team meetings, creates and distributes an agenda for each meeting, and runs each meeting                                        | Zice Sun              |
 | Meeting recorder                 | Takes minutes of each team meeting, including attendance, and records action items and to whom they are assigned                          | Gabriel               |
-| Assignment leader                | Coordinates the team's work on a given assignment to Canvas before the due date                                                           | [FILL]                |
+| Assignment leader                | Coordinates the team's work on a given assignment to Canvas before the due date                                                           | Zice Sun              |
 | Project monitor                  | Tracks the team's progress relative to the project schedule (Gantt chart) and keeps team members apprised of deadlines and project status | Duotao Gao            |
-| [FILL: optional additional role] | [FILL: duties]                                                                                                                            | [FILL]                |
 
 <!--
 The assignment requires a WRITTEN PROCESS in addition to the table, answering
@@ -199,12 +199,11 @@ Roles may be adjusted if a member is unavailable, has an unexpected workload, re
 
 **How will you track team activities and milestones?**
 
-[FILL: the tool and who maintains it.]
+Team milestones will be tracked using a shared task list in the team's project Google Docs folder, and team activities will be tracked through github commit/push record. The project monitor will be responsible for keeping the task list updated and reminding the team of upcoming deadlines.
 
 **How will you assign technical responsibilities to the team members?**
 
-[FILL: how technical work is divided, and how you avoid one person holding
-too many roles at once — see the conflict-of-interest note below.]
+ Assignment leader will be in charge for distributing tasks according to each member's skills, interests, and the needs of the project. Each member will lead the design and development of at least one hardware or software subsystem while the other members provide support and review.
 
 <!--
 Syllabus constraint worth designing around: every team member must lead the
@@ -341,7 +340,6 @@ and date is acceptable.
 | Duotao Gao              | Duotao Gao       | 9/3/2026 |
 | Gabriel Toneser Facchin | Gabriel Facchin  | 9/4/2026 |
 | Zice Sun                | Zice Sun         | 9/3/2026 |
-| [FILL: Member 4]        | [FILL]    | [FILL] |
 
 ## AI Use Disclosure
 
