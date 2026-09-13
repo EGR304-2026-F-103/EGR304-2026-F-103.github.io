@@ -6,21 +6,22 @@ title: User Needs and Benchmarking
 
 ### Search #1
 
-**Keywords:** "kid science kit robotics"
+**Keywords:** "Strength Trainer"
 
-**Search Results Link:** [https://www.amazon.com/s?k=kid+science+kit+robotics&crid=201H95H867ASY&sprefix=kid+science+kit+robotic%2Caps%2C162&ref=nb_sb_noss_2](https://www.amazon.com/s?k=kid+science+kit+robotics&crid=201H95H867ASY&sprefix=kid+science+kit+robotic%2Caps%2C162&ref=nb_sb_noss_2)
+**Search Results Link:** [https://sklz.com/products/grip-strength-trainer-3408]
+(https://sklz.com/products/grip-strength-trainer-3408)
 
 ### Selected Products
 
-#### 1. [Tinkering Labs Robotics Engineering Kit](https://www.amazon.com/Tinkering-Labs-Electric-Engineering-Experiments/dp/B01M5GJFQ1/) < (link to the product)
+#### 1. [Grip Strength Trainer](https://sklz.com/products/grip-strength-trainer-3408) < (link to the product)
 
 ![](image1.png)
 
 **(include a picture)**
 
-* Price: $65
+* Price: $19.99
 
-* Vendor: Amazon
+* Vendor: GRIP
 
 * Description: The kit includes over 50 high quality components and 10 Challenges that inspire kids to invent their own creations. The pieces are a combination of the everyday and the mysterious, perfect for generating creativity, boosting IQ and instilling STEM knowledge.
 
