@@ -8,30 +8,30 @@ title: User Needs and Benchmarking
 
 **Keywords:** "Strength Trainer"
 
-**Search Results Link:** [https://sklz.com/products/grip-strength-trainer-3408]
-(https://sklz.com/products/grip-strength-trainer-3408)
+**Search Results Link:** [https://www.amazon.com/portal/customer-reviews/B07GQ2JBDR/ref=acr_dpx_hist_5?ie=UTF8&filterByStar=five_star&reviewerType=all_reviews#reviews-filter-bar]
+(https://www.amazon.com/portal/customer-reviews/B07GQ2JBDR/ref=acr_dpx_hist_5?ie=UTF8&filterByStar=five_star&reviewerType=all_reviews#reviews-filter-bar)
 
 ### Selected Products
 
-#### 1. [Grip Strength Trainer](https://sklz.com/products/grip-strength-trainer-3408) < (link to the product)
+#### 1. [Grip Strength Trainer](https://www.amazon.com/portal/customer-reviews/B07GQ2JBDR/ref=acr_dpx_hist_5?ie=UTF8&filterByStar=five_star&reviewerType=all_reviews#reviews-filter-bar) < (link to the product)
 
 ![](image1.png)
 
 **(include a picture)**
 
-* Price: $19.99
+* Price: $18.25
 
-* Vendor: GRIP
+* Vendor: Amazon
 
-* Description: The kit includes over 50 high quality components and 10 Challenges that inspire kids to invent their own creations. The pieces are a combination of the everyday and the mysterious, perfect for generating creativity, boosting IQ and instilling STEM knowledge.
+* Description: Adjustable from 20 lb. to 90 lb. of resistance, the Grip Strength Trainer helps increase finger, hand, wrist and forearm strength. It is also a great tool for rehabilitation, circulation and stress relief.
 
 ##### Positive Comments
 
 | Voice of the Customer                                                                                                                                                                  | Restated Customer Need                                                              |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| "My son just turned 6 and he loves this due to the real tools, real wiring and building to truly make something. It is too advanced for his age to do alone but he will grow into it." | 1.  The kit is perceived as more than a toy (explicit)                              |
-|                                                                                                                                                                                        | 2.  The kit can be used by younger children without parental supervision (explicit) |
-|                                                                                                                                                                                        | 3.  The kit is safe for children of all ages (latent)                               |
+| "Great for hand and wrist therapy." | 1. This device supports the rehabilitation of hands and wrists (explicit)                            |
+| "Great build quality. Easy to adjust resistance."                                                                                                                                                       | 2.  The device allows the user to adjust the resistance easily. (explicit) |
+|  "Great to take anywhere."                                                                                                                                                                                      | 3.  The device is portable and easy to transport. (explicit)                             |
 
 ##### Negative Comments
 
