@@ -160,20 +160,40 @@ title: User Needs and Benchmarking
 
 | Voice of the Customer | Restated Customer Need |
 | --- | --- |
-| "Works well. Great to track strengthening progress." | 1.The device records grip-strength measurements at multiple points over time. (explicit) 2. The device shows the amount and direction of change between measurement sessions. (latent) 3. The device associates each measurement with the correct testing session. (latent) | 
-| "I was amazed how important hand strength is. And I can do a daily check. " | 4.The device supports repeated daily grip-strength checks. (explicit)5.The device produces results in a consistent format for day-to-day comparison. (latent) |
-              
+| "Works well. Great to track strengthening progress." | 1. The device records grip-strength measurements at multiple points over time. (explicit) 2. The device shows the amount and direction of change between measurement sessions. (latent) 3. The device associates each measurement with the correct testing session. (latent) | 
+| "I was amazed how important hand strength is. And I can do a daily check. " | 4. The device supports repeated daily grip-strength checks. (explicit) 5. The device produces results in a consistent format for day-to-day comparison. (latent) |
+| "Easy to use. Does everything the manufacturer describes. Happy." | 6. The device is easy to operate. (explicit) 7. The device performs its advertised measurement functions reliably. (explicit) 8. The device requires little training before use. (latent) |
+
+
 ##### Negative Comments
 
 | Voice of the Customer | Restated Customer Need |
 | --- | --- |
-| “This hand force testing device works, but the storage of measurements only contains the last measurement, sometimes it turns itself off. It’s not useful if you want to do a circle of continuous measurements on your own, as it won’t remember anything except the last measured force. If you only care about a one time measurement you probably are good but it’s useless for other test protocols. I’ve also found it quite uncomfortable to hold as it’s quite top heavy and the hand holding bars are not comfortable either.” | 1 The device stores multiple consecutive grip-force measurements without overwriting previous results. (explicit) 2  The device remains powered on throughout an active sequence of measurements. (explicit) 3 The device supports continuous testing protocols without requiring results to be recorded manually after each measurement. (latent) 4 The device distributes its weight evenly while being held. (explicit) 5 The hand-contact surfaces remain comfortable during repeated measurements. (explicit) |
-|"It always shows normal results"  | 6. The device displays a grip-strength classification that corresponds to the measured result. (explicit) 7. The device distinguishes between below-normal, normal, and above-normal grip-strength results. (latent) |
-
+| “This hand force testing device works, but the storage of measurements only contains the last measurement, sometimes it turns itself off. It’s not useful if you want to do a circle of continuous measurements on your own, as it won’t remember anything except the last measured force. If you only care about a one time measurement you probably are good but it’s useless for other test protocols. I’ve also found it quite uncomfortable to hold as it’s quite top heavy and the hand holding bars are not comfortable either.” | 1. The device stores multiple consecutive grip-force measurements without overwriting previous results. (explicit) 2. The device remains powered on throughout an active sequence of measurements. (explicit) 3. The device supports continuous testing protocols without requiring results to be recorded manually after each measurement. (latent) 4. The device distributes its weight evenly while being held. (explicit) 5. The hand-contact surfaces remain comfortable during repeated measurements. (explicit) 6. The device can be held in the correct testing position without excessive effort. (latent) 7. The physical design does not interfere with the user's ability to apply maximum grip force. (latent) |
+|"It always shows normal results"  | 8. The device displays a grip-strength classification that corresponds to the measured result. (explicit) 9. The device distinguishes between below-normal, normal, and above-normal grip-strength results. (latent) |
+|"Very hard to use" | 10. The device can be operated by users with limited grip strength. (explicit) 11. The device accommodates patients at different stages of rehabilitation. (latent) 12. The device allows a therapist to obtain measurements without unnecessary difficulty for the patient. (latent) |
 
 (you don't have to perform multiple searches, but sometimes different keywords reveal slightly different results)
 
+## Patent Benchmarking
 
+### Patent Search #1
+
+**Keywords:** "variable resistance hand rehabilitation device"
+
+**Search Results Link:** https://patents.google.com/?q=(variable+resistance+hand+rehabilitation+device)
+
+### Selected Patent 
+
+#### Variable Resistance Exercise and Rehabilitation Hand Device
+
+**Patent number:** WO2006099484A1
+**Published:** September 21, 2006
+**Assignee:** Northeastern University Boston
+
+**Description:** This patent describes a portable hand exercise and rehabilitation device with electronically controlled variable resistance. The resistance can be changed through computerized control to adjust the exercise or rehabilitation session based on the user's response.
+
+**Relevance to our project:** This patent is relevant because it uses automatically controlled resistance for hand rehabilitation. Our project also provides adjustable resistance, but our design uses grip-force measurement and a DC motor with a lead screw to adjust spring preload.
 
 **Search Results Link:** <add your link here>
 
