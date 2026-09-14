@@ -8,12 +8,12 @@ title: User Needs and Benchmarking
 
 **Keywords:** "Strength Trainer"
 
-**Search Results Link:** [https://www.amazon.com/portal/customer-reviews/B07GQ2JBDR/ref=acr_dpx_hist_5?ie=UTF8&filterByStar=five_star&reviewerType=all_reviews#reviews-filter-bar]
-(https://www.amazon.com/portal/customer-reviews/B07GQ2JBDR/ref=acr_dpx_hist_5?ie=UTF8&filterByStar=five_star&reviewerType=all_reviews#reviews-filter-bar)
+**Search Results Link:** [https://www.amazon.com/SKLZ-Grip-Strength-Trainer-Rehabilitation/dp/B07GQ2JBDR/ref=cm_cr_arp_d_product_top?ie=UTF8]
+(https://www.amazon.com/SKLZ-Grip-Strength-Trainer-Rehabilitation/dp/B07GQ2JBDR/ref=cm_cr_arp_d_product_top?ie=UTF8)
 
 ### Selected Products
 
-#### 1. [Grip Strength Trainer](https://www.amazon.com/portal/customer-reviews/B07GQ2JBDR/ref=acr_dpx_hist_5?ie=UTF8&filterByStar=five_star&reviewerType=all_reviews#reviews-filter-bar) < (link to the product)
+#### 1. [Grip Strength Trainer](https://www.amazon.com/SKLZ-Grip-Strength-Trainer-Rehabilitation/dp/B07GQ2JBDR/ref=cm_cr_arp_d_product_top?ie=UTF8) < (link to the product)
 
 ![](image1.png)
 
