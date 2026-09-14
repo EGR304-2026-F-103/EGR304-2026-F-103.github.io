@@ -8,8 +8,7 @@ title: User Needs and Benchmarking
 
 **Keywords:** "Strength Trainer"
 
-**Search Results Link:** [https://www.amazon.com/s?k=Strength+Trainer&crid=216I4TMBPYM7L&sprefix=strength+trainer%2Caps%2C192&ref=nb_sb_noss_1]
-(https://www.amazon.com/s?k=Strength+Trainer&crid=216I4TMBPYM7L&sprefix=strength+trainer%2Caps%2C192&ref=nb_sb_noss_1)
+**Search Results Link:** [https://www.amazon.com/s?k=Strength+Trainer&crid=216I4TMBPYM7L&sprefix=strength+trainer%2Caps%2C192&ref=nb_sb_noss_1](https://www.amazon.com/s?k=Strength+Trainer&crid=216I4TMBPYM7L&sprefix=strength+trainer%2Caps%2C192&ref=nb_sb_noss_1)
 
 ### Selected Products
 
