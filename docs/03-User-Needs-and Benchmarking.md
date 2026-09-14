@@ -163,8 +163,7 @@ title: User Needs and Benchmarking
 | Voice of the Customer | Restated Customer Need |
 | --- | --- |
 | "Works well. Great to track strengthening progress." | 1.The device records grip-strength measurements at multiple points over time. (explicit) 
-2. The device shows the amount and direction of change between measurement sessions. (latent) 
-3. The device associates each measurement with the correct testing session. (latent) |
+2. The device shows the amount and direction of change between measurement sessions. (latent) 3. The device associates each measurement with the correct testing session. (latent) |
 
 | "I was amazed how important hand strength is. And I can do a daily check. " | 4.The device supports repeated daily grip-strength checks. (explicit)
 5.The device produces results in a consistent format for day-to-day comparison. (latent) |
@@ -173,11 +172,7 @@ title: User Needs and Benchmarking
 
 | Voice of the Customer | Restated Customer Need |
 | --- | --- |
-| “This hand force testing device works, but the storage of measurements only contains the last measurement, sometimes it turns itself off. It’s not useful if you want to do a circle of continuous measurements on your own, as it won’t remember anything except the last measured force. If you only care about a one time measurement you probably are good but it’s useless for other test protocols. I’ve also found it quite uncomfortable to hold as it’s quite top heavy and the hand holding bars are not comfortable either.” | 1 The device stores multiple consecutive grip-force measurements without overwriting previous results. (explicit) 
-2  The device remains powered on throughout an active sequence of measurements. (explicit) 
-3 The device supports continuous testing protocols without requiring results to be recorded manually after each measurement. (latent) 
-4 The device distributes its weight evenly while being held. (explicit) 
-5 The hand-contact surfaces remain comfortable during repeated measurements. (explicit) |
+| “This hand force testing device works, but the storage of measurements only contains the last measurement, sometimes it turns itself off. It’s not useful if you want to do a circle of continuous measurements on your own, as it won’t remember anything except the last measured force. If you only care about a one time measurement you probably are good but it’s useless for other test protocols. I’ve also found it quite uncomfortable to hold as it’s quite top heavy and the hand holding bars are not comfortable either.” | 1 The device stores multiple consecutive grip-force measurements without overwriting previous results. (explicit) 2  The device remains powered on throughout an active sequence of measurements. (explicit) 3 The device supports continuous testing protocols without requiring results to be recorded manually after each measurement. (latent) 4 The device distributes its weight evenly while being held. (explicit) 5 The hand-contact surfaces remain comfortable during repeated measurements. (explicit) |
 |"It always shows normal results"  | 6. The device displays a grip-strength classification that corresponds to the measured result. (explicit)
 7. The device distinguishes between below-normal, normal, and above-normal grip-strength results. (latent) |
 
