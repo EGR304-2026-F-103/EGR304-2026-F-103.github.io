@@ -15,7 +15,7 @@ title: User Needs and Benchmarking
 
 #### 1. [Grip Strength Trainer](https://www.amazon.com/SKLZ-Grip-Strength-Trainer-Rehabilitation/dp/B07GQ2JBDR/ref=cm_cr_arp_d_product_top?ie=UTF8) < (link to the product)
 
-https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T1/images/I/611fm-m42XL._AC_SY879_.jpg
+![Grip Strength Trainer](https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T1/images/I/611fm-m42XL._AC_SY879_.jpg)
 
 * Price: $18.22
 
