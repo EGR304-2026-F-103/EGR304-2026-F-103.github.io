@@ -17,7 +17,7 @@ title: User Needs and Benchmarking
 
 ![](image1.png)
 
-**(include a picture)**
+![SKLZ Grip Strength Trainer](image/sklz-grip-strength-trainer.jpg)
 
 * Price: $18.22
 
