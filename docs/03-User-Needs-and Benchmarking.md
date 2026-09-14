@@ -146,7 +146,7 @@ title: User Needs and Benchmarking
 
 ### Selected Products
 
-#### 5. [CAMRY Digital Hand Dynamometer Grip](https://www.amazon.com/dp/B0DCZ7VN1Slv=shuf&utm_source=chatgpt.com&channelId=480&plpRedirect=mhFallback&th=1)
+#### 5. [CAMRY Digital Hand Dynamometer Grip](https://www.amazon.com/dp/B0DCZ7VN1S?lv=shuf&utm_source=chatgpt.com&channelId=480&plpRedirect=mhFallback&th=1)
 
 ![](https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T1/images/I/71XokK9BoqL._AC_SL1500_.jpg)
 
