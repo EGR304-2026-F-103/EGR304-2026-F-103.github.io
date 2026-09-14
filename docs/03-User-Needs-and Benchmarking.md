@@ -8,8 +8,8 @@ title: User Needs and Benchmarking
 
 **Keywords:** "Strength Trainer"
 
-**Search Results Link:** [https://www.amazon.com/SKLZ-Grip-Strength-Trainer-Rehabilitation/dp/B07GQ2JBDR/ref=cm_cr_arp_d_product_top?ie=UTF8]
-(https://www.amazon.com/SKLZ-Grip-Strength-Trainer-Rehabilitation/dp/B07GQ2JBDR/ref=cm_cr_arp_d_product_top?ie=UTF8)
+**Search Results Link:** [https://www.amazon.com/s?k=Strength+Trainer&crid=216I4TMBPYM7L&sprefix=strength+trainer%2Caps%2C192&ref=nb_sb_noss_1]
+(https://www.amazon.com/s?k=Strength+Trainer&crid=216I4TMBPYM7L&sprefix=strength+trainer%2Caps%2C192&ref=nb_sb_noss_1)
 
 ### Selected Products
 
@@ -30,10 +30,10 @@ title: User Needs and Benchmarking
 | Voice of the Customer                                                                                                                                                                  | Restated Customer Need                                                              |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
 | "Great for hand and wrist therapy." | 1. This device supports the rehabilitation of hands and wrists (explicit) 2. The device can be used safely by users with limited hand strength or dexterity. (latent)                           |
-| "Great build quality. Easy to adjust resistance."                                                                                                                                                       | 3. The device has durable, high-quality construction. (explicit) 4.  The device allows the user to adjust the resistance easily. (explicit) 5. The resistance setting remains secure during use. (latent)|
-|  "Great to take anywhere."                                                                                                                                                                                      | 6.  The device is portable and easy to transport. (explicit)   7. The device can be used in different locations without permanent installation. (latent)                         |
-|  "This is an easy way to relive your tension. Just grip and breathe in and exhale"                |8. The device helps the user relieve stress and tension. (explicit) 9. The device can be used together with breathing exercises. (explicit) 10. The device supports short, self-directed relaxation exercises. (latent) | 
-|"Easy to adjust and use"| 11. The device is easy to operate. (explicit) 12. The device requires little or no training before use. (latent)   |
+| "Great build quality. Easy to adjust resistance."                                                                                                                                                       |  3.  The device allows the user to adjust the resistance easily. (explicit) 4. The resistance setting remains secure during use. (latent)|
+|  "Great to take anywhere."                                                                                                                                                                                      | 5.  The device is portable and easy to transport. (explicit)   6. The device can be used in different locations without permanent installation. (latent)                         |
+|  "This is an easy way to relive your tension. Just grip and breathe in and exhale"                |7. The device helps the user relieve stress and tension. (explicit) 8. The device can be used together with breathing exercises. (explicit) 9. The device supports short, self-directed relaxation exercises. (latent) | 
+|"Easy to adjust and use"| 10. The device is easy to operate. (explicit) 11. The device requires little or no training before use. (latent)   |
 ##### Negative Comments
 
 | Voice of the Customer                                                                                                                                                                                                                                                                                                                                                                                | Restated Customer Need                                  |
