@@ -141,7 +141,6 @@ title: User Needs and Benchmarking
 
  **Keywords:** "digital hand dynamometer"
 
-![](https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T1/images/I/71XokK9BoqL._AC_SL1500_.jpg)
 
 **Search Results Link:** [https://www.amazon.com/s k=digital+hand+dynamometer&crid=1HJLH28QVJ2YP&sprefix=Digital+Hand+Dynamometer%2Caps%2C246&ref=nb_sb_ss_p13n-expert-pd-ops-ranker_1_24]
 
@@ -150,6 +149,8 @@ title: User Needs and Benchmarking
 ### Selected Products
 
 #### 5. [Squegg Digital Hand Grip Strengthener](https://www.mysquegg.com/products/squegg-digital-grip-strengthener)
+
+![](https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T1/images/I/71XokK9BoqL._AC_SL1500_.jpg)
 
 - Price: $32.99
 - Vendor: Amazon
