@@ -29,9 +29,9 @@ title: User Needs and Benchmarking
 
 | Voice of the Customer                                                                                                                                                                  | Restated Customer Need                                                              |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| "Great for hand and wrist therapy." | 1. This device supports the rehabilitation of hands and wrists (explicit)                            |
-| "Great build quality. Easy to adjust resistance."                                                                                                                                                       | 2.  The device allows the user to adjust the resistance easily. (explicit) |
-|  "Great to take anywhere."                                                                                                                                                                                      | 3.  The device is portable and easy to transport. (explicit)                             |
+| "Great for hand and wrist therapy." | 1. This device supports the rehabilitation of hands and wrists (explicit) 2.The device protects the user from injury if a mechanical failure occurs. (latent)                           |
+| "Great build quality. Easy to adjust resistance."                                                                                                                                                       | 3.  The device allows the user to adjust the resistance easily. (explicit) 4.The device provides a visible indication of excessive wear. (latent)|
+|  "Great to take anywhere."                                                                                                                                                                                      | 5.  The device is portable and easy to transport. (explicit)   6. The device has a predictable service life. (latent)                          |             |                  |
 
 ##### Negative Comments
 
