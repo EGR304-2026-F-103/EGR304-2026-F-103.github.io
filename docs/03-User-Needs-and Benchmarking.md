@@ -162,7 +162,8 @@ title: User Needs and Benchmarking
 
 | Voice of the Customer | Restated Customer Need |
 | --- | --- |
-| "Works well. Great to track strengthening progress." | 1.The device records grip-strength measurements at multiple points over time. (explicit) 2. The device shows the amount and direction of change between measurement sessions. (latent) 3. The device associates each measurement with the correct testing session. (latent) | | "I was amazed how important hand strength is. And I can do a daily check. " | 4.The device supports repeated daily grip-strength checks. (explicit)5.The device produces results in a consistent format for day-to-day comparison. (latent) |
+| "Works well. Great to track strengthening progress." | 1.The device records grip-strength measurements at multiple points over time. (explicit) 2. The device shows the amount and direction of change between measurement sessions. (latent) 3. The device associates each measurement with the correct testing session. (latent) | 
+| "I was amazed how important hand strength is. And I can do a daily check. " | 4.The device supports repeated daily grip-strength checks. (explicit)5.The device produces results in a consistent format for day-to-day comparison. (latent) |
               
 ##### Negative Comments
 
