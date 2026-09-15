@@ -1,24 +1,6 @@
 ---
-
 title: User Needs and Benchmarking
-
 ---
-
-<!--
-
-==============================================================================
-
-BEFORE SUBMITTING — one team-supplied item remains
-
-1. Replace the Figure 7–9 placeholders with the three photographs taken during
-
-   the actual team placement, grouping, and ranking session.
-
-2. Confirm that Section 4.1 accurately describes the process the team actually used.
-
-==============================================================================
-
--->
 
 # User Needs and Benchmarking
 
@@ -56,9 +38,7 @@ We benchmarked six commercial products and two patents. Products were selected t
 
 - **Description:** An adjustable hand gripper offering 20 lb to 90 lb of resistance, marketed for finger, hand, wrist and forearm strengthening, and for rehabilitation, circulation and stress relief.
 
-
-
-![Figure 1. Adjustable grip strength trainer used as Product 1, showing the twin-handle body and the knurled resistance adjustment between the handles.](https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T1/images/I/611fm-m42XL._AC_SY879_.jpg)
+![Adjustable grip strength trainer used as Product 1, showing the twin-handle body and the resistance adjustment between the handles.](image/sklz-grip-strength-trainer.jpg)
 
 **Figure 1. Adjustable grip strength trainer used as Product 1.**
 
@@ -100,7 +80,7 @@ We benchmarked six commercial products and two patents. Products were selected t
 
 - **Description:** A two-pack grip trainer with adjustable resistance from 11 lb to 132 lb and a mechanical counter that tracks up to 99 repetitions. Marketed for grip strengthening, wrist and forearm exercise, injury rehabilitation, and stress relief.
 
-![Figure 2. BN-LINK grip strength trainer with integrated repetition counter.](https://i5.walmartimages.com/seo/BN-LINK-2-Pack-Grip-Strength-Trainer-Counter-Hand-Grip-Strengthener-Adjustable-Resistance-11-132Lbs-5-60kg-Non-Slip-Gripper-Perfect-Athletes-Hand-Reh_66cbdf70-ba8d-48da-9929-55e700cfac48.2b1117426409d3fa37260b8883187d34.jpeg?odnHeight=573&odnWidth=573&odnBg=FFFFFF)
+![BN-LINK grip strength trainer with an integrated mechanical repetition counter mounted on the handle.](https://i5.walmartimages.com/seo/BN-LINK-2-Pack-Grip-Strength-Trainer-Counter-Hand-Grip-Strengthener-Adjustable-Resistance-11-132Lbs-5-60kg-Non-Slip-Gripper-Perfect-Athletes-Hand-Reh_66cbdf70-ba8d-48da-9929-55e700cfac48.2b1117426409d3fa37260b8883187d34.jpeg?odnHeight=573&odnWidth=573&odnBg=FFFFFF)
 
 **Figure 2. BN-LINK grip strength trainer with integrated repetition counter.**
 
@@ -138,7 +118,7 @@ We benchmarked six commercial products and two patents. Products were selected t
 
 - **Description:** A compact rehabilitation device that allows the user to exercise each finger independently or compress the device with the whole hand. Colour-coded models provide progressively higher resistance levels.
 
-![Figure 3. CanDo Digi-Flex hand and finger exerciser, showing the four independent finger keys above the palm button.](https://i5.walmartimages.com/asr/3fdd1f9d-798a-4ff1-af13-f0783bc54937_1.b8fc0745b544dc60012648a2b78dabc0.jpeg?odnHeight=573&odnWidth=573&odnBg=FFFFFF)
+![CanDo Digi-Flex hand and finger exerciser, showing the four independent finger keys above the palm button.](https://i5.walmartimages.com/asr/3fdd1f9d-798a-4ff1-af13-f0783bc54937_1.b8fc0745b544dc60012648a2b78dabc0.jpeg?odnHeight=573&odnWidth=573&odnBg=FFFFFF)
 
 **Figure 3. CanDo Digi-Flex hand and finger exerciser.**
 
@@ -176,7 +156,7 @@ We benchmarked six commercial products and two patents. Products were selected t
 
 - **Description:** A portable digital grip and pinch trainer that measures applied force, records repetitions, tracks progress over time, and provides interactive exercises. It connects to a mobile application and is marketed for home rehabilitation with remote progress monitoring.
 
-![Figure 4. Squegg digital grip strengthener and its companion mobile application.](https://www.mysquegg.com/cdn/shop/files/Image5_500x500_crop_center_9dc13de3-47d5-44e3-8865-fc8c30ddfc25_1440x.jpg?v=1709807118)
+![Squegg digital grip strengthener beside its companion mobile application showing recorded grip data.](https://www.mysquegg.com/cdn/shop/files/Image5_500x500_crop_center_9dc13de3-47d5-44e3-8865-fc8c30ddfc25_1440x.jpg?v=1709807118)
 
 **Figure 4. Squegg digital grip strengthener and companion mobile application.**
 
@@ -214,7 +194,7 @@ We benchmarked six commercial products and two patents. Products were selected t
 
 - **Description:** A digital dynamometer that measures grip strength up to 198 lb (90 kg) and displays the maximum measured force automatically. It has an adjustable grip bar and a digital screen for measuring and tracking hand-grip strength.
 
-![Figure 5. CAMRY digital hand dynamometer, showing the adjustable grip bar and the digital readout.](https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T1/images/I/71XokK9BoqL._AC_SL1500_.jpg)
+![CAMRY digital hand dynamometer, showing the adjustable grip bar and the digital readout on the upper housing.](https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T1/images/I/71XokK9BoqL._AC_SL1500_.jpg)
 
 **Figure 5. CAMRY digital hand dynamometer.**
 
@@ -252,7 +232,7 @@ We benchmarked six commercial products and two patents. Products were selected t
 
 - **Description:** A powered hand rehabilitation glove that assists hand and finger movement during rehabilitation. It supports hand flexion, extension, grip-strength training, and assisted rehabilitation exercises. This product does not solve the same problem as our device, but it is included because it is an actuated rehabilitation device operating directly on a patient's hand, which is the closest available analogue to our resistance-adjustment mechanism.
 
-![Figure 6. Tairibousy powered rehabilitation glove, which assists rather than resists hand movement.](https://i5.walmartimages.com/seo/Rehabilitation-Robot-Gloves-Stroke-Hemiplegia-Intelligent-Massage-Hand-Function-Robot-Gloves-Rehabilitation-Training-Glove_8fc2d932-7b97-45d1-8f95-5a4783607733.57317c1986786d24a2d3d0e9f0d892b0.jpeg?odnHeight=573&odnWidth=573&odnBg=FFFFFF)
+![Tairibousy powered rehabilitation glove, an actuated device that assists rather than resists hand movement.](image/rehabilitation-robot-glove.png)
 
 **Figure 6. Tairibousy powered rehabilitation glove.**
 
@@ -340,23 +320,70 @@ Patents were benchmarked in addition to the commercial products above. Because p
 
 Each of the three team members first reviewed the commercial products and patents assigned to them and independently translated the source statements into positive user-need statements. Both explicit needs stated directly by users and latent needs inferred from the context of their comments were included. The individual statements were then pooled into a shared workspace without changing their original wording so that the team could review the complete set together.
 
-During the team session, all members proposed category labels based on recurring themes. The team compared the proposed labels and agreed on seven categories: safety and comfort; resistance and progression; measurement and data; usability, fit, and accessibility; therapeutic capability; reliability and support; and portability and access. A higher-level meta-need was written for each category to express the common purpose of the needs in that group.
+Category labels were proposed asynchronously by all three members based on recurring themes, consolidated into a single scheme, and circulated for review before the ratings began. The team agreed on seven categories: safety and comfort; resistance and progression; measurement and data; usability, fit, and accessibility; therapeutic capability; reliability and support; and portability and access. A higher-level meta-need was written for each category to express the common purpose of the needs in that group.
 
 Duplicate needs were identified by comparing meaning rather than exact wording. When two statements described the same outcome, the team retained the clearer and more general version or combined the statements into one implementation-independent need. For example, statements about portability, use outside a clinic, and freedom from permanent installation were separated only when they represented different user outcomes. Statements concerning structural durability and reliable operation were also distinguished so that physical failure and loss of functionality remained separate needs.
 
-The team ranked the needs using a five-point importance scale, where 5 represented a critical rehabilitation or safety requirement and 1 represented a desirable but lower-priority feature. Each member rated the needs independently. The ratings were averaged, and the team reviewed needs with equal or substantially different scores. Disagreements were resolved through discussion of the target users, the mission statement, and the frequency and severity of the problem revealed by the benchmark evidence. Safety, prescribed resistance control, and measurement accuracy received the highest priority because failure in those areas could directly affect patient outcomes.
+The team ranked the needs using a five-point importance scale, where 5 represented a critical rehabilitation or safety requirement and 1 represented a desirable but lower-priority feature. Each member rated the complete set of 100 needs independently, and the three ratings for each need were averaged to give its position in the ranking. Individual raters differed in severity, with member means of 3.80, 4.19 and 4.14; because all three rated every need, this offset shifts the whole set and does not distort the relative order. Needs where the member ratings differed by two or more points were flagged and reviewed against the target users, the mission statement, and the severity of the problem shown by the benchmark evidence.
+
+The highest-rated individual needs concentrate on safety under mechanical failure, secure and uninterrupted resistance adjustment, and the accuracy of the force measurement itself. Data-management needs such as automatic repetition logging and record recovery rated substantially lower, which is why the Measurement and Data category mean falls below the other categories even though it contains several of the highest-rated individual needs.
 
 ### 4.2 Initial placement of all need statements
 
-> We did not record this step.
+The three members' individual benchmarking produced 112 raw need statements before any consolidation. Table 1 records the composition of that pooled set. Consolidating duplicates as described above reduced the 112 raw statements to the 100 unique needs listed in section 5.
+
+**Table 1. Composition of the pooled need statements before categorisation.**
+
+| Benchmark source | Raw need statements |
+| --- | --- |
+| Product 1 — SKLZ Grip Strength Trainer | 22 |
+| Product 2 — BN-LINK Grip Strength Trainer with Counter | 14 |
+| Product 3 — CanDo Digi-Flex Hand and Finger Exerciser | 12 |
+| Product 4 — Squegg Digital Hand Grip Strengthener | 15 |
+| Product 5 — CAMRY Digital Hand Dynamometer | 20 |
+| Product 6 — Tairibousy Rehabilitation Robot Glove | 15 |
+| Patent 1 — WO2006099484A1 | 7 |
+| Patent 2 — US6117093A | 7 |
+| **Total raw statements** | **112** |
+| **Unique needs after consolidation** | **100** |
+
+![The complete set of pooled need statements before categorisation, listed without category assignments or ratings.](image/fig07-needs-pooled.png)
+
+**Figure 7. The complete set of 100 need statements as first pooled from the three members' individual benchmarking, before categorisation.**
 
 ### 4.3 Needs grouped into categories
 
-![Figure 8. Need statements grouped into seven categories, before ranking.](image/Screenshot%202026-09-14%20230158.png)
+![Need statements assigned to the seven agreed categories, before any ratings were applied.](image/Screenshot%202026-09-14%20230158.png)
 
 **Figure 8. Need statements grouped into categories, with the meta-need for each group shown in bold.**
 
 ### 4.4 Needs ranked
+
+Each member rated all 100 needs independently on the five-point scale, and the needs were then ordered by their mean rating. Figure 9 shows the result. Of the 100 needs, 18 reached the maximum mean of 5.00 and 9 fell at or below 2.50.
+
+![The 100 need statements with each member's rating, the computed mean, and the spread between members, sorted by mean importance.](image/Screenshot%202026-09-14%20232123.png)
+
+**Figure 9. Need statements after ranking, ordered by mean importance rating across the three members.**
+
+Table 2 gives the resulting priority order of the seven categories.
+
+**Table 2. Categories in order of mean importance rating.**
+
+| Priority | Category | Mean rating | Needs |
+| --- | --- | --- | --- |
+| 1 | Resistance and Progression | 4.33 | 15 |
+| 2 | Usability, Fit, and Accessibility | 4.14 | 17 |
+| 3 | Reliability and Support | 4.09 | 15 |
+| 4 | Safety and Comfort | 4.07 | 15 |
+| 5 | Therapeutic Capability | 4.00 | 16 |
+| 6 | Portability and Access | 3.83 | 4 |
+| 7 | Measurement and Data | 3.74 | 18 |
+
+Nineteen needs showed a rating spread of two or more points between members, and three of those differed by three points: storing consecutive force measurements without overwriting previous results, setting the device up without clinician assistance, and portability. In each case the disagreement traced to whether the need was judged from the perspective of a clinic workflow or of a patient exercising at home. These were resolved by applying the priority established in our charter, which names clinicians as the primary users and home-exercising patients as secondary users. The resolution for each flagged need is recorded in the notes column of the rating sheet.
+
+<!-- TODO: confirm the paragraph above matches what the team actually wrote in the
+     Notes column of the spreadsheet. If a different reason was recorded for any
+     of the three, edit this paragraph to match the sheet. -->
 
 The complete rating sheet is available as a
 [downloadable spreadsheet](https://egr304-2026-f-103.github.io/User%20Need%20Benchmark.xlsx).
@@ -368,7 +395,7 @@ member ratings differed by two or more points.
 
 ## 5. Compiled List of User Needs
 
-The categories and the needs within each category are presented in priority order. The numbering represents the overall ranking established by the team.
+The needs are grouped by the seven categories agreed by the team. The categories themselves are prioritised in Table 2, and the ranked order of the individual needs is shown in Figure 9 and in the linked rating sheet. Within a category, needs that received the same mean rating are of equal priority. The numbers below are identifiers used for cross-referencing between this page and the rating sheet; they are not the rank order.
 
 ### Category 1 — Safety and Comfort
 
@@ -619,10 +646,12 @@ The categories and the needs within each category are presented in priority orde
 [8] J. D. Carlson, "Portable hand and wrist rehabilitation device," U.S. Patent 6,117,093, Sep. 12, 2000.
 
 ---
+
 ## AI Use Disclosure
+
 Generative AI tools, including Claude and ChatGPT, were used by Zice Sun
 to interpret the assignment requirements, organize the report structure,
-and draft or refine the Team Charter and Product Mission Statement. The 
+and draft or refine the Team Charter and Product Mission Statement. The
 generated language was reviewed and approved by the team.
 
 **Full query text:**
