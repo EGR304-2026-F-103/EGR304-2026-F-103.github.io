@@ -63,13 +63,17 @@ title: User Needs and Benchmarking
 | --- | --- |
 | "It's comfortable in my hand." | 1. The device is comfortable during repeated use. (explicit)<br>2. The device accommodates users with hand pain. (latent) |
 | "Well made, adjustable, with a counter." | 3. The device allows the user to adjust exercise intensity. (explicit)<br>4. The device records completed repetitions automatically. (explicit)<br>5. The device withstands repeated exercise sessions. (latent) |
+| "Has some grip to it so it doesnt slip out of your hand. Great for all ages." | 6. The device maintains secure contact with the user's hand during squeezing. (explicit)<br>7. The device accommodates users across different age groups. (explicit)<br>8. The device can be controlled without requiring excessive hand stabilization. (latent) |
+
+
 
 ##### Negative Comments
 
 | Voice of the Customer | Restated Customer Need |
 | --- | --- |
-| "They're both right-handed grips." | 6. The device is usable with either hand. (explicit)<br>7. The resistance setting and exercise information remain visible during either left- or right-handed use. (latent) |
-| "The tension does not feel as strong." | 8. The device provides resistance that matches the indicated setting. (explicit)<br>9. The device maintains consistent resistance throughout its operating range. (latent) |
+| "They're both right-handed grips." | 9. The device is usable with either hand. (explicit)<br>10. The resistance setting and exercise information remain visible during either left- or right-handed use. (latent) |
+| "The tension does not feel as strong." | 11. The device provides resistance that matches the indicated setting. (explicit)<br>12. The device maintains consistent resistance throughout its operating range. (latent) |
+| "I have a fairly large hands and I don't think this particular model would work well for someone whose hands are fairly small." | 13. the device accommodates users with different hand sizes. (explicit)<br>14. The device can be comfortably operated by users with smaller hands. (latent)<br>15. The device provides a gripping range suitable for different hand sizes. (latent)|
 
 ---
 
@@ -160,18 +164,18 @@ title: User Needs and Benchmarking
 
 | Voice of the Customer | Restated Customer Need |
 | --- | --- |
-| "Works well. Great to track strengthening progress." | 1. The device records grip-strength measurements at multiple points over time. (explicit) 2. The device shows the amount and direction of change between measurement sessions. (latent) 3. The device associates each measurement with the correct testing session. (latent) | 
-| "I was amazed how important hand strength is. And I can do a daily check. " | 4. The device supports repeated daily grip-strength checks. (explicit) 5. The device produces results in a consistent format for day-to-day comparison. (latent) |
-| "Easy to use. Does everything the manufacturer describes. Happy." | 6. The device is easy to operate. (explicit) 7. The device performs its advertised measurement functions reliably. (explicit) 8. The device requires little training before use. (latent) |
+| "Works well. Great to track strengthening progress." | 1. The device records grip-strength measurements at multiple points over time. (explicit)<br>2. The device shows the amount and direction of change between measurement sessions. (latent)<br>3. The device associates each measurement with the correct testing session. (latent) | 
+| "I was amazed how important hand strength is. And I can do a daily check. " | 4. The device supports repeated daily grip-strength checks. (explicit)<br>5. The device produces results in a consistent format for day-to-day comparison. (latent) |
+| "Easy to use. Does everything the manufacturer describes. Happy." | 6. The device is easy to operate. (explicit)<br>7. The device performs its advertised measurement functions reliably. (explicit)<br>8. The device requires little training before use. (latent) |
 
 
 ##### Negative Comments
 
 | Voice of the Customer | Restated Customer Need |
 | --- | --- |
-| “This hand force testing device works, but the storage of measurements only contains the last measurement, sometimes it turns itself off. It’s not useful if you want to do a circle of continuous measurements on your own, as it won’t remember anything except the last measured force. If you only care about a one time measurement you probably are good but it’s useless for other test protocols. I’ve also found it quite uncomfortable to hold as it’s quite top heavy and the hand holding bars are not comfortable either.” | 1. The device stores multiple consecutive grip-force measurements without overwriting previous results. (explicit) 2. The device remains powered on throughout an active sequence of measurements. (explicit) 3. The device supports continuous testing protocols without requiring results to be recorded manually after each measurement. (latent) 4. The device distributes its weight evenly while being held. (explicit) 5. The hand-contact surfaces remain comfortable during repeated measurements. (explicit) 6. The device can be held in the correct testing position without excessive effort. (latent) 7. The physical design does not interfere with the user's ability to apply maximum grip force. (latent) |
-|"It always shows normal results"  | 8. The device displays a grip-strength classification that corresponds to the measured result. (explicit) 9. The device distinguishes between below-normal, normal, and above-normal grip-strength results. (latent) |
-|"Very hard to use" | 10. The device can be operated by users with limited grip strength. (explicit) 11. The device accommodates patients at different stages of rehabilitation. (latent) 12. The device allows a therapist to obtain measurements without unnecessary difficulty for the patient. (latent) |
+| “This hand force testing device works, but the storage of measurements only contains the last measurement, sometimes it turns itself off. It’s not useful if you want to do a circle of continuous measurements on your own, as it won’t remember anything except the last measured force. If you only care about a one time measurement you probably are good but it’s useless for other test protocols. I’ve also found it quite uncomfortable to hold as it’s quite top heavy and the hand holding bars are not comfortable either.” | 1. The device stores multiple consecutive grip-force measurements without overwriting previous results. (explicit)<br>2. The device remains powered on throughout an active sequence of measurements. (explicit)<br>3. The device supports continuous testing protocols without requiring results to be recorded manually after each measurement. (latent)<br>4. The device distributes its weight evenly while being held. (explicit)<br>5. The hand-contact surfaces remain comfortable during repeated measurements. (explicit)<br>6. The device can be held in the correct testing position without excessive effort. (latent)<br>7. The physical design does not interfere with the user's ability to apply maximum grip force. (latent) |
+|"It always shows normal results"  | 8. The device displays a grip-strength classification that corresponds to the measured result. (explicit)<br>9. The device distinguishes between below-normal, normal, and above-normal grip-strength results. (latent) |
+|"Very hard to use" | 10. The device can be operated by users with limited grip strength. (explicit)<br>11. The device accommodates patients at different stages of rehabilitation. (latent)<br>12. The device allows a therapist to obtain measurements without unnecessary difficulty for the patient. (latent) |
 
 (you don't have to perform multiple searches, but sometimes different keywords reveal slightly different results)
 
