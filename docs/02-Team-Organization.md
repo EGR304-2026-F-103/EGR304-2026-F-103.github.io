@@ -40,7 +40,7 @@ documented in [Appendix: Team Organization](Appendix/App-Team-Org.md).
 
 ## Product Mission Statement
 
-> "Our mission is to create a reliable, intuitive, and useful embedded-system product that addresses specific user needs through the thoughtful integration of hardware and software."
+> "Our mission is to create a reliable, intuitive, and useful embedded-system product that helps activities related to rehabilitation or specific trainings."
 
 <!--
 2-4 sentences of supporting context. Things worth covering:
@@ -54,4 +54,4 @@ documented in [Appendix: Team Organization](Appendix/App-Team-Org.md).
   - What would have to be true for the product to be fulfilling this mission.
 -->
 
-At this early stage, the team is working with the assumption that the final product will be an embedded-system-centered physical device. The mission therefore focuses on the potential value we can deliver to the user rather than committing to a specific product concept too early. The product will fulfill this mission if testing shows that it is functional, safe, easy to use, and responsive to the needs identified through research.
+At this early stage, the team is working with the assumption that the final product will be an embedded-system-centered physical device that helps with excercising/rehabilitation. It will be about handheld size and easy to use, mainly targeting athelets/rehabilitation professionals.
