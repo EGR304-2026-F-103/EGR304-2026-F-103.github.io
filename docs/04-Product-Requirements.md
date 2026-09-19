@@ -191,11 +191,11 @@ The enclosure and external form of the product will be designed by an external i
 
 | ID | Requirement | Source | Priority |
 |---|---|---|---|
-| SW-01 | The device shall close a control loop from measured grip force to motor-driven resistance, holding the prescribed setpoint | UN 2.4, UN 2.11 | Must |
-| SW-02 | The device shall enforce the clinician-authorised maximum resistance and reject any request above it | UN 2.13, UN 2.12 | Must |
-| SW-03 | The device shall store every repetition with timestamp, peak force and session identifier in non-volatile memory without overwriting earlier records | UN 3.5, UN 3.8, UN 3.13 | Must |
-| SW-04 | The device shall detect completed repetitions automatically, without manual entry | UN 3.5, UN 3.11, UN 3.15 | Must |
-| SW-05 | Stored records shall remain retrievable after power loss and shall be exportable for clinician review | UN 3.18, UN 6.12 | Should |
+| SW-01 | The firmware shall use measured grip force to automatically control the resistance mechanism toward the prescribed resistance setting| UN 2.4, UN 2.11 | Must |
+| SW-02 | The firmware shall enforce the clinician-authorized maximum resistance and reject attempts to select a resistance above that limit | UN 3.5, UN 3.8 | Must |
+| SW-03 | The firmware shall store completed-session data including repetition count, peak grip force, and session identifier in non-volatile memory | UN 3.5, UN 3.8, UN 3.13 | Must |
+| SW-04 | The firmware shall automatically detect and count completed grip repetitions without requiring manual entry | UN 3.5, UN 3.11, UN 3.15 | Must |
+| SW-05 | Stored training records shall remain available for review after the device is powered off and restarted | UN 3.18, UN 3.6 | Should |
 
 ### 3.3 Interactivity & User Experience
 
@@ -228,11 +228,11 @@ The enclosure and external form of the product will be designed by an external i
 
 | ID | Requirement | Source | Priority |
 |---|---|---|---|
-| MF-01 | The electronics shall be partitioned into three boards that can each be powered and tested independently | UN 6.1, UN 6.9 | Must |
-| MF-02 | Each analog stage and each motor-driver input shall be accessible at a test point for production test | UN 3.12, UN 6.9 | Must |
-| MF-03 | Force calibration shall be performed at end of line with known masses and no custom fixture | UN 3.1, UN 3.3 | Must |
-| MF-04 | Every critical component shall have an identified second source or documented alternate | UN 6.14, UN 6.15 | Should |
-| MF-05 | The bill of materials shall stay low enough for the unit to be affordable to an individual patient | UN 7.3 | Should |
+| MF-01 | The electronic subsystems shall be designed so that critical functions can be tested independently during assembly and troubleshooting | UN 6.8, UN 6.9 | Must |
+| MF-02 | Critical sensing and motor-control signals shall be accessible for testing and troubleshooting during assembly | UN 3.12, UN 6.9 | Must |
+| MF-03 | The grip-force measurement system shall support calibration using known reference loads without requiring specialized calibration equipment | UN 3.1, UN 3.3 | Must |
+| MF-04 | Critical electronic and mechanical components shall be commercially available and have documented replacement options where available | UN 6.14, UN 6.15 | Should |
+| MF-05 | The device shall be designed using cost-effective components to support affordability for individual patient use | UN 7.3 | Should |
 
 ### 3.6 Safety
 
@@ -295,11 +295,11 @@ Each requirement above is specified below with a measurable criterion and the me
 
 | ID | Specification | Verification | Procedure |
 |---|---|---|---|
-| SW-01 | Control loop executes at ≥ 50 Hz; steady-state resistance within 5 % of setpoint; settling within 2.0 s of a commanded change | Test | Command step changes across the full range; log setpoint and measured force |
-| SW-02 | Requests above the authorised maximum rejected in 20 of 20 trials | Demonstration | Attempt to set resistance above the authorised level from the patient interface |
-| SW-03 | ≥ 500 sessions retained; zero records lost across 20 power-cycle events | Test | Fill storage, power-cycle, export and compare record counts |
-| SW-04 | Automatic repetition count agrees with manual count to ≥ 98 % over 200 repetitions, with no double counts | Test | Two observers count manually while the device logs |
-| SW-05 | 30 days of records exportable in a documented text format within 60 s | Demonstration | Export from a populated device and open the file on a host PC |
+| SW-01 | Control update rate ≥ 50 Hz, steady-state resistance within 10% of the prescribed setpoint, settling time less or equal to 2.0 seconds | Test | Command resistance settings across the operating range, log measured force and motor response, and calculate update rate, steady-state error and settling time |
+| SW-02 | Resistance commands above the clinician-authorized maximum shall be rejected in 20 of 20 test attempts | Demonstration | Set a clinician maximum and attempt 20 resistance commands above the limit; verify that none are accepted |
+| SW-03 | Stored session data shall retain repetition count, peak grip force, and session identifier with zero data loss after 20 power cycles | Test | Record test sessions, cycle device power 20 times, and compare all stored records with the original data |
+| SW-04 | Automatic repetition-count accuracy ≥95% over 100 manually verified repetitions, with no more than 5 missed or false counts | Test | Perform 100 manually counted grip repetitions and compare the manual count with the firmware-recorded count |
+| SW-05 | Stored training records shall remain retrievable after a complete power cycle with no loss or corruption of saved session data | Test | Save multiple training sessions, completely power off the device, restart it, and verify that all saved records can still be retrieved correctly |
 
 ### 4.3 Interactivity & User Experience
 
@@ -325,11 +325,11 @@ Each requirement above is specified below with a measurable criterion and the me
 
 | ID | Specification | Verification | Procedure |
 |---|---|---|---|
-| MF-01 | Three boards with keyed inter-board connectors; each board passes a standalone power-on test | Test | Power each board alone and confirm its documented pass criteria |
-| MF-02 | Test point present at bridge output, instrumentation amplifier output, filter output and each motor-driver input | Inspection | Review PCB layout against the test point list |
-| MF-03 | End-of-line calibration completed in ≤ 5 min per unit using three known masses; residual error ≤ 2 % of full scale | Test | Time the procedure and verify against a fourth mass not used in calibration |
-| MF-04 | 100 % of components designated critical have a second source or documented alternate | Analysis | BOM review against distributor availability |
-| MF-05 | Bill of materials ≤ $120 per unit at a quantity of 100 | Analysis | Costed BOM at quantity-100 pricing |
+| MF-01 | Each critical electronic subsystem shall support independent functional verification before final assembly | Test | Power and test the sensing, control, and motor-drive functions individually before final assembly and verify correct operation of each subsystem |
+| MF-02 | Test access shall be provided for the load-cell signal path and motor-control signals | Inspection | Inspect the assembled electronics and verify that the load-cell signal path and motor-control signals can be measured without disassembling or damaging the circuit |
+| MF-03 | Force calibration shall use at least 3 known reference loads distributed across the intended measurement range; verification error shall be ≤ 5% of full scale | Test | Calibrate the load-cell system using at least 3 known reference loads, then apply an additional reference load not used for calibration and compare the measured force with the known force |
+| MF-04 | Critical components shall be identified in the BOM with manufacturer part numbers and at least one documented replacement option for components that are not uniquely required by the design | Analysis | Review the final BOM and verify that critical components are identified and compatible replacement options are documented where available |
+| MF-05 | Total prototype BOM cost shall be ≤ $150, excluding development tools and reusable laboratory equipment | Analysis | Calculate the total cost of all components required for one complete device using current supplier prices and verify that the total does not exceed $150 |
 
 ### 4.6 Safety
 
