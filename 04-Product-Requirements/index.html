@@ -1469,32 +1469,32 @@ flowchart LR
 <tbody>
 <tr>
 <td>SW-01</td>
-<td>The device shall close a control loop from measured grip force to motor-driven resistance, holding the prescribed setpoint</td>
+<td>The firmware shall use measured grip force to automatically control the resistance mechanism toward the prescribed resistance setting</td>
 <td>UN 2.4, UN 2.11</td>
 <td>Must</td>
 </tr>
 <tr>
 <td>SW-02</td>
-<td>The device shall enforce the clinician-authorised maximum resistance and reject any request above it</td>
-<td>UN 2.13, UN 2.12</td>
+<td>The firmware shall enforce the clinician-authorized maximum resistance and reject attempts to select a resistance above that limit</td>
+<td>UN 3.5, UN 3.8</td>
 <td>Must</td>
 </tr>
 <tr>
 <td>SW-03</td>
-<td>The device shall store every repetition with timestamp, peak force and session identifier in non-volatile memory without overwriting earlier records</td>
+<td>The firmware shall store completed-session data including repetition count, peak grip force, and session identifier in non-volatile memory</td>
 <td>UN 3.5, UN 3.8, UN 3.13</td>
 <td>Must</td>
 </tr>
 <tr>
 <td>SW-04</td>
-<td>The device shall detect completed repetitions automatically, without manual entry</td>
+<td>The firmware shall automatically detect and count completed grip repetitions without requiring manual entry</td>
 <td>UN 3.5, UN 3.11, UN 3.15</td>
 <td>Must</td>
 </tr>
 <tr>
 <td>SW-05</td>
-<td>Stored records shall remain retrievable after power loss and shall be exportable for clinician review</td>
-<td>UN 3.18, UN 6.12</td>
+<td>Stored training records shall remain available for review after the device is powered off and restarted</td>
+<td>UN 3.18, UN 3.6</td>
 <td>Should</td>
 </tr>
 </tbody>
@@ -1605,31 +1605,31 @@ flowchart LR
 <tbody>
 <tr>
 <td>MF-01</td>
-<td>The electronics shall be partitioned into three boards that can each be powered and tested independently</td>
-<td>UN 6.1, UN 6.9</td>
+<td>The electronic subsystems shall be designed so that critical functions can be tested independently during assembly and troubleshooting</td>
+<td>UN 6.8, UN 6.9</td>
 <td>Must</td>
 </tr>
 <tr>
 <td>MF-02</td>
-<td>Each analog stage and each motor-driver input shall be accessible at a test point for production test</td>
+<td>Critical sensing and motor-control signals shall be accessible for testing and troubleshooting during assembly</td>
 <td>UN 3.12, UN 6.9</td>
 <td>Must</td>
 </tr>
 <tr>
 <td>MF-03</td>
-<td>Force calibration shall be performed at end of line with known masses and no custom fixture</td>
+<td>The grip-force measurement system shall support calibration using known reference loads without requiring specialized calibration equipment</td>
 <td>UN 3.1, UN 3.3</td>
 <td>Must</td>
 </tr>
 <tr>
 <td>MF-04</td>
-<td>Every critical component shall have an identified second source or documented alternate</td>
+<td>Critical electronic and mechanical components shall be commercially available and have documented replacement options where available</td>
 <td>UN 6.14, UN 6.15</td>
 <td>Should</td>
 </tr>
 <tr>
 <td>MF-05</td>
-<td>The bill of materials shall stay low enough for the unit to be affordable to an individual patient</td>
+<td>The device shall be designed using cost-effective components to support affordability for individual patient use</td>
 <td>UN 7.3</td>
 <td>Should</td>
 </tr>
@@ -1768,33 +1768,33 @@ flowchart LR
 <tbody>
 <tr>
 <td>SW-01</td>
-<td>Control loop executes at ≥ 50 Hz; steady-state resistance within 5 % of setpoint; settling within 2.0 s of a commanded change</td>
+<td>Control update rate ≥ 50 Hz, steady-state resistance within 10% of the prescribed setpoint, settling time less or equal to 2.0 seconds</td>
 <td>Test</td>
-<td>Command step changes across the full range; log setpoint and measured force</td>
+<td>Command resistance settings across the operating range, log measured force and motor response, and calculate update rate, steady-state error and settling time</td>
 </tr>
 <tr>
 <td>SW-02</td>
-<td>Requests above the authorised maximum rejected in 20 of 20 trials</td>
+<td>Resistance commands above the clinician-authorized maximum shall be rejected in 20 of 20 test attempts</td>
 <td>Demonstration</td>
-<td>Attempt to set resistance above the authorised level from the patient interface</td>
+<td>Set a clinician maximum and attempt 20 resistance commands above the limit; verify that none are accepted</td>
 </tr>
 <tr>
 <td>SW-03</td>
-<td>≥ 500 sessions retained; zero records lost across 20 power-cycle events</td>
+<td>Stored session data shall retain repetition count, peak grip force, and session identifier with zero data loss after 20 power cycles</td>
 <td>Test</td>
-<td>Fill storage, power-cycle, export and compare record counts</td>
+<td>Record test sessions, cycle device power 20 times, and compare all stored records with the original data</td>
 </tr>
 <tr>
 <td>SW-04</td>
-<td>Automatic repetition count agrees with manual count to ≥ 98 % over 200 repetitions, with no double counts</td>
+<td>Automatic repetition-count accuracy ≥95% over 100 manually verified repetitions, with no more than 5 missed or false counts</td>
 <td>Test</td>
-<td>Two observers count manually while the device logs</td>
+<td>Perform 100 manually counted grip repetitions and compare the manual count with the firmware-recorded count</td>
 </tr>
 <tr>
 <td>SW-05</td>
-<td>30 days of records exportable in a documented text format within 60 s</td>
-<td>Demonstration</td>
-<td>Export from a populated device and open the file on a host PC</td>
+<td>Stored training records shall remain retrievable after a complete power cycle with no loss or corruption of saved session data</td>
+<td>Test</td>
+<td>Save multiple training sessions, completely power off the device, restart it, and verify that all saved records can still be retrieved correctly</td>
 </tr>
 </tbody>
 </table>
@@ -1897,33 +1897,33 @@ flowchart LR
 <tbody>
 <tr>
 <td>MF-01</td>
-<td>Three boards with keyed inter-board connectors; each board passes a standalone power-on test</td>
+<td>Each critical electronic subsystem shall support independent functional verification before final assembly</td>
 <td>Test</td>
-<td>Power each board alone and confirm its documented pass criteria</td>
+<td>Power and test the sensing, control, and motor-drive functions individually before final assembly and verify correct operation of each subsystem</td>
 </tr>
 <tr>
 <td>MF-02</td>
-<td>Test point present at bridge output, instrumentation amplifier output, filter output and each motor-driver input</td>
+<td>Test access shall be provided for the load-cell signal path and motor-control signals</td>
 <td>Inspection</td>
-<td>Review PCB layout against the test point list</td>
+<td>Inspect the assembled electronics and verify that the load-cell signal path and motor-control signals can be measured without disassembling or damaging the circuit</td>
 </tr>
 <tr>
 <td>MF-03</td>
-<td>End-of-line calibration completed in ≤ 5 min per unit using three known masses; residual error ≤ 2 % of full scale</td>
+<td>Force calibration shall use at least 3 known reference loads distributed across the intended measurement range; verification error shall be ≤ 5% of full scale</td>
 <td>Test</td>
-<td>Time the procedure and verify against a fourth mass not used in calibration</td>
+<td>Calibrate the load-cell system using at least 3 known reference loads, then apply an additional reference load not used for calibration and compare the measured force with the known force</td>
 </tr>
 <tr>
 <td>MF-04</td>
-<td>100 % of components designated critical have a second source or documented alternate</td>
+<td>Critical components shall be identified in the BOM with manufacturer part numbers and at least one documented replacement option for components that are not uniquely required by the design</td>
 <td>Analysis</td>
-<td>BOM review against distributor availability</td>
+<td>Review the final BOM and verify that critical components are identified and compatible replacement options are documented where available</td>
 </tr>
 <tr>
 <td>MF-05</td>
-<td>Bill of materials ≤ $120 per unit at a quantity of 100</td>
+<td>Total prototype BOM cost shall be ≤ $150, excluding development tools and reusable laboratory equipment</td>
 <td>Analysis</td>
-<td>Costed BOM at quantity-100 pricing</td>
+<td>Calculate the total cost of all components required for one complete device using current supplier prices and verify that the total does not exceed $150</td>
 </tr>
 </tbody>
 </table>
