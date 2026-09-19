@@ -183,11 +183,11 @@ The enclosure and external form of the product will be designed by an external i
 
 | ID | Requirement | Source | Priority |
 |---|---|---|---|
-| HW-01 | The grip span shall be adjustable to fit adult hands across the 5th to 95th percentile range | UN 4.7, UN 4.8 | Must |
+| HW-01 | The grip span shall be adjustable to accommodate different adult hand sizes | UN 4.7, UN 4.8 | Must |
 | HW-02 | The device shall be usable with either hand, with the display readable in both orientations | UN 4.5, UN 4.6 | Must |
 | HW-03 | The device shall be carried in one hand and used without permanent installation | UN 7.1, UN 7.2 | Must |
-| HW-04 | Hand-contact surfaces shall retain the hand securely during maximal effort and survive repeated cleaning | UN 1.7, UN 1.8 | Must |
-| HW-05 | Moving parts and wear debris shall be enclosed away from the user's hand | UN 1.15, UN 6.5 | Must |
+| HW-04 | Hand-contact surfaces shall provide a secure, non-slip grip during repeated exercise and withstand routine cleaning without visible damage | UN 1.7, UN 6.5 | Must |
+| HW-05 | Moving components, including the motor and lead-screw mechanisms, will be enclosed to prevent the user's fingers from contacting pinch, crushing or entanglement hazards during normal operation | UN 1.15, UN 1.2 | Must |
 
 ### 3.2 Software / Functionality
 
@@ -287,11 +287,11 @@ Each requirement above is specified below with a measurable criterion and the me
 
 | ID | Specification | Verification | Procedure |
 |---|---|---|---|
-| HW-01 | Grip span adjustable over 45–90 mm, ±1 mm at any setting | Test | Measure span with gauge blocks at minimum, middle and maximum settings |
-| HW-02 | Display legible at both 0° and 180° orientations; no control obstructed in either hand | Demonstration | Two operators complete a session left-handed and right-handed |
-| HW-03 | Total mass ≤ 1.0 kg including power source; no fixed mounting required | Test | Weigh the complete unit on a scale accurate to ±5 g; operate on an unsecured table |
-| HW-04 | Hand slip ≤ 2 mm over 50 repetitions at maximum resistance; no cracking of contact surfaces after 100 wipe-downs with 70 % isopropyl alcohol | Test | Mark hand reference position and measure displacement; inspect surfaces after wipe cycles |
-| HW-05 | No accessible gap adjacent to moving parts falls between 6 mm and 25 mm | Inspection | Probe all external openings with pin gauges at both limits |
+| HW-01 | Grip span adjustable over 35–87 mm, ±1 mm at any setting | Test | Measure span with calipers at minimum, middle and maximum settings |
+| HW-02 | Display information shall be readable and all controls accessible during both left-handed and right-handed use | Demonstration | Have users operate the device with each hand and verify that all the displayed information can be read and all the controls can be accessed |
+| HW-03 | Total mass ≤ 0.75 kg including power source; no fixed mounting required | Test | Weigh the complete unit on a scale accurate to ±5 g; operate on an unsecured table |
+| HW-04 | Hand displacement ≤ 5mm during 20 consecutive repetitions at the maximum prescribed resistance, no visible cracking, peeling, or permanent deformation after 100 cleaning cycles with 70% isopropyl alcohol | Test | Mark the initial hand position and measure displacement after 20 repetitions, then perform 100 cleaning cycles with 70% IPA and visually inspect the hand-contact surfaces |
+| HW-05 | No user-accessible contact with the motor, lead screw, gears, or other hazardous moving components during normal operation | Inspection / Test | Operate the device through its full range of motion and inspect all accessible openings to verify that fingers cannot contact hazardous moving components |
 
 ### 4.2 Software / Functionality
 
