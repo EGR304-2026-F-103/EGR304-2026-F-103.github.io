@@ -389,4 +389,4 @@ Full query text (translated from Chinese where applicable):
 4. Add the per-section instruction comments back into the filled English version.
 5. Also spell out what the abbreviations UN, UX, CU and the rest stand for.
 6. Final check. [uploaded the team's completed draft]
-7. Rewrite §4.4 to match the new §3.4, apply the rest of the suggested corrections, and output the file.
+7. Rewrite Section 4.4 to match the new Section 3.4, apply the rest of the suggested corrections, and output the file.
