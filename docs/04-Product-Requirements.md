@@ -201,11 +201,11 @@ The enclosure and external form of the product will be designed by an external i
 
 | ID | Requirement | Source | Priority |
 |---|---|---|---|
-| UX-01 | A patient shall be able to start their prescribed session in a small fixed number of actions | UN 4.1, UN 3.11 | Must |
-| UX-02 | Repetition and end-of-set feedback shall be perceivable without looking at the device | UN 5.15, UN 5.16 | Must |
-| UX-03 | The display shall show current resistance, repetitions completed and target throughout a session | UN 4.6, UN 3.16 | Must |
-| UX-04 | All controls shall be operable by a user with limited grip strength and limited dexterity | UN 4.11, UN 1.1 | Must |
-| UX-05 | A first-time user shall complete a session using on-device prompts alone, with no prior training | UN 4.2, UN 4.3 | Should |
+| UX-01 | Patients should be able to start training through no more than three operations. | UN 4.1 | Must |
+| UX-02 | The device should display the patient's grip strength in real time during the training process. | UN 3.4, UN 4.6 | Must |
+| UX-03 | The device should display the resistance level, completed number of times and target number of times during the training process | UN 4.6, UN 3.5 | Must |
+| UX-04 | Patients with limited grip strength or hand flexibility should also be able to operate the equipment. | UN 4.11, UN 1.1 | Must |
+| UX-05 | When the target repetition number is reached, the device should notify the patient. | UN 3.5, UN 4.3 | Should |
 
 ### 3.4 Customization
 
@@ -214,11 +214,11 @@ The enclosure and external form of the product will be designed by an external i
 
 | ID | Requirement | Source | Priority |
 |---|---|---|---|
-| CU-01 | A clinician shall be able to set the prescribed resistance, target repetitions, sessions per day and progression step | UN 2.12, UN 2.15 | Must |
-| CU-02 | A stored prescription shall survive power loss and firmware update without alteration | UN 6.12, UN 6.11 | Must |
-| CU-03 | The grip span setting shall be stored per user and restored on profile selection | UN 4.8, UN 4.14 | Should |
-| CU-04 | A patient shall be able to select only among resistance levels the clinician has authorised | UN 2.13, UN 2.1 | Must |
-| CU-05 | The device shall hold multiple independent user profiles so one unit can serve several patients | UN 3.8, UN 7.3 | Should |
+| CU-01 | Therapists should be able to set resistance levels and target repetitions for each patient. | UN 2.12 | Must |
+| CU-02 | Patients can only choose the resistance level authorized by the therapist. | UN 2.13 | Must |
+| CU-03 | The device should adjust the resistance according to the measured patient's performance | UN 2.11 | Should |
+| CU-04 | The grip distance of the equipment should be adjustable according to the size of the patient's hand. | UN 4.8 | Must |
+| CU-05 | Therapists should be able to select the corresponding progressive training Settings for patients at different stages of rehabilitation. | UN 2.14, UN 2.15 | Should |
 
 ### 3.5 Manufacturing
 
