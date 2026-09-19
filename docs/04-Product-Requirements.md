@@ -321,11 +321,11 @@ Each requirement above is specified below with a measurable criterion and the me
 
 | ID | Specification | Verification | Procedure |
 |---|---|---|---|
-| MF-01 | Each critical electronic subsystem shall support independent functional verification before final assembly | Test | Power and test the sensing, control and motor-drive functions individually before final assembly and verify correct operation of each subsystem |
-| MF-02 | Test access shall be provided for the load-cell signal path and motor-control signals | Inspection | Inspect the assembled electronics and verify that the load-cell signal path and motor-control signals can be measured without disassembling or damaging the circuit |
-| MF-03 | Force calibration shall use at least 3 known reference loads distributed across the intended measurement range; verification error shall be ≤ 5 % of full scale | Test | Calibrate the load-cell system using at least 3 known reference loads, then apply an additional reference load not used for calibration and compare the measured force with the known force |
-| MF-04 | Critical components shall be identified in the BOM with manufacturer part numbers and at least one documented replacement option for components that are not uniquely required by the design | Analysis | Review the final BOM and verify that critical components are identified and compatible replacement options are documented where available |
-| MF-05 | Prototype BOM cost ≤ $150 per unit excluding development tools and reusable laboratory equipment; projected BOM cost at a quantity of 100 ≤ $100, consistent with a retail price at or below the $129 benchmark device | Analysis | Cost the complete BOM at single-unit supplier pricing and again at quantity-100 pricing, and compare the projected retail price against the benchmarked products |
+| MF-01 | Sensing, control and motor-drive functions each verified independently before final assembly | Test | Power and test each subsystem alone against its documented pass criteria |
+| MF-02 | Test access at the load-cell signal path and at the motor-control signals | Inspection | Inspect the assembly and confirm both can be probed without disassembly |
+| MF-03 | Calibration uses ≥ 3 known reference loads across the range; verification error ≤ 5 % of full scale | Test | Calibrate with 3 loads, then check against a 4th load not used in calibration |
+| MF-04 | Critical components listed in the BOM with manufacturer part numbers and ≥ 1 documented alternate where one exists | Analysis | Review the final BOM against distributor availability |
+| MF-05 | Prototype BOM ≤ USD 150 per unit excluding development tools; projected BOM at quantity 100 ≤ USD 100 | Analysis | Cost the BOM at single-unit and quantity-100 pricing; compare against benchmarked retail prices |
 
 ### 4.6 Safety
 
