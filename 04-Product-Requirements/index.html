@@ -1238,7 +1238,7 @@
        (c) two different stakeholders
      State which one you chose in the line below. -->
 
-<p><strong>Contrast axis:</strong> two different stakeholders — a therapist in a clinic and a patient at home. This pair was chosen because the team charter names clinicians as primary users and home-exercising patients as secondary users, and because the two groups impose opposing requirements on the same interface: the therapist needs configuration authority, and the patient must be prevented from exercising it.</p>
+<p><strong>Contrast axis:</strong> Two different stakeholders — A therapist and a patient. We chose these two because they use the devices in different ways. The therapist sets the resistance level and the target number of repetitions. Patients should follow the designated training plan and must not choose resistance levels that exceed the limits set by the therapist.</p>
 <h3 id="21-use-case-1-therapist-sets-a-progression-at-a-clinic-follow-up">2.1 Use Case 1 — Therapist sets a progression at a clinic follow-up</h3>
 <table>
 <thead>
@@ -1258,7 +1258,7 @@
 </tr>
 <tr>
 <td>Precondition</td>
-<td>The patient's file has been established, the equipment has been turned on and calibrated</td>
+<td>The patient's profile has been established, the device has been turned on and calibrated</td>
 </tr>
 <tr>
 <td>Trigger</td>
@@ -1275,7 +1275,7 @@
 2.The patient undergoes a brief grip strength test. 
 3.The device displays the patient's grip strength in real time. 
 4.The therapist sets the resistance level and the target number of repetitions. 
-5.The patient completed a set of supervised training using the new Settings. 
+5.The patient completes a set of supervised training using the new Settings. 
 6.The therapist confirms and saves the training plan.</p>
 <p><strong>What could go wrong</strong></p>
 <!-- Failure mode + how the product should respond. Items written here
@@ -1305,11 +1305,11 @@
 </tr>
 <tr>
 <td>Precondition</td>
-<td>The patient files and training plans have been loaded</td>
+<td>The patient profiles and training plans have been loaded</td>
 </tr>
 <tr>
 <td>Trigger</td>
-<td>The patient began the scheduled training</td>
+<td>The patient begins the scheduled training</td>
 </tr>
 <tr>
 <td>Success criteria</td>
@@ -1322,18 +1322,16 @@
 <li>The patient turns on the device and selects their own file. </li>
 <li>The device loads the training plan set by the therapist. </li>
 <li>The device displays the resistance level and the number of target repetitions. </li>
-<li>The patient begin training, and the device displays the grip strength and records the number of repetitions. </li>
+<li>The patient begins training, and the device displays the grip strength and records the number of repetitions. </li>
 <li>After achieving the goal, the device reminds the patient. </li>
-<li>
-<p>The device saves the results of this training.
-<strong>What could go wrong</strong></p>
-</li>
-<li>
-<p>If the patient feels pain, the patient stops the training and the equipment removes the resistance. </p>
-</li>
+<li>The device saves the results of this training.</li>
+</ol>
+<p><strong>What could go wrong</strong></p>
+<ul>
+<li>If the patient feels pain, the patient stops the training and the equipment removes the resistance. </li>
 <li>If the patient attempts to exceed the resistance limit, the device prevents this change. </li>
 <li>If the power is cut off during the training process, the equipment releases the resistance and saves the number of repetitions that have been completed</li>
-</ol>
+</ul>
 <!-- Optional, recommended: add a mermaid flowchart — already enabled
      on this site. Example syntax:
 
