@@ -82,56 +82,53 @@ The objective of this project is a prescription-based automatic resistance grip 
 
 | Field | Content |
 |---|---|
-| Actor | Occupational therapist in an outpatient hand therapy clinic |
-| Venue / Context | Clinic treatment room; device shared between patients |
-| Precondition | Patient profile exists; patient is three weeks post flexor tendon repair; device calibrated |
-| Trigger | Scheduled follow-up appointment |
-| Success criteria | A new prescribed resistance and progression step are stored against the correct patient profile, and the previous three weeks of session records are readable |
+| Actor | Therapist |
+| Venue / Context | Clinic Treatment room |
+| Precondition | The patient's file has been established, the equipment has been turned on and calibrated |
+| Trigger | The patient came for treatment at the appointed time  |
+| Success criteria | The resistance level and the number of target repetitions are saved to the correct patient profile |
 
 **Main flow**
 
-1. Therapist powers on the device and selects the patient's profile.
-2. Therapist reviews the stored session history and the trend in peak grip force.
-3. Therapist has the patient perform a baseline measurement at the current prescribed level.
-4. Therapist raises the prescribed resistance by one progression step and sets the target repetition count.
-5. Patient performs one supervised set at the new level while the therapist observes for pain or compensation.
-6. Therapist confirms the prescription; the device stores it and locks it against patient modification.
-7. Device is cleaned and released for the next patient.
+1.The therapist turns on the device and selects the patient's profile. 
+2.The patient undergoes a brief grip strength test. 
+3.The device displays the patient's grip strength in real time. 
+4.The therapist sets the resistance level and the target number of repetitions. 
+5.The patient completed a set of supervised training using the new Settings. 
+6.The therapist confirms and saves the training plan.
 
 **What could go wrong**
 
 <!-- Failure mode + how the product should respond. Items written here
      usually become §3.6 safety requirements. -->
 
-- The patient reports sharp pain mid-set and cannot release the device unaided, requiring the resistance to be removed immediately.
-- The therapist selects the wrong profile and writes a prescription against another patient's record.
-- The device has drifted out of calibration since the last visit, so the baseline measurement is not comparable to the earlier trend.
+- If the patient feels pain, the therapist stops the training and the equipment removes the resistance. 
+- If the wrong patient file is selected, the device will ask the therapist to confirm the patient's information before saving it. 
+- If the grip strength reading is abnormal, the device will issue a warning and require recalibration.
 
 ### 2.2 Use Case 2 — Patient completes a prescribed session at home
 
 | Field | Content |
 |---|---|
-| Actor | Patient living with rheumatoid arthritis, exercising unsupervised |
-| Venue / Context | Patient's home, seated at a table, no clinician present |
-| Precondition | Device prescribed and grip span already set for this patient; profile loaded |
-| Trigger | The patient's scheduled daily exercise time |
-| Success criteria | The prescribed number of repetitions is completed at the prescribed resistance, recorded with timestamps, and the prescribed maximum is never exceeded |
+| Actor | Patient |
+| Venue / Context | A patient's home where no therapist is present |
+| Precondition | The patient files and training plans have been loaded |
+| Trigger | The patient began the scheduled training |
+| Success criteria | When the patient completes the target number of repetitions, the device saves the training results  |
 
 **Main flow**
 
-1. Patient powers on the device and selects their own profile.
-2. Device loads the prescribed resistance and drives the mechanism to that setting.
-3. Device displays the target repetition count and waits.
-4. Patient performs repetitions; each completed repetition is confirmed audibly so the patient does not need to watch the display.
-5. Device logs peak force and timestamp for each repetition.
-6. Device signals end of set and stores the session record.
-
+1. The patient turns on the device and selects their own file. 
+2. The device loads the training plan set by the therapist. 
+3. The device displays the resistance level and the number of target repetitions. 
+4. The patient begin training, and the device displays the grip strength and records the number of repetitions. 
+5. After achieving the goal, the device reminds the patient. 
+6. The device saves the results of this training.
 **What could go wrong**
 
-- Power is lost mid-repetition while the mechanism is holding resistance against the patient's hand.
-- The patient decides the session feels too easy and attempts to raise the resistance above the prescribed level.
-- The patient's hand slips on the contact surface during a maximal effort.
-- The device fills its record storage and begins overwriting earlier sessions, so the therapist sees an incomplete history at the next visit.
+- If the patient feels pain, the patient stops the training and the equipment removes the resistance. 
+- If the patient attempts to exceed the resistance limit, the device prevents this change. 
+- If the power is cut off during the training process, the equipment releases the resistance and saves the number of repetitions that have been completed
 
 <!-- Optional, recommended: add a mermaid flowchart — already enabled
      on this site. Example syntax:
