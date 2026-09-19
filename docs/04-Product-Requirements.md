@@ -138,10 +138,9 @@ The objective of this project is a prescription-based automatic resistance grip 
 
 ```mermaid
 flowchart LR
-    A[Step] --> B{Decision}
-    B -->|Yes| C[Outcome]
-    B -->|No| D[Outcome]
-```
+    A[Step] -> B{Decision}
+    B ->|Yes| C[Outcome]
+    B ->|No| D[Outcome]
 -->
 
 ---
