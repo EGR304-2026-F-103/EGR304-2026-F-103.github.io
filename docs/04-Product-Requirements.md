@@ -76,7 +76,7 @@ The objective of this project is a prescription-based automatic resistance grip 
        (c) two different stakeholders
      State which one you chose in the line below. -->
 
-**Contrast axis:** two different stakeholders — a therapist in a clinic and a patient at home. This pair was chosen because the team charter names clinicians as primary users and home-exercising patients as secondary users, and because the two groups impose opposing requirements on the same interface: the therapist needs configuration authority, and the patient must be prevented from exercising it.
+**Contrast axis:** Two different stakeholders — A therapist and a patient. We chose these two because they use the devices in different ways. The therapist sets the resistance level and the target number of repetitions. Patients should follow the designated training plan and must not choose resistance levels that exceed the limits set by the therapist.
 
 ### 2.1 Use Case 1 — Therapist sets a progression at a clinic follow-up
 
@@ -84,7 +84,7 @@ The objective of this project is a prescription-based automatic resistance grip 
 |---|---|
 | Actor | Therapist |
 | Venue / Context | Clinic Treatment room |
-| Precondition | The patient's file has been established, the equipment has been turned on and calibrated |
+| Precondition | The patient's profile has been established, the device has been turned on and calibrated |
 | Trigger | The patient came for treatment at the appointed time  |
 | Success criteria | The resistance level and the number of target repetitions are saved to the correct patient profile |
 
@@ -94,7 +94,7 @@ The objective of this project is a prescription-based automatic resistance grip 
 2.The patient undergoes a brief grip strength test. 
 3.The device displays the patient's grip strength in real time. 
 4.The therapist sets the resistance level and the target number of repetitions. 
-5.The patient completed a set of supervised training using the new Settings. 
+5.The patient completes a set of supervised training using the new Settings. 
 6.The therapist confirms and saves the training plan.
 
 **What could go wrong**
@@ -112,8 +112,8 @@ The objective of this project is a prescription-based automatic resistance grip 
 |---|---|
 | Actor | Patient |
 | Venue / Context | A patient's home where no therapist is present |
-| Precondition | The patient files and training plans have been loaded |
-| Trigger | The patient began the scheduled training |
+| Precondition | The patient profiles and training plans have been loaded |
+| Trigger | The patient begins the scheduled training |
 | Success criteria | When the patient completes the target number of repetitions, the device saves the training results  |
 
 **Main flow**
@@ -121,9 +121,10 @@ The objective of this project is a prescription-based automatic resistance grip 
 1. The patient turns on the device and selects their own file. 
 2. The device loads the training plan set by the therapist. 
 3. The device displays the resistance level and the number of target repetitions. 
-4. The patient begin training, and the device displays the grip strength and records the number of repetitions. 
+4. The patient begins training, and the device displays the grip strength and records the number of repetitions. 
 5. After achieving the goal, the device reminds the patient. 
 6. The device saves the results of this training.
+
 **What could go wrong**
 
 - If the patient feels pain, the patient stops the training and the equipment removes the resistance. 
