@@ -1135,13 +1135,26 @@
 
 <h1 id="product-requirements">Product Requirements</h1>
 <!-- ============================================================
-     TEAM NOTES (HTML comments do not appear on the published page)
+     HOW TO WORK ON THIS PAGE
+     (HTML comments do not appear on the published page.
+     No need to delete them when you are done.)
 
      OWNERSHIP
-       Zice      — §1, §3.6 Safety, §4 format + traceability,
+       Zice      — §1 Objective & Stakeholders, §3.6 Safety,
+                   §4 table format + traceability IDs,
                    site build / PDF export / Canvas submission
        Duotao  — §2 Use Cases, §3.3 Interactivity & UX, §3.4 Customization
        Gabriel  — §3.1 Hardware, §3.2 Software, §3.5 Manufacturing
+       Everyone  — §5 Open Questions; review §4 together
+
+     THREE HARD RULES
+       1. Every requirement must trace back to one item from the
+          User Needs assignment (fill the Source column).
+       2. Every requirement must have a verifiable specification in §4.
+          No spec = the requirement is not finished.
+       3. Keep table columns few and cell text short. Put long
+          explanations in body text. Wide tables break across pages
+          in the PDF export — this is one of the listed common mistakes.
 
      BEFORE EXTERNAL DESIGN REVIEW — CONFIRM THESE NUMBERS
        Every target value in §4 is a proposed engineering target. Each one
@@ -1151,17 +1164,30 @@
        conservative one.
 
      PRE-SUBMISSION CHECKLIST
-       [ ] Every §3 requirement has a matching §4 row
-       [ ] No adjective-only criteria anywhere in §4
+       [ ] §1 objective written, stakeholder table complete
+       [ ] §2 at least two Use Cases, both using the same contrast axis
+       [ ] §3 all six aspects have >= 3 requirements, roughly balanced
+       [ ] §4 every row has target + unit + tolerance + method + procedure
+       [ ] §4 contains no adjective-only criteria
+           (comfortable / lightweight / sturdy / fast)
+       [ ] §5 Open Questions is not empty
        [ ] Browser print preview checked — no table cut across pages
-       [ ] Open Questions updated with anything still unresolved
        [ ] AI Use Disclosure updated with all queries used
      ============================================================ -->
 
 <h2 id="1-project-objective-and-stakeholders">1. Project Objective and Stakeholders</h2>
 <h3 id="11-project-objective">1.1 Project Objective</h3>
+<!-- 2-4 sentences. Answer: for whom, what problem it solves, what the
+     product is, and what success looks like. Do not describe the
+     implementation here — objective only. -->
+
 <p>The objective of this project is a prescription-based automatic resistance grip trainer for hand rehabilitation. The device measures the force a patient actually applies through a load cell and a custom analog front end, and automatically sets its own mechanical resistance to a level prescribed by a clinician. Success means a clinician can define a progression plan once and have it carried out correctly across both clinic and home sessions, without manual reconfiguration of the device and without losing the record of what the patient actually did.</p>
 <h3 id="12-stakeholders">1.2 Stakeholders</h3>
+<!-- Beyond the direct user, think about who else imposes design
+     constraints: whoever pays, prescribes, maintains, approves,
+     or disposes of the product.
+     If §2 uses the "two stakeholders" axis, pick two rows from here. -->
+
 <table>
 <thead>
 <tr>
@@ -1206,6 +1232,12 @@
 </table>
 <hr>
 <h2 id="2-use-cases">2. Use Cases</h2>
+<!-- At least two. Pick ONE contrast axis and keep it consistent:
+       (a) two different venues
+       (b) two different interaction examples
+       (c) two different stakeholders
+     State which one you chose in the line below. -->
+
 <p><strong>Contrast axis:</strong> two different stakeholders — a therapist in a clinic and a patient at home. This pair was chosen because the team charter names clinicians as primary users and home-exercising patients as secondary users, and because the two groups impose opposing requirements on the same interface: the therapist needs configuration authority, and the patient must be prevented from exercising it.</p>
 <h3 id="21-use-case-1-therapist-sets-a-progression-at-a-clinic-follow-up">2.1 Use Case 1 — Therapist sets a progression at a clinic follow-up</h3>
 <table>
@@ -1249,6 +1281,9 @@
 <li>Device is cleaned and released for the next patient.</li>
 </ol>
 <p><strong>What could go wrong</strong></p>
+<!-- Failure mode + how the product should respond. Items written here
+     usually become §3.6 safety requirements. -->
+
 <ul>
 <li>The patient reports sharp pain mid-set and cannot release the device unaided, requiring the resistance to be removed immediately.</li>
 <li>The therapist selects the wrong profile and writes a prescription against another patient's record.</li>
@@ -1301,10 +1336,86 @@
 <li>The patient's hand slips on the contact surface during a maximal effort.</li>
 <li>The device fills its record storage and begins overwriting earlier sessions, so the therapist sees an incomplete history at the next visit.</li>
 </ul>
+<!-- Optional, recommended: add a mermaid flowchart — already enabled
+     on this site. Example syntax:
+
+<pre class="mermaid"><code>flowchart LR
+    A[Step] --&gt; B{Decision}
+    B --&gt;|Yes| C[Outcome]
+    B --&gt;|No| D[Outcome]</code></pre>
+-->
+
 <hr>
 <h2 id="3-requirements-by-design-aspect">3. Requirements by Design Aspect</h2>
+<!-- All six aspects are required. At least 3 requirements each, roughly
+     balanced in count across aspects.
+     Source column: the User Needs item this came from. This column is the
+     traceability the assignment asks for — the QFD / decision matrix tools
+     it points to exist to support it.
+     Priority: Must / Should / Could.
+     State WHAT is needed here. "How much counts as met" belongs in §4. -->
+
 <p>Requirements are traced to the categorised needs in the team's User Needs and Benchmarking report. <strong><code>UN c.n</code> denotes category <code>c</code>, need <code>n</code></strong> in that report — for example, <code>UN 2.4</code> is "The device provides resistance that matches the indicated setting."</p>
+<p>The identifiers used throughout this page are as follows.</p>
+<table>
+<thead>
+<tr>
+<th>Prefix</th>
+<th>Stands for</th>
+<th>Where it is defined</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>UN c.n</code></td>
+<td><strong>U</strong>ser <strong>N</strong>eed, category <code>c</code>, item <code>n</code></td>
+<td>User Needs and Benchmarking report, section 5</td>
+</tr>
+<tr>
+<td><code>HW</code></td>
+<td><strong>H</strong>ard<strong>w</strong>are / Product Design requirement</td>
+<td>§3.1, specified in §4.1</td>
+</tr>
+<tr>
+<td><code>SW</code></td>
+<td><strong>S</strong>oft<strong>w</strong>are / Functionality requirement</td>
+<td>§3.2, specified in §4.2</td>
+</tr>
+<tr>
+<td><code>UX</code></td>
+<td>User e<strong>X</strong>perience and Interactivity requirement</td>
+<td>§3.3, specified in §4.3</td>
+</tr>
+<tr>
+<td><code>CU</code></td>
+<td><strong>Cu</strong>stomization requirement</td>
+<td>§3.4, specified in §4.4</td>
+</tr>
+<tr>
+<td><code>MF</code></td>
+<td><strong>M</strong>anu<strong>f</strong>acturing requirement</td>
+<td>§3.5, specified in §4.5</td>
+</tr>
+<tr>
+<td><code>SF</code></td>
+<td><strong>S</strong>a<strong>f</strong>ety requirement</td>
+<td>§3.6, specified in §4.6</td>
+</tr>
+<tr>
+<td><code>Q</code></td>
+<td>Open <strong>Q</strong>uestion</td>
+<td>§5</td>
+</tr>
+</tbody>
+</table>
 <h3 id="31-hardware-product-design">3.1 Hardware / Product Design</h3>
+<!-- Note: the product (industrial) design will be outsourced to an
+     external designer. So this section states the CONSTRAINTS GIVEN TO
+     THAT DESIGNER, not your own styling decisions — dimensional envelope,
+     hand contact surfaces, mounting hole locations, material limits,
+     volume taken by the PCBs, thermal and routing clearance,
+     ingress protection. -->
+
 <p>The enclosure and external form of the product will be designed by an external industrial designer. This section therefore states the constraints that design must satisfy; it does not specify styling.</p>
 <table>
 <thead>
@@ -1435,6 +1546,9 @@
 </tbody>
 </table>
 <h3 id="34-customization">3.4 Customization</h3>
+<!-- What is configurable, who is allowed to configure it, the range and
+     granularity of each setting, and whether settings must persist. -->
+
 <table>
 <thead>
 <tr>
@@ -1478,6 +1592,10 @@
 </tbody>
 </table>
 <h3 id="35-manufacturing">3.5 Manufacturing</h3>
+<!-- Volume assumptions, number of assembly steps, need for custom
+     fixtures, testability, component sourcing risk (single source or
+     long lead time), whether calibration requires manual labor. -->
+
 <table>
 <thead>
 <tr>
@@ -1521,6 +1639,15 @@
 </tbody>
 </table>
 <h3 id="36-safety">3.6 Safety</h3>
+<!-- The assignment encourages citing safety regulations you find. For each
+     citation, give the standard number and its scope, and say which part of
+     this product it applies to.
+     Every "What could go wrong" item in §2 should have a matching
+     requirement here.
+
+     The regulatory pathway is NOT yet settled — see Q-01 in §5.
+     Do not state an FDA device class on this page until it is verified. -->
+
 <table>
 <thead>
 <tr>
@@ -1563,11 +1690,30 @@
 </tr>
 </tbody>
 </table>
-<!-- The regulatory pathway is NOT yet settled — see Q-01 in §5.
-     Do not state an FDA device class on this page until it is verified. -->
-
 <hr>
 <h2 id="4-requirement-criteria-specifications">4. Requirement Criteria Specifications</h2>
+<!-- One row per requirement in §3, matched by Req ID.
+
+     The Specification column must be: metric + target value + unit +
+     tolerance. Adjectives are never acceptable. If you cannot write a
+     number, the requirement is not yet thought through.
+
+     Verification — pick one:
+       Inspection     confirmable by looking (label, material,
+                      dimension, connector type)
+       Analysis       calculated (power budget, error stack-up, loading)
+       Test           measured with instruments (accuracy, bandwidth,
+                      response time, endurance)
+       Demonstration  show the function running (self-test, alarm
+                      trigger, power-loss behavior)
+
+     Procedure: one sentence — what equipment, how many points measured,
+     and the pass/fail condition. If you cannot write a procedure, the
+     verification method is probably the wrong choice.
+
+     This section is split into six small tables, one per aspect, so that
+     no single table runs long enough to break across pages in the PDF. -->
+
 <p>Each requirement above is specified below with a measurable criterion and the method by which it will be verified: <strong>inspection</strong>, <strong>analysis</strong>, <strong>test</strong>, or <strong>demonstration</strong>.</p>
 <h3 id="41-hardware-product-design">4.1 Hardware / Product Design</h3>
 <table>
@@ -1829,6 +1975,10 @@
 </table>
 <hr>
 <h2 id="5-open-questions">5. Open Questions</h2>
+<!-- Writing this section honestly earns credit — it shows the team knows
+     what it does not yet know. For each item: what is blocked, who will
+     find the answer, and when the answer is needed. -->
+
 <table>
 <thead>
 <tr>
@@ -1879,6 +2029,12 @@
 </table>
 <hr>
 <h2 id="appendix-requirement-derivation">Appendix — Requirement Derivation</h2>
+<!-- Optional but recommended: a decision matrix or QFD table supporting the
+     Source column in §3. The assignment specifically calls attention to
+     these two tools — having one beats having none.
+     Large tables can live in docs/Appendix/ and be linked from here so
+     this page stays a reasonable length. -->
+
 <p>The seven need categories in the User Needs and Benchmarking report were rated for importance by all three team members. Those mean ratings are used as weights when requirements compete for the same resource — enclosure volume, board area, unit cost, or development time.</p>
 <table>
 <thead>
@@ -1926,9 +2082,6 @@
 </tr>
 </tbody>
 </table>
-<!-- If a decision matrix or QFD table is built, put it in docs/Appendix/
-     and link it from here rather than inlining a wide table on this page. -->
-
 <hr>
 <h2 id="ai-use-disclosure">AI Use Disclosure</h2>
 <p>Generative AI tools, including Claude, were used by Zice Sun to interpret the assignment requirements, establish the page structure and traceability scheme, and draft candidate requirement and specification wording. All target values, verification methods and open questions were reviewed by the team and adjusted against the actual design before submission.</p>
@@ -1936,6 +2089,9 @@
 <ol>
 <li>I am starting the EGR 304 team assignment. Lay out all the requirements, how to approach it, and the division of work. If useful, produce a skeleton file that my teammates and I can fill in directly. [assignment link; team repository link]</li>
 <li>The skeleton should be in English.</li>
+<li>Based on our previous assignment, fill in 1-2 entries for each section for reference.</li>
+<li>Add the per-section instruction comments back into the filled English version.</li>
+<li>Also spell out what the abbreviations UN, UX, CU and the rest stand for.</li>
 </ol>
 <!-- Add any further queries here before submitting. -->
 
