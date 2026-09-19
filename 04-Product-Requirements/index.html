@@ -1250,44 +1250,41 @@
 <tbody>
 <tr>
 <td>Actor</td>
-<td>Occupational therapist in an outpatient hand therapy clinic</td>
+<td>Therapist</td>
 </tr>
 <tr>
 <td>Venue / Context</td>
-<td>Clinic treatment room; device shared between patients</td>
+<td>Clinic Treatment room</td>
 </tr>
 <tr>
 <td>Precondition</td>
-<td>Patient profile exists; patient is three weeks post flexor tendon repair; device calibrated</td>
+<td>The patient's file has been established, the equipment has been turned on and calibrated</td>
 </tr>
 <tr>
 <td>Trigger</td>
-<td>Scheduled follow-up appointment</td>
+<td>The patient came for treatment at the appointed time</td>
 </tr>
 <tr>
 <td>Success criteria</td>
-<td>A new prescribed resistance and progression step are stored against the correct patient profile, and the previous three weeks of session records are readable</td>
+<td>The resistance level and the number of target repetitions are saved to the correct patient profile</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Main flow</strong></p>
-<ol>
-<li>Therapist powers on the device and selects the patient's profile.</li>
-<li>Therapist reviews the stored session history and the trend in peak grip force.</li>
-<li>Therapist has the patient perform a baseline measurement at the current prescribed level.</li>
-<li>Therapist raises the prescribed resistance by one progression step and sets the target repetition count.</li>
-<li>Patient performs one supervised set at the new level while the therapist observes for pain or compensation.</li>
-<li>Therapist confirms the prescription; the device stores it and locks it against patient modification.</li>
-<li>Device is cleaned and released for the next patient.</li>
-</ol>
+<p>1.The therapist turns on the device and selects the patient's profile. 
+2.The patient undergoes a brief grip strength test. 
+3.The device displays the patient's grip strength in real time. 
+4.The therapist sets the resistance level and the target number of repetitions. 
+5.The patient completed a set of supervised training using the new Settings. 
+6.The therapist confirms and saves the training plan.</p>
 <p><strong>What could go wrong</strong></p>
 <!-- Failure mode + how the product should respond. Items written here
      usually become §3.6 safety requirements. -->
 
 <ul>
-<li>The patient reports sharp pain mid-set and cannot release the device unaided, requiring the resistance to be removed immediately.</li>
-<li>The therapist selects the wrong profile and writes a prescription against another patient's record.</li>
-<li>The device has drifted out of calibration since the last visit, so the baseline measurement is not comparable to the earlier trend.</li>
+<li>If the patient feels pain, the therapist stops the training and the equipment removes the resistance. </li>
+<li>If the wrong patient file is selected, the device will ask the therapist to confirm the patient's information before saving it. </li>
+<li>If the grip strength reading is abnormal, the device will issue a warning and require recalibration.</li>
 </ul>
 <h3 id="22-use-case-2-patient-completes-a-prescribed-session-at-home">2.2 Use Case 2 — Patient completes a prescribed session at home</h3>
 <table>
@@ -1300,42 +1297,43 @@
 <tbody>
 <tr>
 <td>Actor</td>
-<td>Patient living with rheumatoid arthritis, exercising unsupervised</td>
+<td>Patient</td>
 </tr>
 <tr>
 <td>Venue / Context</td>
-<td>Patient's home, seated at a table, no clinician present</td>
+<td>A patient's home where no therapist is present</td>
 </tr>
 <tr>
 <td>Precondition</td>
-<td>Device prescribed and grip span already set for this patient; profile loaded</td>
+<td>The patient files and training plans have been loaded</td>
 </tr>
 <tr>
 <td>Trigger</td>
-<td>The patient's scheduled daily exercise time</td>
+<td>The patient began the scheduled training</td>
 </tr>
 <tr>
 <td>Success criteria</td>
-<td>The prescribed number of repetitions is completed at the prescribed resistance, recorded with timestamps, and the prescribed maximum is never exceeded</td>
+<td>When the patient completes the target number of repetitions, the device saves the training results</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Main flow</strong></p>
 <ol>
-<li>Patient powers on the device and selects their own profile.</li>
-<li>Device loads the prescribed resistance and drives the mechanism to that setting.</li>
-<li>Device displays the target repetition count and waits.</li>
-<li>Patient performs repetitions; each completed repetition is confirmed audibly so the patient does not need to watch the display.</li>
-<li>Device logs peak force and timestamp for each repetition.</li>
-<li>Device signals end of set and stores the session record.</li>
+<li>The patient turns on the device and selects their own file. </li>
+<li>The device loads the training plan set by the therapist. </li>
+<li>The device displays the resistance level and the number of target repetitions. </li>
+<li>The patient begin training, and the device displays the grip strength and records the number of repetitions. </li>
+<li>After achieving the goal, the device reminds the patient. </li>
+<li>
+<p>The device saves the results of this training.
+<strong>What could go wrong</strong></p>
+</li>
+<li>
+<p>If the patient feels pain, the patient stops the training and the equipment removes the resistance. </p>
+</li>
+<li>If the patient attempts to exceed the resistance limit, the device prevents this change. </li>
+<li>If the power is cut off during the training process, the equipment releases the resistance and saves the number of repetitions that have been completed</li>
 </ol>
-<p><strong>What could go wrong</strong></p>
-<ul>
-<li>Power is lost mid-repetition while the mechanism is holding resistance against the patient's hand.</li>
-<li>The patient decides the session feels too easy and attempts to raise the resistance above the prescribed level.</li>
-<li>The patient's hand slips on the contact surface during a maximal effort.</li>
-<li>The device fills its record storage and begins overwriting earlier sessions, so the therapist sees an incomplete history at the next visit.</li>
-</ul>
 <!-- Optional, recommended: add a mermaid flowchart — already enabled
      on this site. Example syntax:
 
