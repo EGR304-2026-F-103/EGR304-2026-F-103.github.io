@@ -1140,12 +1140,12 @@
      No need to delete them when you are done.)
 
      OWNERSHIP
-       Zice      — §1 Objective & Stakeholders, §3.6 Safety,
-                   §4 table format + traceability IDs,
-                   site build / PDF export / Canvas submission
-       Duotao  — §2 Use Cases, §3.3 Interactivity & UX, §3.4 Customization
+       Zice     — §1 Objective & Stakeholders, §3.6 Safety,
+                  §4 table format + traceability IDs,
+                  site build / PDF export / Canvas submission
+       Duotao   — §2 Use Cases, §3.3 Interactivity & UX, §3.4 Customization
        Gabriel  — §3.1 Hardware, §3.2 Software, §3.5 Manufacturing
-       Everyone  — §5 Open Questions; review §4 together
+       Everyone — §5 Open Questions; review §4 together
 
      THREE HARD RULES
        1. Every requirement must trace back to one item from the
@@ -1155,24 +1155,6 @@
        3. Keep table columns few and cell text short. Put long
           explanations in body text. Wide tables break across pages
           in the PDF export — this is one of the listed common mistakes.
-
-     BEFORE EXTERNAL DESIGN REVIEW — CONFIRM THESE NUMBERS
-       Every target value in §4 is a proposed engineering target. Each one
-       must be checked against the actual mechanism (spring rate, lead-screw
-       pitch, motor torque, load-cell range) and adjusted if infeasible.
-       A target the built prototype cannot meet is worse than a
-       conservative one.
-
-     PRE-SUBMISSION CHECKLIST
-       [ ] §1 objective written, stakeholder table complete
-       [ ] §2 at least two Use Cases, both using the same contrast axis
-       [ ] §3 all six aspects have >= 3 requirements, roughly balanced
-       [ ] §4 every row has target + unit + tolerance + method + procedure
-       [ ] §4 contains no adjective-only criteria
-           (comfortable / lightweight / sturdy / fast)
-       [ ] §5 Open Questions is not empty
-       [ ] Browser print preview checked — no table cut across pages
-       [ ] AI Use Disclosure updated with all queries used
      ============================================================ -->
 
 <h2 id="1-project-objective-and-stakeholders">1. Project Objective and Stakeholders</h2>
@@ -1238,7 +1220,7 @@
        (c) two different stakeholders
      State which one you chose in the line below. -->
 
-<p><strong>Contrast axis:</strong> Two different stakeholders — A therapist and a patient. We chose these two because they use the devices in different ways. The therapist sets the resistance level and the target number of repetitions. Patients should follow the designated training plan and must not choose resistance levels that exceed the limits set by the therapist.</p>
+<p><strong>Contrast axis:</strong> Two different stakeholders — a therapist and a patient. We chose these two because they use the device in different ways. The therapist sets the resistance level and the target number of repetitions. Patients follow the designated training plan and must not choose resistance levels that exceed the limits set by the therapist.</p>
 <h3 id="21-use-case-1-therapist-sets-a-progression-at-a-clinic-follow-up">2.1 Use Case 1 — Therapist sets a progression at a clinic follow-up</h3>
 <table>
 <thead>
@@ -1254,37 +1236,39 @@
 </tr>
 <tr>
 <td>Venue / Context</td>
-<td>Clinic Treatment room</td>
+<td>Clinic treatment room</td>
 </tr>
 <tr>
 <td>Precondition</td>
-<td>The patient's profile has been established, the device has been turned on and calibrated</td>
+<td>The patient's profile has been established; the device has been turned on and calibrated</td>
 </tr>
 <tr>
 <td>Trigger</td>
-<td>The patient came for treatment at the appointed time</td>
+<td>The patient arrives for treatment at the appointed time</td>
 </tr>
 <tr>
 <td>Success criteria</td>
-<td>The resistance level and the number of target repetitions are saved to the correct patient profile</td>
+<td>The resistance level and the target number of repetitions are saved to the correct patient profile</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Main flow</strong></p>
-<p>1.The therapist turns on the device and selects the patient's profile. 
-2.The patient undergoes a brief grip strength test. 
-3.The device displays the patient's grip strength in real time. 
-4.The therapist sets the resistance level and the target number of repetitions. 
-5.The patient completes a set of supervised training using the new Settings. 
-6.The therapist confirms and saves the training plan.</p>
+<ol>
+<li>The therapist turns on the device and selects the patient's profile.</li>
+<li>The patient undergoes a brief grip strength test.</li>
+<li>The device displays the patient's grip strength in real time.</li>
+<li>The therapist sets the resistance level and the target number of repetitions.</li>
+<li>The patient completes a set of supervised training using the new settings.</li>
+<li>The therapist confirms and saves the training plan.</li>
+</ol>
 <p><strong>What could go wrong</strong></p>
 <!-- Failure mode + how the product should respond. Items written here
      usually become §3.6 safety requirements. -->
 
 <ul>
-<li>If the patient feels pain, the therapist stops the training and the equipment removes the resistance. </li>
-<li>If the wrong patient file is selected, the device will ask the therapist to confirm the patient's information before saving it. </li>
-<li>If the grip strength reading is abnormal, the device will issue a warning and require recalibration.</li>
+<li>If the patient feels pain, the therapist stops the training and the device removes the resistance.</li>
+<li>If the wrong patient profile is selected, the device asks the therapist to confirm the patient's information before saving.</li>
+<li>If the grip strength reading is abnormal, the device issues a warning and requires recalibration.</li>
 </ul>
 <h3 id="22-use-case-2-patient-completes-a-prescribed-session-at-home">2.2 Use Case 2 — Patient completes a prescribed session at home</h3>
 <table>
@@ -1301,11 +1285,11 @@
 </tr>
 <tr>
 <td>Venue / Context</td>
-<td>A patient's home where no therapist is present</td>
+<td>A patient's home, where no therapist is present</td>
 </tr>
 <tr>
 <td>Precondition</td>
-<td>The patient profiles and training plans have been loaded</td>
+<td>The patient profile and training plan have been loaded</td>
 </tr>
 <tr>
 <td>Trigger</td>
@@ -1319,29 +1303,19 @@
 </table>
 <p><strong>Main flow</strong></p>
 <ol>
-<li>The patient turns on the device and selects their own file. </li>
-<li>The device loads the training plan set by the therapist. </li>
-<li>The device displays the resistance level and the number of target repetitions. </li>
-<li>The patient begins training, and the device displays the grip strength and records the number of repetitions. </li>
-<li>After achieving the goal, the device reminds the patient. </li>
-<li>The device saves the results of this training.</li>
+<li>The patient turns on the device and selects their own profile.</li>
+<li>The device loads the training plan set by the therapist.</li>
+<li>The device displays the resistance level and the target number of repetitions.</li>
+<li>The patient begins training, and the device displays the grip force and records the number of repetitions.</li>
+<li>After the target is reached, the device notifies the patient.</li>
+<li>The device saves the results of this training session.</li>
 </ol>
 <p><strong>What could go wrong</strong></p>
 <ul>
-<li>If the patient feels pain, the patient stops the training and the equipment removes the resistance. </li>
-<li>If the patient attempts to exceed the resistance limit, the device prevents this change. </li>
-<li>If the power is cut off during the training process, the equipment releases the resistance and saves the number of repetitions that have been completed</li>
+<li>If the patient feels pain, the patient stops the training and the device removes the resistance.</li>
+<li>If the patient attempts to exceed the resistance limit, the device prevents the change.</li>
+<li>If power is lost during training, the device releases the resistance and preserves the repetitions completed so far.</li>
 </ul>
-<!-- Optional, recommended: add a mermaid flowchart — already enabled
-     on this site. Example syntax:
-
-```mermaid
-flowchart LR
-    A[Step] -> B{Decision}
-    B ->|Yes| C[Outcome]
-    B ->|No| D[Outcome]
--->
-
 <hr>
 <h2 id="3-requirements-by-design-aspect">3. Requirements by Design Aspect</h2>
 <!-- All six aspects are required. At least 3 requirements each, roughly
@@ -1426,7 +1400,7 @@ flowchart LR
 <tbody>
 <tr>
 <td>HW-01</td>
-<td>The grip span shall be adjustable to accommodate different adult hand sizes</td>
+<td>The grip span shall be adjustable to accommodate adult hand sizes across the 5th to 95th percentile range</td>
 <td>UN 4.7, UN 4.8</td>
 <td>Must</td>
 </tr>
@@ -1450,7 +1424,7 @@ flowchart LR
 </tr>
 <tr>
 <td>HW-05</td>
-<td>Moving components, including the motor and lead-screw mechanisms, will be enclosed to prevent the user's fingers from contacting pinch, crushing or entanglement hazards during normal operation</td>
+<td>Moving components, including the motor and lead-screw mechanisms, shall be enclosed to prevent the user's fingers from contacting pinch, crushing or entanglement hazards during normal operation</td>
 <td>UN 1.15, UN 1.2</td>
 <td>Must</td>
 </tr>
@@ -1476,7 +1450,7 @@ flowchart LR
 <tr>
 <td>SW-02</td>
 <td>The firmware shall enforce the clinician-authorized maximum resistance and reject attempts to select a resistance above that limit</td>
-<td>UN 3.5, UN 3.8</td>
+<td>UN 2.13, UN 2.12</td>
 <td>Must</td>
 </tr>
 <tr>
@@ -1493,12 +1467,25 @@ flowchart LR
 </tr>
 <tr>
 <td>SW-05</td>
-<td>Stored training records shall remain available for review after the device is powered off and restarted</td>
+<td>Stored training records shall be exportable for clinician review without requiring custom software</td>
 <td>UN 3.18, UN 3.6</td>
 <td>Should</td>
 </tr>
+<tr>
+<td>SW-06</td>
+<td>The device shall measure the applied grip force across its full operating range with an error small enough for results to be comparable with clinical assessment equipment</td>
+<td>UN 3.1, UN 3.2, UN 3.4</td>
+<td>Must</td>
+</tr>
 </tbody>
 </table>
+<!-- SW-06 covers the core sensing function (load cell + analog front end).
+     It was added because UN 3.1 and UN 3.2 are among the highest-rated
+     needs in the report and were previously only covered indirectly by the
+     manufacturing calibration requirement MF-03, which specifies a process
+     rather than an accuracy. If the team prefers, SW-06 can move to §3.1
+     as a hardware requirement — but it must exist somewhere. -->
+
 <h3 id="33-interactivity-user-experience">3.3 Interactivity &amp; User Experience</h3>
 <table>
 <thead>
@@ -1512,31 +1499,31 @@ flowchart LR
 <tbody>
 <tr>
 <td>UX-01</td>
-<td>Patients should be able to start training through no more than three operations.</td>
+<td>A patient shall be able to start a prescribed training session in no more than three operations</td>
 <td>UN 4.1</td>
 <td>Must</td>
 </tr>
 <tr>
 <td>UX-02</td>
-<td>The device should display the patient's grip strength in real time during the training process.</td>
+<td>The device shall display the patient's grip force in real time during a training session</td>
 <td>UN 3.4, UN 4.6</td>
 <td>Must</td>
 </tr>
 <tr>
 <td>UX-03</td>
-<td>The device should display the resistance level, completed number of times and target number of times during the training process</td>
+<td>The device shall display the resistance level, the completed repetition count and the target repetition count during a training session</td>
 <td>UN 4.6, UN 3.5</td>
 <td>Must</td>
 </tr>
 <tr>
 <td>UX-04</td>
-<td>Patients with limited grip strength or hand flexibility should also be able to operate the equipment.</td>
+<td>The device shall be operable by patients with limited grip strength or limited hand flexibility</td>
 <td>UN 4.11, UN 1.1</td>
 <td>Must</td>
 </tr>
 <tr>
 <td>UX-05</td>
-<td>When the target repetition number is reached, the device should notify the patient.</td>
+<td>The device should notify the patient when the target repetition count is reached</td>
 <td>UN 3.5, UN 4.3</td>
 <td>Should</td>
 </tr>
@@ -1558,31 +1545,31 @@ flowchart LR
 <tbody>
 <tr>
 <td>CU-01</td>
-<td>Therapists should be able to set resistance levels and target repetitions for each patient.</td>
+<td>A therapist shall be able to set the resistance level and the target repetition count for each patient</td>
 <td>UN 2.12</td>
 <td>Must</td>
 </tr>
 <tr>
 <td>CU-02</td>
-<td>Patients can only choose the resistance level authorized by the therapist.</td>
+<td>A patient shall be able to select only the resistance levels authorized by the therapist</td>
 <td>UN 2.13</td>
 <td>Must</td>
 </tr>
 <tr>
 <td>CU-03</td>
-<td>The device should adjust the resistance according to the measured patient's performance</td>
+<td>The device should adjust the resistance according to the patient's measured performance</td>
 <td>UN 2.11</td>
 <td>Should</td>
 </tr>
 <tr>
 <td>CU-04</td>
-<td>The grip distance of the equipment should be adjustable according to the size of the patient's hand.</td>
+<td>The grip span of the device shall be adjustable to the size of the patient's hand</td>
 <td>UN 4.8</td>
 <td>Must</td>
 </tr>
 <tr>
 <td>CU-05</td>
-<td>Therapists should be able to select the corresponding progressive training Settings for patients at different stages of rehabilitation.</td>
+<td>A therapist should be able to select progressive training settings appropriate to the patient's stage of rehabilitation</td>
 <td>UN 2.14, UN 2.15</td>
 <td>Should</td>
 </tr>
@@ -1629,7 +1616,7 @@ flowchart LR
 </tr>
 <tr>
 <td>MF-05</td>
-<td>The device shall be designed using cost-effective components to support affordability for individual patient use</td>
+<td>The device should be designed to a component cost, at a stated production quantity, that supports affordability for individual patient ownership</td>
 <td>UN 7.3</td>
 <td>Should</td>
 </tr>
@@ -1709,7 +1696,11 @@ flowchart LR
      verification method is probably the wrong choice.
 
      This section is split into six small tables, one per aspect, so that
-     no single table runs long enough to break across pages in the PDF. -->
+     no single table runs long enough to break across pages in the PDF.
+
+     WHEN §3 CHANGES, CHANGE §4 IN THE SAME EDIT. The two sections drifted
+     apart once already and the mismatch is the first thing a reviewer
+     checking traceability will find. -->
 
 <p>Each requirement above is specified below with a measurable criterion and the method by which it will be verified: <strong>inspection</strong>, <strong>analysis</strong>, <strong>test</strong>, or <strong>demonstration</strong>.</p>
 <h3 id="41-hardware-product-design">4.1 Hardware / Product Design</h3>
@@ -1725,15 +1716,15 @@ flowchart LR
 <tbody>
 <tr>
 <td>HW-01</td>
-<td>Grip span adjustable over 35–87 mm, ±1 mm at any setting</td>
+<td>Grip span adjustable over 35–87 mm, ±1 mm at any setting, covering the 5th to 95th percentile adult hand breadth</td>
 <td>Test</td>
-<td>Measure span with calipers at minimum, middle and maximum settings</td>
+<td>Measure span with calipers at minimum, middle and maximum settings and compare against the anthropometric range cited in the design brief</td>
 </tr>
 <tr>
 <td>HW-02</td>
 <td>Display information shall be readable and all controls accessible during both left-handed and right-handed use</td>
 <td>Demonstration</td>
-<td>Have users operate the device with each hand and verify that all the displayed information can be read and all the controls can be accessed</td>
+<td>Have users operate the device with each hand and verify that all displayed information can be read and all controls can be accessed</td>
 </tr>
 <tr>
 <td>HW-03</td>
@@ -1743,18 +1734,22 @@ flowchart LR
 </tr>
 <tr>
 <td>HW-04</td>
-<td>Hand displacement ≤ 5mm during 20 consecutive repetitions at the maximum prescribed resistance, no visible cracking, peeling, or permanent deformation after 100 cleaning cycles with 70% isopropyl alcohol</td>
+<td>Hand displacement ≤ 5 mm during 20 consecutive repetitions at the maximum prescribed resistance; no visible cracking, peeling or permanent deformation after 100 cleaning cycles with 70 % isopropyl alcohol</td>
 <td>Test</td>
-<td>Mark the initial hand position and measure displacement after 20 repetitions, then perform 100 cleaning cycles with 70% IPA and visually inspect the hand-contact surfaces</td>
+<td>Mark the initial hand position and measure displacement after 20 repetitions, then perform 100 cleaning cycles with 70 % IPA and visually inspect the hand-contact surfaces</td>
 </tr>
 <tr>
 <td>HW-05</td>
-<td>No user-accessible contact with the motor, lead screw, gears, or other hazardous moving components during normal operation</td>
+<td>No user-accessible contact with the motor, lead screw, gears or other hazardous moving components during normal operation</td>
 <td>Inspection / Test</td>
 <td>Operate the device through its full range of motion and inspect all accessible openings to verify that fingers cannot contact hazardous moving components</td>
 </tr>
 </tbody>
 </table>
+<!-- HW-01: cite the anthropometric data source for the 5th–95th percentile
+     range (a published hand-dimension table) in the design brief, so the
+     35–87 mm figures have a documented basis. -->
+
 <h3 id="42-software-functionality">4.2 Software / Functionality</h3>
 <table>
 <thead>
@@ -1768,7 +1763,7 @@ flowchart LR
 <tbody>
 <tr>
 <td>SW-01</td>
-<td>Control update rate ≥ 50 Hz, steady-state resistance within 10% of the prescribed setpoint, settling time less or equal to 2.0 seconds</td>
+<td>Control update rate ≥ 50 Hz, steady-state resistance within 10 % of the prescribed setpoint, settling time ≤ 2.0 s</td>
 <td>Test</td>
 <td>Command resistance settings across the operating range, log measured force and motor response, and calculate update rate, steady-state error and settling time</td>
 </tr>
@@ -1780,21 +1775,27 @@ flowchart LR
 </tr>
 <tr>
 <td>SW-03</td>
-<td>Stored session data shall retain repetition count, peak grip force, and session identifier with zero data loss after 20 power cycles</td>
+<td>Stored session data shall retain repetition count, peak grip force and session identifier with zero data loss after 20 power cycles</td>
 <td>Test</td>
 <td>Record test sessions, cycle device power 20 times, and compare all stored records with the original data</td>
 </tr>
 <tr>
 <td>SW-04</td>
-<td>Automatic repetition-count accuracy ≥95% over 100 manually verified repetitions, with no more than 5 missed or false counts</td>
+<td>Automatic repetition-count accuracy ≥ 95 % over 100 manually verified repetitions, with no more than 5 missed or false counts</td>
 <td>Test</td>
 <td>Perform 100 manually counted grip repetitions and compare the manual count with the firmware-recorded count</td>
 </tr>
 <tr>
 <td>SW-05</td>
-<td>Stored training records shall remain retrievable after a complete power cycle with no loss or corruption of saved session data</td>
+<td>At least 30 days of stored sessions exportable within 60 s as a plain-text or CSV file readable on a host PC without custom software</td>
+<td>Demonstration</td>
+<td>Export from a device holding 30 days of session records and open the file on a host PC using standard software</td>
+</tr>
+<tr>
+<td>SW-06</td>
+<td>Grip force measured over 0–40 kgf with an error ≤ 5 % of reading when compared against a reference dynamometer at a minimum of 5 points across the range</td>
 <td>Test</td>
-<td>Save multiple training sessions, completely power off the device, restart it, and verify that all saved records can still be retrieved correctly</td>
+<td>Apply 5 known loads spanning the range using the reference dynamometer identified in Q-03 and compute the error at each point</td>
 </tr>
 </tbody>
 </table>
@@ -1813,19 +1814,19 @@ flowchart LR
 <td>UX-01</td>
 <td>Session starts within 3 user actions from power-on</td>
 <td>Demonstration</td>
-<td>Count actions from power-on to first logged repetition</td>
+<td>Count actions from power-on to the first logged repetition</td>
 </tr>
 <tr>
 <td>UX-02</td>
-<td>Repetition confirmation within 300 ms of detection, at ≥ 65 dBA measured 0.5 m from the device</td>
+<td>Displayed grip force updates at ≥ 5 Hz with display latency ≤ 200 ms and a displayed resolution of 0.1 kgf</td>
 <td>Test</td>
-<td>Sound level meter at 0.5 m; timing captured on a logic analyser</td>
+<td>Apply a known step load and measure the update rate and the delay between the applied step and the displayed value</td>
 </tr>
 <tr>
 <td>UX-03</td>
-<td>Character height ≥ 4 mm; text contrast ratio ≥ 4.5:1</td>
+<td>Resistance level, completed repetitions and target repetitions all visible simultaneously; character height ≥ 4 mm; text contrast ratio ≥ 4.5:1</td>
 <td>Inspection</td>
-<td>Measure characters and compute contrast from measured luminance</td>
+<td>Confirm all three values are on screen during a session; measure character height and compute contrast from measured luminance</td>
 </tr>
 <tr>
 <td>UX-04</td>
@@ -1835,9 +1836,9 @@ flowchart LR
 </tr>
 <tr>
 <td>UX-05</td>
-<td>3 of 3 untrained users complete a full session with no verbal assistance</td>
-<td>Demonstration</td>
-<td>Observed trial with participants who have not used the device before</td>
+<td>End-of-target notification issued within 500 ms of the final repetition, audible at ≥ 65 dBA measured 0.5 m from the device</td>
+<td>Test</td>
+<td>Sound level meter at 0.5 m; compare notification timing against the logged repetition timestamp</td>
 </tr>
 </tbody>
 </table>
@@ -1854,36 +1855,43 @@ flowchart LR
 <tbody>
 <tr>
 <td>CU-01</td>
-<td>Resistance settable 2.0–30.0 kgf in 0.5 kgf steps; target repetitions 1–99; sessions per day 1–10; progression step 0–5.0 kgf</td>
+<td>Resistance settable 2.0–30.0 kgf in 0.5 kgf steps and target repetitions settable 1–99, stored against the selected patient profile and retained across a power cycle</td>
 <td>Demonstration</td>
-<td>Set each parameter to its minimum, a middle value and its maximum</td>
+<td>Set both parameters to their minimum, a middle value and their maximum on two different profiles; power-cycle and confirm each value is restored to the correct profile</td>
 </tr>
 <tr>
 <td>CU-02</td>
-<td>Prescription retained ≥ 30 days with power removed, and unchanged after a firmware update</td>
-<td>Test</td>
-<td>Store prescription, remove power 30 days, re-read; repeat across an update</td>
+<td>Patient-selectable resistance bounded by the clinician-authorized maximum, with out-of-range selections rejected in 20 of 20 attempts</td>
+<td>Demonstration</td>
+<td>Attempt 20 out-of-range selections from the patient interface and confirm none are accepted</td>
 </tr>
 <tr>
 <td>CU-03</td>
-<td>Grip span setting restored within 2.0 s of profile selection</td>
-<td>Demonstration</td>
-<td>Switch between two profiles with different spans and time the response</td>
+<td>When the measured peak force over a completed set differs from the prescribed setpoint by more than 10 %, the device applies the clinician-defined progression step at the next session and never exceeds the authorized maximum</td>
+<td>Test</td>
+<td>Run scripted sessions with applied forces above and below the setpoint; log the resistance applied in the following session and confirm the authorized maximum is never exceeded</td>
 </tr>
 <tr>
 <td>CU-04</td>
-<td>Patient-selectable range bounded by the authorised maximum in 20 of 20 attempts</td>
+<td>Grip span setting stored per patient profile and restored within 2.0 s of profile selection</td>
 <td>Demonstration</td>
-<td>Attempt out-of-range selection from the patient interface</td>
+<td>Switch between two profiles with different grip span settings and time the response</td>
 </tr>
 <tr>
 <td>CU-05</td>
-<td>≥ 8 independent user profiles, each with its own prescription and records</td>
-<td>Inspection</td>
-<td>Create 8 profiles and confirm records do not cross between them</td>
+<td>Progression step settable 0–5.0 kgf and session frequency settable 1–10 per day per profile; the stored plan is retained for ≥ 30 days with power removed</td>
+<td>Test</td>
+<td>Store a progression plan, remove power for 30 days, then re-read and compare against the stored values</td>
 </tr>
 </tbody>
 </table>
+<!-- Two requirements from the earlier draft lost their §3 row when §3.4 was
+     rewritten: prescription persistence, and a minimum number of user
+     profiles. Persistence has been folded into the CU-01 and CU-05
+     specifications above. If the team wants a stated profile capacity
+     (the clinic-sharing case in §1.2), it needs its own §3.4 row — it is
+     not covered anywhere at present. -->
+
 <h3 id="45-manufacturing">4.5 Manufacturing</h3>
 <table>
 <thead>
@@ -1899,7 +1907,7 @@ flowchart LR
 <td>MF-01</td>
 <td>Each critical electronic subsystem shall support independent functional verification before final assembly</td>
 <td>Test</td>
-<td>Power and test the sensing, control, and motor-drive functions individually before final assembly and verify correct operation of each subsystem</td>
+<td>Power and test the sensing, control and motor-drive functions individually before final assembly and verify correct operation of each subsystem</td>
 </tr>
 <tr>
 <td>MF-02</td>
@@ -1909,7 +1917,7 @@ flowchart LR
 </tr>
 <tr>
 <td>MF-03</td>
-<td>Force calibration shall use at least 3 known reference loads distributed across the intended measurement range; verification error shall be ≤ 5% of full scale</td>
+<td>Force calibration shall use at least 3 known reference loads distributed across the intended measurement range; verification error shall be ≤ 5 % of full scale</td>
 <td>Test</td>
 <td>Calibrate the load-cell system using at least 3 known reference loads, then apply an additional reference load not used for calibration and compare the measured force with the known force</td>
 </tr>
@@ -1921,9 +1929,9 @@ flowchart LR
 </tr>
 <tr>
 <td>MF-05</td>
-<td>Total prototype BOM cost shall be ≤ $150, excluding development tools and reusable laboratory equipment</td>
+<td>Prototype BOM cost ≤ $150 per unit excluding development tools and reusable laboratory equipment; projected BOM cost at a quantity of 100 ≤ $100, consistent with a retail price at or below the $129 benchmark device</td>
 <td>Analysis</td>
-<td>Calculate the total cost of all components required for one complete device using current supplier prices and verify that the total does not exceed $150</td>
+<td>Cost the complete BOM at single-unit supplier pricing and again at quantity-100 pricing, and compare the projected retail price against the benchmarked products</td>
 </tr>
 </tbody>
 </table>
@@ -1997,16 +2005,16 @@ flowchart LR
 <tr>
 <td>Q-02</td>
 <td>Is the lead screw back-drivable at maximum spring preload? If not, a mechanical release must be designed in.</td>
-<td>Member B</td>
+<td>Gabriel</td>
 <td>Before the enclosure brief is sent out</td>
 <td>SF-02, HW-05, external design brief</td>
 </tr>
 <tr>
 <td>Q-03</td>
 <td>Which reference dynamometer will serve as the accuracy standard, and is one available on campus?</td>
-<td>Member A</td>
+<td>Duotao</td>
 <td>Before the calibration procedure is written</td>
-<td>MF-03, SW-01, UN 3.2 traceability</td>
+<td>SW-06, MF-03, UN 3.2 traceability</td>
 </tr>
 <tr>
 <td>Q-04</td>
@@ -2018,7 +2026,7 @@ flowchart LR
 <tr>
 <td>Q-05</td>
 <td>Is the home unit battery powered or mains powered?</td>
-<td>Member B</td>
+<td>Gabriel</td>
 <td>Before power board layout</td>
 <td>HW-03 mass target, power board design</td>
 </tr>
@@ -2081,16 +2089,17 @@ flowchart LR
 </table>
 <hr>
 <h2 id="ai-use-disclosure">AI Use Disclosure</h2>
-<p>Generative AI tools, including Claude, were used by Zice Sun to interpret the assignment requirements, establish the page structure and traceability scheme, and draft candidate requirement and specification wording. All target values, verification methods and open questions were reviewed by the team and adjusted against the actual design before submission.</p>
+<p>Generative AI tools, including Claude, were used by Zice Sun to interpret the assignment requirements, establish the page structure and traceability scheme, draft candidate requirement and specification wording, and review the completed draft for traceability and consistency errors. All target values, verification methods and open questions were reviewed by the team and adjusted against the actual design before submission.</p>
 <p>Full query text (translated from Chinese where applicable):</p>
 <ol>
 <li>I am starting the EGR 304 team assignment. Lay out all the requirements, how to approach it, and the division of work. If useful, produce a skeleton file that my teammates and I can fill in directly. [assignment link; team repository link]</li>
 <li>The skeleton should be in English.</li>
-<li>Based on our previous assignment, fill in 1-2 entries for each section for reference.</li>
+<li>Based on our previous assignment, fill in 1-2 sample entries for each section as reference.</li>
 <li>Add the per-section instruction comments back into the filled English version.</li>
 <li>Also spell out what the abbreviations UN, UX, CU and the rest stand for.</li>
+<li>Final check. [uploaded the team's completed draft]</li>
+<li>Rewrite §4.4 to match the new §3.4, apply the rest of the suggested corrections, and output the file.</li>
 </ol>
-<!-- Add any further queries here before submitting. -->
 
 
 
