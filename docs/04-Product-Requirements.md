@@ -1,13 +1,26 @@
 # Product Requirements
 
 <!-- ============================================================
-     TEAM NOTES (HTML comments do not appear on the published page)
+     HOW TO WORK ON THIS PAGE
+     (HTML comments do not appear on the published page.
+     No need to delete them when you are done.)
 
      OWNERSHIP
-       Zice      — §1, §3.6 Safety, §4 format + traceability,
+       Zice      — §1 Objective & Stakeholders, §3.6 Safety,
+                   §4 table format + traceability IDs,
                    site build / PDF export / Canvas submission
        Duotao  — §2 Use Cases, §3.3 Interactivity & UX, §3.4 Customization
        Gabriel  — §3.1 Hardware, §3.2 Software, §3.5 Manufacturing
+       Everyone  — §5 Open Questions; review §4 together
+
+     THREE HARD RULES
+       1. Every requirement must trace back to one item from the
+          User Needs assignment (fill the Source column).
+       2. Every requirement must have a verifiable specification in §4.
+          No spec = the requirement is not finished.
+       3. Keep table columns few and cell text short. Put long
+          explanations in body text. Wide tables break across pages
+          in the PDF export — this is one of the listed common mistakes.
 
      BEFORE EXTERNAL DESIGN REVIEW — CONFIRM THESE NUMBERS
        Every target value in §4 is a proposed engineering target. Each one
@@ -17,10 +30,14 @@
        conservative one.
 
      PRE-SUBMISSION CHECKLIST
-       [ ] Every §3 requirement has a matching §4 row
-       [ ] No adjective-only criteria anywhere in §4
+       [ ] §1 objective written, stakeholder table complete
+       [ ] §2 at least two Use Cases, both using the same contrast axis
+       [ ] §3 all six aspects have >= 3 requirements, roughly balanced
+       [ ] §4 every row has target + unit + tolerance + method + procedure
+       [ ] §4 contains no adjective-only criteria
+           (comfortable / lightweight / sturdy / fast)
+       [ ] §5 Open Questions is not empty
        [ ] Browser print preview checked — no table cut across pages
-       [ ] Open Questions updated with anything still unresolved
        [ ] AI Use Disclosure updated with all queries used
      ============================================================ -->
 
@@ -28,9 +45,18 @@
 
 ### 1.1 Project Objective
 
+<!-- 2-4 sentences. Answer: for whom, what problem it solves, what the
+     product is, and what success looks like. Do not describe the
+     implementation here — objective only. -->
+
 The objective of this project is a prescription-based automatic resistance grip trainer for hand rehabilitation. The device measures the force a patient actually applies through a load cell and a custom analog front end, and automatically sets its own mechanical resistance to a level prescribed by a clinician. Success means a clinician can define a progression plan once and have it carried out correctly across both clinic and home sessions, without manual reconfiguration of the device and without losing the record of what the patient actually did.
 
 ### 1.2 Stakeholders
+
+<!-- Beyond the direct user, think about who else imposes design
+     constraints: whoever pays, prescribes, maintains, approves,
+     or disposes of the product.
+     If §2 uses the "two stakeholders" axis, pick two rows from here. -->
 
 | Stakeholder | Role | What they need from the product | How they interact with it |
 |---|---|---|---|
@@ -43,6 +69,12 @@ The objective of this project is a prescription-based automatic resistance grip 
 ---
 
 ## 2. Use Cases
+
+<!-- At least two. Pick ONE contrast axis and keep it consistent:
+       (a) two different venues
+       (b) two different interaction examples
+       (c) two different stakeholders
+     State which one you chose in the line below. -->
 
 **Contrast axis:** two different stakeholders — a therapist in a clinic and a patient at home. This pair was chosen because the team charter names clinicians as primary users and home-exercising patients as secondary users, and because the two groups impose opposing requirements on the same interface: the therapist needs configuration authority, and the patient must be prevented from exercising it.
 
@@ -67,6 +99,9 @@ The objective of this project is a prescription-based automatic resistance grip 
 7. Device is cleaned and released for the next patient.
 
 **What could go wrong**
+
+<!-- Failure mode + how the product should respond. Items written here
+     usually become §3.6 safety requirements. -->
 
 - The patient reports sharp pain mid-set and cannot release the device unaided, requiring the resistance to be removed immediately.
 - The therapist selects the wrong profile and writes a prescription against another patient's record.
@@ -98,13 +133,52 @@ The objective of this project is a prescription-based automatic resistance grip 
 - The patient's hand slips on the contact surface during a maximal effort.
 - The device fills its record storage and begins overwriting earlier sessions, so the therapist sees an incomplete history at the next visit.
 
+<!-- Optional, recommended: add a mermaid flowchart — already enabled
+     on this site. Example syntax:
+
+```mermaid
+flowchart LR
+    A[Step] --> B{Decision}
+    B -->|Yes| C[Outcome]
+    B -->|No| D[Outcome]
+```
+-->
+
 ---
 
 ## 3. Requirements by Design Aspect
 
+<!-- All six aspects are required. At least 3 requirements each, roughly
+     balanced in count across aspects.
+     Source column: the User Needs item this came from. This column is the
+     traceability the assignment asks for — the QFD / decision matrix tools
+     it points to exist to support it.
+     Priority: Must / Should / Could.
+     State WHAT is needed here. "How much counts as met" belongs in §4. -->
+
 Requirements are traced to the categorised needs in the team's User Needs and Benchmarking report. **`UN c.n` denotes category `c`, need `n`** in that report — for example, `UN 2.4` is "The device provides resistance that matches the indicated setting."
 
+The identifiers used throughout this page are as follows.
+
+| Prefix | Stands for | Where it is defined |
+|---|---|---|
+| `UN c.n` | **U**ser **N**eed, category `c`, item `n` | User Needs and Benchmarking report, section 5 |
+| `HW` | **H**ard**w**are / Product Design requirement | §3.1, specified in §4.1 |
+| `SW` | **S**oft**w**are / Functionality requirement | §3.2, specified in §4.2 |
+| `UX` | User e**X**perience and Interactivity requirement | §3.3, specified in §4.3 |
+| `CU` | **Cu**stomization requirement | §3.4, specified in §4.4 |
+| `MF` | **M**anu**f**acturing requirement | §3.5, specified in §4.5 |
+| `SF` | **S**a**f**ety requirement | §3.6, specified in §4.6 |
+| `Q` | Open **Q**uestion | §5 |
+
 ### 3.1 Hardware / Product Design
+
+<!-- Note: the product (industrial) design will be outsourced to an
+     external designer. So this section states the CONSTRAINTS GIVEN TO
+     THAT DESIGNER, not your own styling decisions — dimensional envelope,
+     hand contact surfaces, mounting hole locations, material limits,
+     volume taken by the PCBs, thermal and routing clearance,
+     ingress protection. -->
 
 The enclosure and external form of the product will be designed by an external industrial designer. This section therefore states the constraints that design must satisfy; it does not specify styling.
 
@@ -138,6 +212,9 @@ The enclosure and external form of the product will be designed by an external i
 
 ### 3.4 Customization
 
+<!-- What is configurable, who is allowed to configure it, the range and
+     granularity of each setting, and whether settings must persist. -->
+
 | ID | Requirement | Source | Priority |
 |---|---|---|---|
 | CU-01 | A clinician shall be able to set the prescribed resistance, target repetitions, sessions per day and progression step | UN 2.12, UN 2.15 | Must |
@@ -147,6 +224,10 @@ The enclosure and external form of the product will be designed by an external i
 | CU-05 | The device shall hold multiple independent user profiles so one unit can serve several patients | UN 3.8, UN 7.3 | Should |
 
 ### 3.5 Manufacturing
+
+<!-- Volume assumptions, number of assembly steps, need for custom
+     fixtures, testability, component sourcing risk (single source or
+     long lead time), whether calibration requires manual labor. -->
 
 | ID | Requirement | Source | Priority |
 |---|---|---|---|
@@ -158,6 +239,15 @@ The enclosure and external form of the product will be designed by an external i
 
 ### 3.6 Safety
 
+<!-- The assignment encourages citing safety regulations you find. For each
+     citation, give the standard number and its scope, and say which part of
+     this product it applies to.
+     Every "What could go wrong" item in §2 should have a matching
+     requirement here.
+
+     The regulatory pathway is NOT yet settled — see Q-01 in §5.
+     Do not state an FDA device class on this page until it is verified. -->
+
 | ID | Requirement | Source / Standard | Priority |
 |---|---|---|---|
 | SF-01 | Applied resistance shall never exceed the authorised maximum, and an overforce condition shall be released automatically | UN 1.6, UN 2.13 | Must |
@@ -166,12 +256,31 @@ The enclosure and external form of the product will be designed by an external i
 | SF-04 | Skin-contact materials shall be biologically evaluated and shall withstand clinical cleaning between patients | UN 1.9, UN 6.5; ISO 10993-1 | Must |
 | SF-05 | Hazards shall be identified and mitigated under a documented risk management process | ISO 14971; IEC 60601-1; IEC 62366-1 | Must |
 
-<!-- The regulatory pathway is NOT yet settled — see Q-01 in §5.
-     Do not state an FDA device class on this page until it is verified. -->
-
 ---
 
 ## 4. Requirement Criteria Specifications
+
+<!-- One row per requirement in §3, matched by Req ID.
+
+     The Specification column must be: metric + target value + unit +
+     tolerance. Adjectives are never acceptable. If you cannot write a
+     number, the requirement is not yet thought through.
+
+     Verification — pick one:
+       Inspection     confirmable by looking (label, material,
+                      dimension, connector type)
+       Analysis       calculated (power budget, error stack-up, loading)
+       Test           measured with instruments (accuracy, bandwidth,
+                      response time, endurance)
+       Demonstration  show the function running (self-test, alarm
+                      trigger, power-loss behavior)
+
+     Procedure: one sentence — what equipment, how many points measured,
+     and the pass/fail condition. If you cannot write a procedure, the
+     verification method is probably the wrong choice.
+
+     This section is split into six small tables, one per aspect, so that
+     no single table runs long enough to break across pages in the PDF. -->
 
 Each requirement above is specified below with a measurable criterion and the method by which it will be verified: **inspection**, **analysis**, **test**, or **demonstration**.
 
@@ -239,6 +348,10 @@ Each requirement above is specified below with a measurable criterion and the me
 
 ## 5. Open Questions
 
+<!-- Writing this section honestly earns credit — it shows the team knows
+     what it does not yet know. For each item: what is blocked, who will
+     find the answer, and when the answer is needed. -->
+
 | ID | Question | Owner | Needed by | Blocking |
 |---|---|---|---|---|
 | Q-01 | Which FDA classification applies to a prescription powered hand exerciser, and does 21 CFR 890.5380 cover this device? | Zice | Before external design review | SF-05, labelling, any regulatory claim on this page |
@@ -250,6 +363,12 @@ Each requirement above is specified below with a measurable criterion and the me
 ---
 
 ## Appendix — Requirement Derivation
+
+<!-- Optional but recommended: a decision matrix or QFD table supporting the
+     Source column in §3. The assignment specifically calls attention to
+     these two tools — having one beats having none.
+     Large tables can live in docs/Appendix/ and be linked from here so
+     this page stays a reasonable length. -->
 
 The seven need categories in the User Needs and Benchmarking report were rated for importance by all three team members. Those mean ratings are used as weights when requirements compete for the same resource — enclosure volume, board area, unit cost, or development time.
 
@@ -263,9 +382,6 @@ The seven need categories in the User Needs and Benchmarking report were rated f
 | Portability and Access | 3.83 | Hardware, Manufacturing |
 | Measurement and Data | 3.74 | Software, Manufacturing |
 
-<!-- If a decision matrix or QFD table is built, put it in docs/Appendix/
-     and link it from here rather than inlining a wide table on this page. -->
-
 ---
 
 ## AI Use Disclosure
@@ -276,5 +392,8 @@ Full query text (translated from Chinese where applicable):
 
 1. I am starting the EGR 304 team assignment. Lay out all the requirements, how to approach it, and the division of work. If useful, produce a skeleton file that my teammates and I can fill in directly. [assignment link; team repository link]
 2. The skeleton should be in English.
+3. Based on our previous assignment, fill in 1-2 entries for each section for reference.
+4. Add the per-section instruction comments back into the filled English version.
+5. Also spell out what the abbreviations UN, UX, CU and the rest stand for.
 
 <!-- Add any further queries here before submitting. -->
