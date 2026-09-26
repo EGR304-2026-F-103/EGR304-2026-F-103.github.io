@@ -502,18 +502,23 @@ The original spreadsheet can be [downloaded here](https://egr304-2026-f-103.gith
      EXAMPLE direction: "Adaptive Coach" — motivation and automatic
      progression; a storyboard with a patient character suits this one. -->
 
-**Pitch:** {one sentence}
+**Pitch:** The "Adaptive Coach" is a home-based hand rehabilitation training device. It conducts training according to the prescription set by the therapist and adjusts subsequent training based on the patient's recent performance.
 
 | ID | Feature | Satisfies |
 |---|---|---|
-| F-072 | Patient ID card tap | UX-01, CU-01 |
-| F-N02 | Card-locked prescription | CU-01, SF-01 |
-| | | |
+| F-072 | Patient ID card tap | UX-01 |
+| F-076 | Password-protected therapist menu | CU-01 |
+| F-084 | Adjust according to the training trend | CU-03 |
+| F-086 | Three-field OLED dashboard | UX-03 |
+| F-091 | Large low-force key | UX-04 |
+| F-097 | Voice completion message | UX-05 |
+| F-036 | Motor-driven spring preload | SW-01 |
+| F-001 | Quick-release cam lever | SF-02 |
 
 <!-- ![Concept C storyboard](image/ideation/concept-c.svg)
      **Figure 6. Concept C — {name}, storyboard of a home session.** -->
 
-{1 paragraph.}
+The therapist sets the patient's training resistance and target repetitions through a password-protected menu. At home, the patient swips the identity card to load the training plan and then presses the effortless large button to start the training. During training, the OLED screen displays resistance, completed times and target times. When the goal is reached, the device will remind the patient by voice. The equipment refers to the recent training results to determine the resistance setting for subsequent training and makes adjustments through a motor-driven spring mechanism. If the patient needs to release the resistance immediately, they can manually pull the quick release rod. 
 
 ### 5.4 Concept Comparison
 
@@ -563,7 +568,7 @@ The original spreadsheet can be [downloaded here](https://egr304-2026-f-103.gith
         features on fit, feasibility and cost, and the mean score weighted
         by requirement importance determined the ranking." -->
 
-The brainstorm session was run in-person by Zice Sun and Duotao Gao, Gabriel brainstormed by himself at a different time and location. We settled on rules like no judgement
+The brainstorm session was run in-person by Zice Sun and Duotao Gao, Gabriel brainstormed by himself at a different time and location. We settled on rules like no judgement. We first jot down our ideas and not rush to consider whether they can be realized. In this way, we can come up with several solutions for the same problem. Starting from the requirements of the previous two assignments, we put forward ideas regarding grip strength mechanisms, strength measurement, and home use, and summarized them into 100 numbered functions. After that, we divided them into ten groups based on their functions to facilitate the comparison of similar solutions, while retaining the original numbers to meet the corresponding requirements. Grouping also helps us see what different approaches we have proposed for the same task. For example, the safety group includes different schemes for limiting or releasing resistance; The patient operation group included control methods with different requirements for hand movement ability. Even if the final product does not adopt all the solutions, we still retain these ideas. Putting them together for comparison gives us more options when conceiving three different product concepts.
 
 ---
 
