@@ -176,7 +176,36 @@ Tables 2 to 4 are the raw output of the brainstorm, recorded in the order the id
 | F-003 | SF-02 | Release button | Pressing a large button separates the motor from the spring, so the handle can be opened by hand |
 | F-004 | SF-02 | Return to lowest setting on power loss | If the power goes out, the mechanism moves back to its easiest setting on its own |
 | F-005 | SF-02 | Snap-off handle | A firm pull pops the grip handle off the body, freeing the hand immediately |
-| F-006 | | | |
+| F-006 | SF-01 | Mechanical end stop | A physical stop inside the housing keeps the spring from being tightened past the prescribed limit |
+| F-007 | SF-01 | Software resistance limit | The controller refuses any setting above the maximum the therapist entered |
+| F-008 | SF-01 | Automatic back-off | If the squeeze force goes over the limit, the motor eases the resistance off on its own |
+| F-009 | SF-01 | Slip clutch | A clutch slips when the load gets too high, so the extra force never reaches the hand |
+| F-010 | SF-01 | Therapist-only unlock | Raising the maximum needs the therapist's code, so the patient can only choose lower settings |
+| F-011 | SF-04 | Removable grip sleeves | Soft sleeves slide off the handles so they can be washed or replaced for each patient |
+| F-012 | SF-04 | Seamless handle | The handle has no gaps or seams, so it can be wiped clean with disinfectant |
+| F-013 | SF-04 | Antimicrobial handle material | The handle is made from a plastic that resists germ growth |
+| F-014 | SF-04 | Disposable grip covers | Single-use covers slip over the handles and are thrown away between patients |
+| F-015 | SF-04 | UV cleaning case | The storage case shines UV light on the handles while the device is put away |
+| F-016 | SW-06 | Force sensor between the handles | A sensor placed where the two handles meet measures the squeeze force directly |
+| F-017 | SW-06 | Spring compression reading | The device measures how far the spring is squeezed and turns that distance into a force |
+| F-018 | SW-06 | Air-filled squeeze bulb | The patient squeezes a sealed bulb, and the air pressure inside is turned into a force reading |
+| F-019 | SW-06 | Motor effort estimate | Force is estimated from how hard the motor has to work to hold the handle in place |
+| F-020 | SW-06 | Per-finger pressure pads | Thin pads under each finger report how hard each finger presses, as well as the total |
+| F-021 | SW-04 | Force threshold counting | A repetition is counted each time the squeeze force rises above a set level and falls back |
+| F-022 | SW-04 | Closed-handle switch | A switch clicks each time the handle is squeezed fully closed |
+| F-023 | SW-04 | Motion sensor | A motion sensor in the handle recognizes the squeeze-and-release pattern |
+| F-024 | SW-04 | Light-beam sensor | A light beam across the handle gap is broken each time the hand closes |
+| F-025 | SW-04 | Phone camera counting | A phone app watches the hand through the camera and counts each squeeze |
+| F-026 | MF-03 | Calibration weight hook | A hook lets a standard weight hang from the handle so the reading can be checked |
+| F-027 | MF-03 | Guided calibration mode | A menu mode walks the technician through an empty step and a known-weight step |
+| F-028 | MF-03 | Reference spring check | A spring of known stiffness is squeezed and the reading is compared with the force it should give |
+| F-029 | MF-03 | Calibration dock | A dock presses the handle with a known force and corrects the reading automatically |
+| F-030 | MF-03 | Automatic zero at startup | The reading resets to zero each time the device turns on with no one holding it |
+| F-031 | MF-02 | Labeled test points | Marked metal pads on the circuit board where a meter probe can be clipped on |
+| F-032 | MF-02 | Removable service cover | A panel unscrews to reach the circuit board without taking the whole device apart |
+| F-033 | MF-02 | External test connector | One plug on the outside brings out the key signals for testing |
+| F-034 | MF-02 | Live readings to a computer | The device sends its readings to a computer over a cable while it runs |
+| F-035 | MF-02 | Status lights | Small lights show whether the sensor and motor are working, visible without any tools |
 
 ### 3.2 Actuation, Mechanics and Data (Gabriel)
 
