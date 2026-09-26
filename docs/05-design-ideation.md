@@ -526,7 +526,7 @@ Once the board was full, the team rearranged the notes according to the job each
         features on fit, feasibility and cost, and the mean score weighted
         by requirement importance determined the ranking." -->
 
-The brainstorm session was run in-person by Zice Sun and Duotao Gao, Gabriel brainstormed by himself at a different time and location. We settled on rules like no judgement
+The brainstorm session was run in-person by Zice Sun and Duotao Gao, Gabriel brainstormed by himself at a different time and location. We settled on rules like no judgement. We first jot down our ideas and not rush to consider whether they can be realized. In this way, we can come up with several solutions for the same problem. Starting from the requirements of the previous two assignments, we put forward ideas regarding grip strength mechanisms, strength measurement, and home use, and summarized them into 100 numbered functions. After that, we divided them into ten groups based on their functions to facilitate the comparison of similar solutions, while retaining the original numbers to meet the corresponding requirements.
 
 ---
 
