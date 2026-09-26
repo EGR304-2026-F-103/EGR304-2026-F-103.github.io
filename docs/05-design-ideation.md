@@ -77,18 +77,8 @@ title: Ideation and Concept Generation
      HOW: restate the product in one sentence (reuse the wording of
      §1.1 Project Objective on the Requirements page so the pages agree),
      name the primary and secondary users from the stakeholder table,
-     then one sentence on what this page does.
-
-     EXAMPLE 1 (goal sentence):
-       "Team 103 is developing a prescription-based automatic resistance
-        grip trainer that measures the force a patient applies and sets
-        its own resistance to a level prescribed by a clinician."
-     EXAMPLE 2 (audience + page purpose):
-       "The primary users are physical and occupational therapists; the
-        secondary users are patients exercising at home between clinic
-        visits. This page records how the team generated about 100
-        candidate features for that device and recombined them into
-        three distinct product concepts." -->
+     then one sentence on what this page does.-->
+Our product is a hand-rehabilitation grip trainer whose resistance is set by a therapist's prescription rather than by the patient. It senses how hard the hand is squeezing and adjusts its mechanism so that each exercise is performed at the intended load. We are designing it for two groups: therapists in physical and occupational therapy, who decide the training plan and check the results, and the patients they treat, who follow that plan at home without supervision. The sections below records how the team moved from those needs to a total of about 100 ideas and then to three alternative product concepts.
 
 ## 2. Prioritization of Needs and Requirements
 
@@ -114,20 +104,8 @@ title: Ideation and Concept Generation
          meets the ~100 target exactly.
      Write 1 short paragraph explaining this in your own words, then the
      table. Say explicitly: "Yes, we used the category weights from the
-     User Needs assignment", and say what else influenced the choice.
-
-     EXAMPLE sentence 1:
-       "Rather than brainstorming on all 32 requirements equally, we
-        weighted each requirement by the mean importance of the need
-        category it traces to."
-     EXAMPLE sentence 2:
-       "Requirements that describe a process rather than a feature, such
-        as maintaining a risk file, were set aside because they do not
-        have alternative physical or software solutions."
-
-     The table below is the PROPOSED allocation and is also the division
-     of work for §3. Adjust at the team meeting; if you change a row,
-     change the matching §3 table in the same edit. -->
+     User Needs assignment", and say what else influenced the choice.-->
+Brainstorming on every requirement with equal effort would mean 100 features over 32 prompts, so the team first decided which requirements deserved the most weights and attention. We reused the importance ratings from our User Needs and Benchmarking work: a requirement took the average rating of the need category listed in its Source column, and a requirement citing two categories took the larger of the two. Two kinds of requirements were then removed from the list. Those that describe paperwork or a process, such as keeping a risk file, offer nothing to brainstorm, and pairs whose solutions would be the same, such as the two resistance-limit requirements, were combined into one prompt. That left the 20 prompts in Table 1, and asking for five features on each gave the target of 100.
 
 **Table 1. Requirements selected as brainstorm prompts, in priority order.**
 
@@ -182,11 +160,8 @@ title: Ideation and Concept Generation
        - Number features continuously F-001 to F-100 across all three
          tables so that §4 and §5 can refer to them by ID.
        - Fill this table AS CAPTURED during the session. Do not reorder or
-         prune here — sorting happens in §4.
-
-     Two example rows per table are filled in below as a model of the
-     expected level of detail. Keep them only if the team agrees they
-     belong in the brainstorm. -->
+         prune here — sorting happens in §4. -->
+Tables 2 to 4 are the raw output of the brainstorm, recorded in the order the ideas were offered. At this point the team was only collecting: nothing was judged, edited or discarded, and ideas that seemed impractical were written down with the same care as conventional ones, since an unusual idea can become the starting point of a different concept later.
 
 ### 3.1 Sensing, Measurement and Safety (Zice)
 
@@ -196,9 +171,12 @@ title: Ideation and Concept Generation
 
 | ID | Req ID | Feature | Detail |
 |---|---|---|---|
-| F-001 | SW-06 | Bar load cell + instrumentation amplifier | A strain-gauge bridge in the handle is amplified by an INA125 and filtered before the ADC, giving a continuous force reading |
-| F-002 | SW-06 | Force-sensitive resistor pads | Thin FSR pads under each finger report force per finger instead of one total, at lower cost and lower accuracy |
-| F-003 | | | |
+| F-001 | SF-02 | Quick-release cam lever | Flipping a lever on the side lets the spring go slack, so the resistance drops right away |
+| F-002 | SF-02 | Pull-out safety pin | Pulling a pin out of the handle disconnects the spring, so the handles open freely |
+| F-003 | SF-02 | Release button | Pressing a large button separates the motor from the spring, so the handle can be opened by hand |
+| F-004 | SF-02 | Return to lowest setting on power loss | If the power goes out, the mechanism moves back to its easiest setting on its own |
+| F-005 | SF-02 | Snap-off handle | A firm pull pops the grip handle off the body, freeing the hand immediately |
+| F-006 | | | |
 
 ### 3.2 Actuation, Mechanics and Data (Gabriel)
 
@@ -231,6 +209,7 @@ title: Ideation and Concept Generation
 
      Before the tables, write 2-3 sentences: what grouping axis the team
      chose and why (theme / function / user need / subsystem). -->
+Once the board was full, the team rearranged the notes according to the job each feature does in the device. Sorting this way, instead of by author, put competing ideas for the same job next to each other, which made them easier to compare. The team then ranked the features inside each group, and talking through the rankings led to a handful of new features that joined ideas from separate groups.
 
 ### 4.1 Feature Groups
 
