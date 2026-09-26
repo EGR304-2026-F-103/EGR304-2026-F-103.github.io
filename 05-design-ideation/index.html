@@ -1361,9 +1361,183 @@
 </tr>
 <tr>
 <td>F-006</td>
-<td></td>
-<td></td>
-<td></td>
+<td>SF-01</td>
+<td>Mechanical end stop</td>
+<td>A physical stop inside the housing keeps the spring from being tightened past the prescribed limit</td>
+</tr>
+<tr>
+<td>F-007</td>
+<td>SF-01</td>
+<td>Software resistance limit</td>
+<td>The controller refuses any setting above the maximum the therapist entered</td>
+</tr>
+<tr>
+<td>F-008</td>
+<td>SF-01</td>
+<td>Automatic back-off</td>
+<td>If the squeeze force goes over the limit, the motor eases the resistance off on its own</td>
+</tr>
+<tr>
+<td>F-009</td>
+<td>SF-01</td>
+<td>Slip clutch</td>
+<td>A clutch slips when the load gets too high, so the extra force never reaches the hand</td>
+</tr>
+<tr>
+<td>F-010</td>
+<td>SF-01</td>
+<td>Therapist-only unlock</td>
+<td>Raising the maximum needs the therapist's code, so the patient can only choose lower settings</td>
+</tr>
+<tr>
+<td>F-011</td>
+<td>SF-04</td>
+<td>Removable grip sleeves</td>
+<td>Soft sleeves slide off the handles so they can be washed or replaced for each patient</td>
+</tr>
+<tr>
+<td>F-012</td>
+<td>SF-04</td>
+<td>Seamless handle</td>
+<td>The handle has no gaps or seams, so it can be wiped clean with disinfectant</td>
+</tr>
+<tr>
+<td>F-013</td>
+<td>SF-04</td>
+<td>Antimicrobial handle material</td>
+<td>The handle is made from a plastic that resists germ growth</td>
+</tr>
+<tr>
+<td>F-014</td>
+<td>SF-04</td>
+<td>Disposable grip covers</td>
+<td>Single-use covers slip over the handles and are thrown away between patients</td>
+</tr>
+<tr>
+<td>F-015</td>
+<td>SF-04</td>
+<td>UV cleaning case</td>
+<td>The storage case shines UV light on the handles while the device is put away</td>
+</tr>
+<tr>
+<td>F-016</td>
+<td>SW-06</td>
+<td>Force sensor between the handles</td>
+<td>A sensor placed where the two handles meet measures the squeeze force directly</td>
+</tr>
+<tr>
+<td>F-017</td>
+<td>SW-06</td>
+<td>Spring compression reading</td>
+<td>The device measures how far the spring is squeezed and turns that distance into a force</td>
+</tr>
+<tr>
+<td>F-018</td>
+<td>SW-06</td>
+<td>Air-filled squeeze bulb</td>
+<td>The patient squeezes a sealed bulb, and the air pressure inside is turned into a force reading</td>
+</tr>
+<tr>
+<td>F-019</td>
+<td>SW-06</td>
+<td>Motor effort estimate</td>
+<td>Force is estimated from how hard the motor has to work to hold the handle in place</td>
+</tr>
+<tr>
+<td>F-020</td>
+<td>SW-06</td>
+<td>Per-finger pressure pads</td>
+<td>Thin pads under each finger report how hard each finger presses, as well as the total</td>
+</tr>
+<tr>
+<td>F-021</td>
+<td>SW-04</td>
+<td>Force threshold counting</td>
+<td>A repetition is counted each time the squeeze force rises above a set level and falls back</td>
+</tr>
+<tr>
+<td>F-022</td>
+<td>SW-04</td>
+<td>Closed-handle switch</td>
+<td>A switch clicks each time the handle is squeezed fully closed</td>
+</tr>
+<tr>
+<td>F-023</td>
+<td>SW-04</td>
+<td>Motion sensor</td>
+<td>A motion sensor in the handle recognizes the squeeze-and-release pattern</td>
+</tr>
+<tr>
+<td>F-024</td>
+<td>SW-04</td>
+<td>Light-beam sensor</td>
+<td>A light beam across the handle gap is broken each time the hand closes</td>
+</tr>
+<tr>
+<td>F-025</td>
+<td>SW-04</td>
+<td>Phone camera counting</td>
+<td>A phone app watches the hand through the camera and counts each squeeze</td>
+</tr>
+<tr>
+<td>F-026</td>
+<td>MF-03</td>
+<td>Calibration weight hook</td>
+<td>A hook lets a standard weight hang from the handle so the reading can be checked</td>
+</tr>
+<tr>
+<td>F-027</td>
+<td>MF-03</td>
+<td>Guided calibration mode</td>
+<td>A menu mode walks the technician through an empty step and a known-weight step</td>
+</tr>
+<tr>
+<td>F-028</td>
+<td>MF-03</td>
+<td>Reference spring check</td>
+<td>A spring of known stiffness is squeezed and the reading is compared with the force it should give</td>
+</tr>
+<tr>
+<td>F-029</td>
+<td>MF-03</td>
+<td>Calibration dock</td>
+<td>A dock presses the handle with a known force and corrects the reading automatically</td>
+</tr>
+<tr>
+<td>F-030</td>
+<td>MF-03</td>
+<td>Automatic zero at startup</td>
+<td>The reading resets to zero each time the device turns on with no one holding it</td>
+</tr>
+<tr>
+<td>F-031</td>
+<td>MF-02</td>
+<td>Labeled test points</td>
+<td>Marked metal pads on the circuit board where a meter probe can be clipped on</td>
+</tr>
+<tr>
+<td>F-032</td>
+<td>MF-02</td>
+<td>Removable service cover</td>
+<td>A panel unscrews to reach the circuit board without taking the whole device apart</td>
+</tr>
+<tr>
+<td>F-033</td>
+<td>MF-02</td>
+<td>External test connector</td>
+<td>One plug on the outside brings out the key signals for testing</td>
+</tr>
+<tr>
+<td>F-034</td>
+<td>MF-02</td>
+<td>Live readings to a computer</td>
+<td>The device sends its readings to a computer over a cable while it runs</td>
+</tr>
+<tr>
+<td>F-035</td>
+<td>MF-02</td>
+<td>Status lights</td>
+<td>Small lights show whether the sensor and motor are working, visible without any tools</td>
 </tr>
 </tbody>
 </table>
