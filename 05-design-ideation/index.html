@@ -1973,7 +1973,7 @@
      chose and why (theme / function / user need / subsystem). -->
 <p>Once the board was full, the team rearranged the notes according to the job each feature does in the device. Sorting this way, instead of by author, put competing ideas for the same job next to each other, which made them easier to compare. The team then ranked the features inside each group, and talking through the rankings led to a handful of new features that joined ideas from separate groups.</p>
 <h3 id="41-feature-groups">4.1 Feature Groups</h3>
-<!-- OWNER: Duotao
+<!-- OWNER: Zice Sun
      HOW:
        - Group by FUNCTION, not by who wrote the feature. If the groups
          end up identical to §3.1/3.2/3.3, the grouping step added nothing
@@ -2017,7 +2017,7 @@
 </tbody>
 </table>
 <h3 id="42-ranking-method-and-results">4.2 Ranking Method and Results</h3>
-<!-- OWNER: Gabriel
+<!-- OWNER: Zice Sun
      HOW: The assignment only says "rank and indicate the top ideas", so
      the method is the team's choice — but it must be stated and applied
      consistently. A simple, defensible method:
@@ -2035,38 +2035,221 @@
      Do NOT put all 100 scores in the main body. Show the method, then only
      the top features per group here; put the full sheet as an image or
      table in docs/Appendix/ and embed it there (not a link to a Sheet). -->
-
-<p><strong>Table 3. Highest-scoring features (full scoring sheet in the Appendix).</strong></p>
+<p>The features were ranked with the same method the team used to rate the user needs. Each rater scored every one of the 100 features on a five-point scale, where 5 marks a strong candidate for the final design and 1 marks a feature not worth pursuing as the product's form. Each score weighs three considerations together: how well the feature satisfies its prompt, whether the team could realistically build it this semester with the course hardware and tools, and its cost and complexity. The two ratings for each feature were averaged, and the features were ranked by that average, with equal averages sharing a rank.</p>
+<p>The features were rated by Zice Sun and Duotao Gao, the two members who took part in the in-person session. Gabriel could not make it to the meeting for personal reasons. The initial ratings methods, including the sheet form and formulas, were drafted with AI assistance and then reviewed and adjusted by each rater. Then, AI was used to review the result and give the summary below:</p>
+<p>Nine features received the maximum score from both raters, and 22 reached an average of 4.5 or higher; these are listed in Table 3 and cover 16 of the 20 prompts. The highest-rated features tend to reuse hardware the device already needs, namely the grip force sensor, the motor that sets the spring preload and the main controller, so they add capability without adding parts. A single force reading, for example, supports the software resistance limit (F-007), threshold-based repetition counting (F-021) and automatic zeroing (F-030). The lowest-rated features were those that would bring in a technology used nowhere else in the device, such as the air-filled squeeze bulb (F-018), the UV cleaning case (F-015) and QR-code export (F-069).</p>
+<p><strong>Table 3. Features with an average rating of 4.5 or higher.</strong></p>
 <table>
 <thead>
 <tr>
 <th>Rank</th>
 <th>ID</th>
 <th>Feature</th>
-<th>Score</th>
+<th>Req ID</th>
+<th>Average</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>1</td>
+<td>F-007</td>
+<td>Software resistance limit</td>
+<td>SF-01</td>
+<td>5.00</td>
+</tr>
+<tr>
+<td>1</td>
+<td>F-016</td>
+<td>Force sensor between the handles</td>
+<td>SW-06</td>
+<td>5.00</td>
+</tr>
+<tr>
+<td>1</td>
+<td>F-021</td>
+<td>Force threshold counting</td>
+<td>SW-04</td>
+<td>5.00</td>
+</tr>
+<tr>
+<td>1</td>
+<td>F-030</td>
+<td>Automatic zero at startup</td>
+<td>MF-03</td>
+<td>5.00</td>
+</tr>
+<tr>
+<td>1</td>
 <td>F-036</td>
 <td>Motor-driven spring preload</td>
-<td>—</td>
+<td>SW-01</td>
+<td>5.00</td>
 </tr>
 <tr>
-<td>2</td>
+<td>1</td>
+<td>F-046</td>
+<td>Enclosed moving mechanism</td>
+<td>HW-05</td>
+<td>5.00</td>
+</tr>
+<tr>
+<td>1</td>
+<td>F-057</td>
+<td>Standard off-the-shelf motor</td>
+<td>MF-05</td>
+<td>5.00</td>
+</tr>
+<tr>
+<td>1</td>
+<td>F-071</td>
+<td>Single start button</td>
+<td>UX-01</td>
+<td>5.00</td>
+</tr>
+<tr>
+<td>1</td>
+<td>F-091</td>
+<td>Large low-force key</td>
+<td>UX-04</td>
+<td>5.00</td>
+</tr>
+<tr>
+<td>10</td>
 <td>F-001</td>
-<td>Bar load cell + instrumentation amplifier</td>
-<td>—</td>
+<td>Quick-release cam lever</td>
+<td>SF-02</td>
+<td>4.50</td>
 </tr>
 <tr>
-<td>3</td>
-<td></td>
-<td></td>
-<td></td>
+<td>10</td>
+<td>F-006</td>
+<td>Mechanical end stop</td>
+<td>SF-01</td>
+<td>4.50</td>
+</tr>
+<tr>
+<td>10</td>
+<td>F-008</td>
+<td>Automatic back-off</td>
+<td>SF-01</td>
+<td>4.50</td>
+</tr>
+<tr>
+<td>10</td>
+<td>F-010</td>
+<td>Therapist-only unlock</td>
+<td>SF-01</td>
+<td>4.50</td>
+</tr>
+<tr>
+<td>10</td>
+<td>F-027</td>
+<td>Guided calibration mode</td>
+<td>MF-03</td>
+<td>4.50</td>
+</tr>
+<tr>
+<td>10</td>
+<td>F-031</td>
+<td>Labeled test points</td>
+<td>MF-02</td>
+<td>4.50</td>
+</tr>
+<tr>
+<td>10</td>
+<td>F-034</td>
+<td>Live readings to a computer</td>
+<td>MF-02</td>
+<td>4.50</td>
+</tr>
+<tr>
+<td>10</td>
+<td>F-041</td>
+<td>Sliding adjustable handle</td>
+<td>HW-01</td>
+<td>4.50</td>
+</tr>
+<tr>
+<td>10</td>
+<td>F-042</td>
+<td>Multi-position locking grip</td>
+<td>HW-01</td>
+<td>4.50</td>
+</tr>
+<tr>
+<td>10</td>
+<td>F-061</td>
+<td>EEPROM session storage</td>
+<td>SW-03</td>
+<td>4.50</td>
+</tr>
+<tr>
+<td>10</td>
+<td>F-081</td>
+<td>Peak grip strength threshold rule</td>
+<td>CU-03</td>
+<td>4.50</td>
+</tr>
+<tr>
+<td>10</td>
+<td>F-086</td>
+<td>Three-field OLED dashboard</td>
+<td>UX-03</td>
+<td>4.50</td>
+</tr>
+<tr>
+<td>10</td>
+<td>F-096</td>
+<td>Piezoelectric buzzer</td>
+<td>UX-05</td>
+<td>4.50</td>
 </tr>
 </tbody>
 </table>
+<p>The two ratings differed by two or more points for four features, listed in Table 4. As with the user-needs rating, the raters discussed each of these and recorded the agreed outcome.</p>
+<p><strong>Table 4. Features where the two ratings differed by two or more points.</strong></p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Feature</th>
+<th>Zice</th>
+<th>Duotao</th>
+<th>Resolution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F-025</td>
+<td>Phone camera counting</td>
+<td>1</td>
+<td>3</td>
+<td>Too inconsistent, removed</td>
+</tr>
+<tr>
+<td>F-053</td>
+<td>Rechargeable battery power</td>
+<td>3</td>
+<td>5</td>
+<td>Impractical with current battery technology,removed</td>
+</tr>
+<tr>
+<td>F-058</td>
+<td>Single-controller architecture</td>
+<td>2</td>
+<td>4</td>
+<td>Not sure about actual hardware yet, removed</td>
+</tr>
+<tr>
+<td>F-093</td>
+<td>Voice activation</td>
+<td>1</td>
+<td>3</td>
+<td>Pressing buttons might interfere with the exercise process, kept</td>
+</tr>
+</tbody>
+</table>
+<p>The original spreadsheet can be <a href="https://egr304-2026-f-103.github.io/docs/Feature-Ranking.xlsx">downloaded here</a>.</p>
 <h3 id="43-new-features-from-discussion">4.3 New Features from Discussion</h3>
 <!-- OWNER: Everyone; Zice records.
      WHAT: The assignment explicitly asks you to "generate new features from
@@ -2290,7 +2473,7 @@
 <!-- ![Concept C storyboard](image/ideation/concept-c.svg)
      **Figure 6. Concept C — {name}, storyboard of a home session.** -->
 
-<p>The therapist sets the patient's training resistance and target repetitions through a password-protected menu. At home, the patient swips the identity card to load the training plan and then presses the effortless large button to start the training. During training, the OLED screen displays resistance, completed times and target times. When the goal is reached, the device will remind the patient by voice. The equipment refers to the recent training results to determine the resistance setting for subsequent training and makes adjustments through a motor-driven spring mechanism. If the patient needs to release the resistance immediately, they can manually pull the quick release rod. Grouping also helps us see what different approaches we have proposed for the same task. For example, the safety group includes different schemes for limiting or releasing resistance; The patient operation group included control methods with different requirements for hand movement ability. Even if the final product does not adopt all the solutions, we still retain these ideas. Putting them together for comparison gives us more options when conceiving three different product concepts.</p>
+<p>The therapist sets the patient's training resistance and target repetitions through a password-protected menu. At home, the patient swips the identity card to load the training plan and then presses the effortless large button to start the training. During training, the OLED screen displays resistance, completed times and target times. When the goal is reached, the device will remind the patient by voice. The equipment refers to the recent training results to determine the resistance setting for subsequent training and makes adjustments through a motor-driven spring mechanism. If the patient needs to release the resistance immediately, they can manually pull the quick release rod. </p>
 <h3 id="54-concept-comparison">5.4 Concept Comparison</h3>
 <!-- OWNER: Everyone (fill after all three concepts exist)
      WHAT: Not strictly required, but it is the fastest way to show the
@@ -2361,7 +2544,7 @@
         features on fit, feasibility and cost, and the mean score weighted
         by requirement importance determined the ranking." -->
 
-<p>The brainstorm session was run in-person by Zice Sun and Duotao Gao, Gabriel brainstormed by himself at a different time and location. We settled on rules like no judgement. We first jot down our ideas and not rush to consider whether they can be realized. In this way, we can come up with several solutions for the same problem. Starting from the requirements of the previous two assignments, we put forward ideas regarding grip strength mechanisms, strength measurement, and home use, and summarized them into 100 numbered functions. After that, we divided them into ten groups based on their functions to facilitate the comparison of similar solutions, while retaining the original numbers to meet the corresponding requirements.</p>
+<p>The brainstorm session was run in-person by Zice Sun and Duotao Gao, Gabriel brainstormed by himself at a different time and location. We settled on rules like no judgement. We first jot down our ideas and not rush to consider whether they can be realized. In this way, we can come up with several solutions for the same problem. Starting from the requirements of the previous two assignments, we put forward ideas regarding grip strength mechanisms, strength measurement, and home use, and summarized them into 100 numbered functions. After that, we divided them into ten groups based on their functions to facilitate the comparison of similar solutions, while retaining the original numbers to meet the corresponding requirements. Grouping also helps us see what different approaches we have proposed for the same task. For example, the safety group includes different schemes for limiting or releasing resistance; The patient operation group included control methods with different requirements for hand movement ability. Even if the final product does not adopt all the solutions, we still retain these ideas. Putting them together for comparison gives us more options when conceiving three different product concepts.</p>
 <hr>
 <h2 id="ai-use-disclosure">AI Use Disclosure</h2>
 <!-- REQUIRED for EGR 304: full query disclosure on every submission.
@@ -2371,7 +2554,15 @@
 <p>Generative AI tools, including Claude, were used by Zice Sun to interpret the assignment requirements, propose the page structure, the prioritization method and the division of work, and provide example entries illustrating the expected format. All brainstormed features, rankings, concept designs and the process description reflect the team's own session and were reviewed by the team before submission.</p>
 <p>Full query text:</p>
 <ol>
-<li>EGR 304 team assignment: build a complete skeleton file, write clearly in English comments what each section should do and how to do it, fill 2 examples in each section, and divide the work among Zice Sun (me), Duotao Gao and Gabriel. [team repository link; assignment link]</li>
+<li>
+<p>EGR 304 team assignment: build a complete skeleton file, write clearly in English comments what each section should do and how to do it, fill 2 examples in each section, and divide the work among Zice Sun (me), Duotao Gao and Gabriel. [team repository link; assignment link]</p>
+</li>
+<li>
+<p>For 4.2, build an excel file for ranking. Raters are Zice Sun and Duotao Gao, similiar to the last team assignment</p>
+</li>
+<li>
+<p>Summarize on the result</p>
+</li>
 </ol>
 
 
