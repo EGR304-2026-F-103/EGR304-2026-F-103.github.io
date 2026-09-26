@@ -666,15 +666,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#54-concept-comparison" class="md-nav__link">
-    <span class="md-ellipsis">
-      5.4 Concept Comparison
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -971,15 +962,6 @@
   <a href="#53-concept-c-adaptive-coach-duotao" class="md-nav__link">
     <span class="md-ellipsis">
       5.3 Concept C — "Adaptive Coach" (Duotao)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#54-concept-comparison" class="md-nav__link">
-    <span class="md-ellipsis">
-      5.4 Concept Comparison
     </span>
   </a>
   
@@ -1985,34 +1967,88 @@
 
      Group names below are examples only. -->
 
-<p><strong>Table 2. Feature groups and the top-ranked features in each.</strong></p>
+<p>The 100 features were sorted into ten groups according to their function. Because several prompts ask for the same kind of function, every group combines features written for at least two different requirements, and four of the groups also combine ideas from different members. Grouping in this way let the team compare different solutions to the same job directly. Table 2 lists the groups, and the last column identifies the highest-rated feature in each group using the average ratings from Section 4.2.</p>
+<p><strong>Table 2. Feature groups and the top-rated feature(s) in each.</strong></p>
 <table>
 <thead>
 <tr>
 <th>Group</th>
 <th>Theme</th>
-<th>Feature IDs</th>
-<th>Top feature(s)</th>
+<th>Count</th>
+<th>Features</th>
+<th>Top feature(s) (average)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>G1</td>
-<td>Force sensing front end</td>
-<td>F-001, F-002, …</td>
-<td><strong>F-001</strong></td>
+<td>Resistance generation</td>
+<td>6</td>
+<td>F-036–F-040, F-057</td>
+<td><strong>F-036</strong> Motor-driven spring preload; <strong>F-057</strong> Standard off-the-shelf motor (5.00)</td>
 </tr>
 <tr>
 <td>G2</td>
-<td>Resistance mechanism</td>
-<td>F-036, F-037, …</td>
-<td><strong>F-036</strong></td>
+<td>Safety: limiting and releasing resistance</td>
+<td>11</td>
+<td>F-001–F-010, F-050</td>
+<td><strong>F-007</strong> Software resistance limit (5.00)</td>
 </tr>
 <tr>
 <td>G3</td>
-<td></td>
-<td></td>
-<td></td>
+<td>Force sensing and calibration</td>
+<td>10</td>
+<td>F-016–F-020, F-026–F-030</td>
+<td><strong>F-016</strong> Force sensor between the handles; <strong>F-030</strong> Automatic zero at startup (5.00)</td>
+</tr>
+<tr>
+<td>G4</td>
+<td>Repetition counting and session records</td>
+<td>10</td>
+<td>F-021–F-025, F-061–F-065</td>
+<td><strong>F-021</strong> Force threshold counting (5.00)</td>
+</tr>
+<tr>
+<td>G5</td>
+<td>Data export and test access</td>
+<td>10</td>
+<td>F-031–F-035, F-066–F-070</td>
+<td><strong>F-031</strong> Labeled test points; <strong>F-034</strong> Live readings to a computer (4.50)</td>
+</tr>
+<tr>
+<td>G6</td>
+<td>Prescription and progression</td>
+<td>10</td>
+<td>F-076–F-085</td>
+<td><strong>F-081</strong> Peak grip strength threshold rule (4.50)</td>
+</tr>
+<tr>
+<td>G7</td>
+<td>Patient operation</td>
+<td>10</td>
+<td>F-071–F-075, F-091–F-095</td>
+<td><strong>F-071</strong> Single start button; <strong>F-091</strong> Large low-force key (5.00)</td>
+</tr>
+<tr>
+<td>G8</td>
+<td>Training feedback and display</td>
+<td>10</td>
+<td>F-086–F-090, F-096–F-100</td>
+<td><strong>F-086</strong> Three-field OLED dashboard; <strong>F-096</strong> Piezoelectric buzzer (4.50)</td>
+</tr>
+<tr>
+<td>G9</td>
+<td>Hand contact: fit and hygiene</td>
+<td>10</td>
+<td>F-011–F-015, F-041–F-045</td>
+<td><strong>F-041</strong> Sliding adjustable handle; <strong>F-042</strong> Multi-position locking grip (4.50)</td>
+</tr>
+<tr>
+<td>G10</td>
+<td>Enclosure, portability and cost</td>
+<td>13</td>
+<td>F-046–F-049, F-051–F-056, F-058–F-060</td>
+<td><strong>F-046</strong> Enclosed moving mechanism (5.00)</td>
 </tr>
 </tbody>
 </table>
@@ -2474,47 +2510,6 @@
      **Figure 6. Concept C — {name}, storyboard of a home session.** -->
 
 <p>The therapist sets the patient's training resistance and target repetitions through a password-protected menu. At home, the patient swips the identity card to load the training plan and then presses the effortless large button to start the training. During training, the OLED screen displays resistance, completed times and target times. When the goal is reached, the device will remind the patient by voice. The equipment refers to the recent training results to determine the resistance setting for subsequent training and makes adjustments through a motor-driven spring mechanism. If the patient needs to release the resistance immediately, they can manually pull the quick release rod. </p>
-<h3 id="54-concept-comparison">5.4 Concept Comparison</h3>
-<!-- OWNER: Everyone (fill after all three concepts exist)
-     WHAT: Not strictly required, but it is the fastest way to show the
-     reviewer the three concepts really are "alternative visions", and the
-     team will need this comparison for the next assignment anyway.
-     HOW: 5-7 rows, each a top-weighted need category or key requirement.
-     Short words only (Strong / Partial / Weak, or a 1-5 score). -->
-
-<table>
-<thead>
-<tr>
-<th>Criterion</th>
-<th>Concept A</th>
-<th>Concept B</th>
-<th>Concept C</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Resistance accuracy (SW-01)</td>
-<td>Strong</td>
-<td>Partial</td>
-<td>Partial</td>
-</tr>
-<tr>
-<td>Home usability (UX-01)</td>
-<td>Partial</td>
-<td>Strong</td>
-<td>Strong</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<!-- The ratings in the two rows above are placeholders that illustrate the
-     format; set them once the concepts are finalized. -->
-
 <h2 id="6-ideation-process">6. Ideation Process</h2>
 <!-- OWNER: Zice drafts, Gabriel and Duotao review.
      WHAT: Step 5 — ONE page (single-spaced 12 pt ≈ 500-600 words). Must
