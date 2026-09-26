@@ -395,7 +395,7 @@ The two ratings differed by two or more points for four features, listed in Tabl
 | F-058 | Single-controller architecture | 2 | 4 | Not sure about actual hardware yet, removed |
 | F-093 | Voice activation | 1 | 3 | Pressing buttons might interfere with the exercise process, kept |
 
-The original spreadsheet can be [downloaded here](https://egr304-2026-f-103.github.io/docs/Feature-Ranking.xlsx).
+The original spreadsheet can be [downloaded here](https://egr304-2026-f-103.github.io/Feature-Ranking.xlsx).
 
 ### 4.3 New Features from Discussion
 
@@ -407,11 +407,19 @@ The original spreadsheet can be [downloaded here](https://egr304-2026-f-103.gith
 
      EXAMPLES (the combination logic is the point, not the exact wording): -->
 
+Comparing the top-rated features of different groups showed that several of them could share the same hardware or the same software usage. Combining them in this way produced some new features in Table 5. Each one keeps the parts count the same or lower than using its source features separately, and most join a feature from one group with a feature from another, which is a combination the per-prompt brainstorm could not produce on its own.
+
+**Table 5. New features created by combining brainstormed features.**
+
 | ID | New feature | Built from | Why it is better |
 |---|---|---|---|
-| F-N01 | One force signal, three jobs | F-001 + a rep-count idea + an overforce idea | The same load-cell reading drives the display, the repetition counter and the overforce cutoff, so no extra sensor is needed |
-| F-N02 | Card-locked prescription | F-072 + a resistance-limit idea | The patient's card carries the authorized maximum, so a home patient cannot select a level the therapist did not allow |
-| F-N03 | | | |
+| F-N01 | One force reading for limit, count and display | F-016 + F-007 + F-021 + F-086 | A single force sensor enforces the resistance limit, counts repetitions and feeds the screen, so no second sensor is needed |
+| F-N02 | Force-triggered back-off | F-016 + F-008 + F-036 | When the measured force passes the limit, the same motor that sets the resistance eases it off, so overload protection needs no extra actuator |
+| F-N03 | Card-locked prescription | F-072 + F-010 | The patient's card carries the therapist's maximum, so at home the patient can lower the resistance but never raise it past what was prescribed |
+| F-N04 | Progression with a ceiling | F-081 + F-007 + F-061 | The next session's resistance is adjusted from the stored peak force of the last one, but never above the therapist's maximum |
+| F-N05 | Safe stop on power loss | F-004 + F-065 | If power is lost, the mechanism returns to its easiest setting and the repetitions completed so far are already saved |
+| F-N06 | Calibration through the computer link | F-026 + F-027 + F-034 | A technician hangs a known weight, watches the live reading on a computer and confirms the correction in one guided step |
+| F-N07 | Grip span stored with the patient | F-042 + F-072 | The patient's card records which grip position they use, and the screen shows that position at the start of each session |
 
 ### 4.4 Brainstorm Snapshots
 
@@ -428,13 +436,19 @@ The original spreadsheet can be [downloaded here](https://egr304-2026-f-103.gith
      Format to follow (these two lines are the pattern; uncomment and
      replace the file names once the images exist):
 
-     ![Raw brainstorm board with all features before sorting](image/ideation/stage1-raw.png)
+     ![Raw brainstorming product prototype](image/05-design-ideation-pic1.jpg)
      **Figure 1. Stage 1 — all features as first captured, before sorting.**
 
      ![Features arranged into thematic groups with top features highlighted](image/ideation/stage2-grouped.png)
      **Figure 2. Stage 2 — features sorted into groups and ranked.**
 -->
 
+![Raw brainstorming product prototype](image/05-design-ideation-pic1.jpg)
+     **Figure 1. Stage 1 — all features as first captured, before sorting.
+
+![Product prototype idea collection](image/05-design-ideation-pic2.png)
+     **Figure 2. Stage 2 — features sorted into groups and ranked.
+     
 ## 5. Product Concepts
 
 <!-- WHAT: Step 4. Three concepts, each a DIFFERENT recombination of the
@@ -486,19 +500,16 @@ The original spreadsheet can be [downloaded here](https://egr304-2026-f-103.gith
 
 {1 paragraph: what the concept does and how its features satisfy the needs and requirements.}
 
-### 5.2 Concept B — {name} (Gabriel)
+### 5.2 Concept B — {Placeholder} (Gabriel)
 
 <!-- OWNER: Gabriel
      EXAMPLE direction: "Home Companion" — lightest, simplest unit for
      unsupervised home use. -->
 
-**Pitch:** {one sentence}
+**Pitch:** {Placeholder}
 
 | ID | Feature | Satisfies |
 |---|---|---|
-| F-071 | Single start button | UX-01 |
-| F-037 | Magnetorheological brake | SW-01, SF-02 |
-| | | |
 
 <!-- ![Concept B annotated sketch](image/ideation/concept-b.svg)
      **Figure 5. Concept B — {name}, with each selected feature labeled.** -->
