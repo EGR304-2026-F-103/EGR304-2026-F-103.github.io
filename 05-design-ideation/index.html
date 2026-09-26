@@ -649,9 +649,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#52-concept-b-name-gabriel" class="md-nav__link">
+  <a href="#52-concept-b-placeholder-gabriel" class="md-nav__link">
     <span class="md-ellipsis">
-      5.2 Concept B — {name} (Gabriel)
+      5.2 Concept B — {Placeholder} (Gabriel)
     </span>
   </a>
   
@@ -950,9 +950,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#52-concept-b-name-gabriel" class="md-nav__link">
+  <a href="#52-concept-b-placeholder-gabriel" class="md-nav__link">
     <span class="md-ellipsis">
-      5.2 Concept B — {name} (Gabriel)
+      5.2 Concept B — {Placeholder} (Gabriel)
     </span>
   </a>
   
@@ -2285,7 +2285,7 @@
 </tr>
 </tbody>
 </table>
-<p>The original spreadsheet can be <a href="https://egr304-2026-f-103.github.io/docs/Feature-Ranking.xlsx">downloaded here</a>.</p>
+<p>The original spreadsheet can be <a href="https://egr304-2026-f-103.github.io/Feature-Ranking.xlsx">downloaded here</a>.</p>
 <h3 id="43-new-features-from-discussion">4.3 New Features from Discussion</h3>
 <!-- OWNER: Everyone; Zice records.
      WHAT: The assignment explicitly asks you to "generate new features from
@@ -2295,6 +2295,8 @@
 
      EXAMPLES (the combination logic is the point, not the exact wording): -->
 
+<p>Comparing the top-rated features of different groups showed that several of them could share the same hardware or the same software usage. Combining them in this way produced some new features in Table 5. Each one keeps the parts count the same or lower than using its source features separately, and most join a feature from one group with a feature from another, which is a combination the per-prompt brainstorm could not produce on its own.</p>
+<p><strong>Table 5. New features created by combining brainstormed features.</strong></p>
 <table>
 <thead>
 <tr>
@@ -2307,21 +2309,45 @@
 <tbody>
 <tr>
 <td>F-N01</td>
-<td>One force signal, three jobs</td>
-<td>F-001 + a rep-count idea + an overforce idea</td>
-<td>The same load-cell reading drives the display, the repetition counter and the overforce cutoff, so no extra sensor is needed</td>
+<td>One force reading for limit, count and display</td>
+<td>F-016 + F-007 + F-021 + F-086</td>
+<td>A single force sensor enforces the resistance limit, counts repetitions and feeds the screen, so no second sensor is needed</td>
 </tr>
 <tr>
 <td>F-N02</td>
-<td>Card-locked prescription</td>
-<td>F-072 + a resistance-limit idea</td>
-<td>The patient's card carries the authorized maximum, so a home patient cannot select a level the therapist did not allow</td>
+<td>Force-triggered back-off</td>
+<td>F-016 + F-008 + F-036</td>
+<td>When the measured force passes the limit, the same motor that sets the resistance eases it off, so overload protection needs no extra actuator</td>
 </tr>
 <tr>
 <td>F-N03</td>
-<td></td>
-<td></td>
-<td></td>
+<td>Card-locked prescription</td>
+<td>F-072 + F-010</td>
+<td>The patient's card carries the therapist's maximum, so at home the patient can lower the resistance but never raise it past what was prescribed</td>
+</tr>
+<tr>
+<td>F-N04</td>
+<td>Progression with a ceiling</td>
+<td>F-081 + F-007 + F-061</td>
+<td>The next session's resistance is adjusted from the stored peak force of the last one, but never above the therapist's maximum</td>
+</tr>
+<tr>
+<td>F-N05</td>
+<td>Safe stop on power loss</td>
+<td>F-004 + F-065</td>
+<td>If power is lost, the mechanism returns to its easiest setting and the repetitions completed so far are already saved</td>
+</tr>
+<tr>
+<td>F-N06</td>
+<td>Calibration through the computer link</td>
+<td>F-026 + F-027 + F-034</td>
+<td>A technician hangs a known weight, watches the live reading on a computer and confirms the correction in one guided step</td>
+</tr>
+<tr>
+<td>F-N07</td>
+<td>Grip span stored with the patient</td>
+<td>F-042 + F-072</td>
+<td>The patient's card records which grip position they use, and the screen shows that position at the start of each session</td>
 </tr>
 </tbody>
 </table>
@@ -2339,13 +2365,17 @@
      Format to follow (these two lines are the pattern; uncomment and
      replace the file names once the images exist):
 
-     ![Raw brainstorm board with all features before sorting](image/ideation/stage1-raw.png)
+     ![Raw brainstorming product prototype](image/05-design-ideation-pic1.jpg)
      **Figure 1. Stage 1 — all features as first captured, before sorting.**
 
      ![Features arranged into thematic groups with top features highlighted](image/ideation/stage2-grouped.png)
      **Figure 2. Stage 2 — features sorted into groups and ranked.**
 -->
 
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/05-design-ideation-pic1.jpg" data-desc-position="bottom"><img alt="Raw brainstorming product prototype" src="../image/05-design-ideation-pic1.jpg"></a>
+     **Figure 1. Stage 1 — all features as first captured, before sorting.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/05-design-ideation-pic2.png" data-desc-position="bottom"><img alt="Product prototype idea collection" src="../image/05-design-ideation-pic2.png"></a>
+     **Figure 2. Stage 2 — features sorted into groups and ranked.</p>
 <h2 id="5-product-concepts">5. Product Concepts</h2>
 <!-- WHAT: Step 4. Three concepts, each a DIFFERENT recombination of the
      features — "alternative visions" for the client. Each concept needs:
@@ -2413,12 +2443,12 @@
      **Figure 4. Concept A — {name}, with each selected feature labeled.** -->
 
 <p>{1 paragraph: what the concept does and how its features satisfy the needs and requirements.}</p>
-<h3 id="52-concept-b-name-gabriel">5.2 Concept B — {name} (Gabriel)</h3>
+<h3 id="52-concept-b-placeholder-gabriel">5.2 Concept B — {Placeholder} (Gabriel)</h3>
 <!-- OWNER: Gabriel
      EXAMPLE direction: "Home Companion" — lightest, simplest unit for
      unsupervised home use. -->
 
-<p><strong>Pitch:</strong> {one sentence}</p>
+<p><strong>Pitch:</strong> {Placeholder}</p>
 <table>
 <thead>
 <tr>
@@ -2428,16 +2458,6 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>F-071</td>
-<td>Single start button</td>
-<td>UX-01</td>
-</tr>
-<tr>
-<td>F-037</td>
-<td>Magnetorheological brake</td>
-<td>SW-01, SF-02</td>
-</tr>
 <tr>
 <td></td>
 <td></td>
