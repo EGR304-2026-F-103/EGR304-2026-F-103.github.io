@@ -218,9 +218,36 @@ title: Ideation and Concept Generation
 
 | ID | Req ID | Feature | Detail |
 |---|---|---|---|
-| F-071 | UX-01 | Single start button | One large button resumes the last prescribed session, so a home patient starts in one press |
-| F-072 | UX-01 | Patient ID card tap | Tapping an NFC card loads that patient's profile and prescription with no menu navigation |
-| F-073 | | | |
+| F-071 | UX-01 | Single start button | Press a large button and you can continue the training as prescribed last time. |
+| F-072 | UX-01 | Patient ID card tap | After swiping the NFC card, the device automatically loads the patient's file and training prescription. |
+| F-073 | UX-01 | Qr coded patient card | Scan the QR code on the card to load the patient's training plan. |
+| F-074 | UX-01 | Paired mobile phone recognition | The device recognizes the paired mobile phone, and the patient can start training with one click.|
+| F-075 | UX-01 | Magnetic profile token | Insert the exclusive identification plate, select the patient file, and then press the Start button. |
+| F-076 | CU-01 | Password-protected therapist menu | After the therapist enters the password, they set the resistance and target number of repetitions for the designated patient. |
+| F-077 | CU-01 | USB prescription editor | The therapist connects the device to the computer to save the resistance and the target number of repetitions. |
+| F-078 | CU-01 | Therapist configuration Card | The authenticated NFC card transmits the parameters set by the therapist to the device. |
+| F-079 | CU-01 | Detachable setting keyboard | The therapist connects the keyboard to input the parameters. After setting them up, the keyboard is removed. |
+| F-080 | CU-01 | A key-controlled knob | The therapist unlocks the knob with a key and then adjusts the resistance and the target number of repetitions.|
+| F-081 | CU-03 | Peak grip strength threshold rule | If the measured peak grip strength differs from the set value by more than 10%, the equipment should be adjusted within the range specified by the therapist in the next training session. |
+| F-082 | CU-03 | Two-direction progression | When the grip strength is too high or too low, increase or decrease the resistance as prescribed in the next training session. |
+| F-083 | CU-03 | Patient-exclusive advanced table | Therapists preset different resistance adjustment magnitudes for different rehabilitation stages. |
+| F-084 | CU-04 | Adjust according to the training trend | Refer to the recent training results of the equipment to select a more stable adjustment range for the next training. |
+| F-085 | CU-05 | Pre-approved advanced rules | The therapist pre-approves the adjustment rules. When the measured grip strength meets the conditions, the device will automatically execute. |
+| F-086 | UX-03 | Three-field OLED dashboard | The screen is divided into three columns, simultaneously displaying resistance, completed times and target times. |
+| F-087 | UX-03 | Segmented LCD panel | Three fixed number areas make the three items of data in training always visible. |
+| F-088 | UX-03 | Large-print e-paper panel | Display three sets of data in large characters and high contrast, and update the number of times each action is completed |
+| F-089 | UX-03 | Three independent digital displays | Three named displays each show a piece of training data. |
+| F-090 | UX-03 | Color TFT information screen | The color screen delineates a fixed area and simultaneously displays three types of data. |
+| F-091 | UX-04 | Large low-force key | The patient can start or pause the training by pressing the wide button with a very small force. |
+| F-092 | UX-04 | Capacitive touch area | It can be operated by simply touching the larger sensing area, without the need to press hard. |
+| F-093 | UX-04 | vice activation  | Patients can operate by giving simple commands without pressing buttons. |
+| F-094 | UX-04 | Optional foot switch | Patients can start or stop using the foot switch without having to use the hand being trained. |
+| F-095 | UX-04 | Palm-operated rocker | The patient pushes the wide control keys with the palm of their hand, without having to use a single finger flexibly. |
+| F-096 | UX-05 | piezoelectric buzzer | When the last action is recorded, the buzzer emits a prompt sound. |
+| F-097 | UX-05 | Voice completion message  | The built-in speaker tells the patient by voice that the goal has been achieved. |
+| F-098 | UX-05 | Exclusive completion prompt tone | The device plays a sound different from other alarms to let the patient know that the training is complete. |
+| F-099 | UX-05 | Electromechanical chime | When the target number of times is reached, the small machine's electric bell makes a sound. |
+| F-100 | UX-05 | Shell sound-emitting transducer | The transducer drives the equipment housing to emit a completion prompt sound. |
 
 ## 4. Sorting, Ranking and Refinement
 
