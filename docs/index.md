@@ -20,6 +20,10 @@ Instructor: Zane Reynolds
 > * This needs to be updated to reflect a team introduction.
 > * Content should also help an unfamiliar reader navigate to areas of interest.
 
+## Report Pages
+
+- [Ideation and Concept Generation](05-design-ideation.md)
+
 ## Team Members Datasheet links
 
 | **Team Member**       | **Ind Datasheet Links**   |
