@@ -302,7 +302,7 @@ Once the board was full, the team rearranged the notes according to the job each
 
 ### 4.1 Feature Groups
 
-<!-- OWNER: Duotao
+<!-- OWNER: Zice Sun
      HOW:
        - Group by FUNCTION, not by who wrote the feature. If the groups
          end up identical to §3.1/3.2/3.3, the grouping step added nothing
@@ -324,7 +324,7 @@ Once the board was full, the team rearranged the notes according to the job each
 
 ### 4.2 Ranking Method and Results
 
-<!-- OWNER: Gabriel
+<!-- OWNER: Zice Sun
      HOW: The assignment only says "rank and indicate the top ideas", so
      the method is the team's choice — but it must be stated and applied
      consistently. A simple, defensible method:
@@ -342,14 +342,51 @@ Once the board was full, the team rearranged the notes according to the job each
      Do NOT put all 100 scores in the main body. Show the method, then only
      the top features per group here; put the full sheet as an image or
      table in docs/Appendix/ and embed it there (not a link to a Sheet). -->
+The features were ranked with the same method the team used to rate the user needs. Each rater scored every one of the 100 features on a five-point scale, where 5 marks a strong candidate for the final design and 1 marks a feature not worth pursuing as the product's form. Each score weighs three considerations together: how well the feature satisfies its prompt, whether the team could realistically build it this semester with the course hardware and tools, and its cost and complexity. The two ratings for each feature were averaged, and the features were ranked by that average, with equal averages sharing a rank.
 
-**Table 3. Highest-scoring features (full scoring sheet in the Appendix).**
+The features were rated by Zice Sun and Duotao Gao, the two members who took part in the in-person session. Gabriel could not make it to the meeting for personal reasons. The initial ratings methods, including the sheet form and formulas, were drafted with AI assistance and then reviewed and adjusted by each rater. Then, AI was used to review the result and give the summary below:
 
-| Rank | ID | Feature | Score |
-|---|---|---|---|
-| 1 | F-036 | Motor-driven spring preload | — |
-| 2 | F-001 | Bar load cell + instrumentation amplifier | — |
-| 3 | | | |
+Nine features received the maximum score from both raters, and 22 reached an average of 4.5 or higher; these are listed in Table 3 and cover 16 of the 20 prompts. The highest-rated features tend to reuse hardware the device already needs, namely the grip force sensor, the motor that sets the spring preload and the main controller, so they add capability without adding parts. A single force reading, for example, supports the software resistance limit (F-007), threshold-based repetition counting (F-021) and automatic zeroing (F-030). The lowest-rated features were those that would bring in a technology used nowhere else in the device, such as the air-filled squeeze bulb (F-018), the UV cleaning case (F-015) and QR-code export (F-069).
+
+**Table 3. Features with an average rating of 4.5 or higher.**
+
+| Rank | ID | Feature | Req ID | Average |
+|---|---|---|---|---|
+| 1 | F-007 | Software resistance limit | SF-01 | 5.00 |
+| 1 | F-016 | Force sensor between the handles | SW-06 | 5.00 |
+| 1 | F-021 | Force threshold counting | SW-04 | 5.00 |
+| 1 | F-030 | Automatic zero at startup | MF-03 | 5.00 |
+| 1 | F-036 | Motor-driven spring preload | SW-01 | 5.00 |
+| 1 | F-046 | Enclosed moving mechanism | HW-05 | 5.00 |
+| 1 | F-057 | Standard off-the-shelf motor | MF-05 | 5.00 |
+| 1 | F-071 | Single start button | UX-01 | 5.00 |
+| 1 | F-091 | Large low-force key | UX-04 | 5.00 |
+| 10 | F-001 | Quick-release cam lever | SF-02 | 4.50 |
+| 10 | F-006 | Mechanical end stop | SF-01 | 4.50 |
+| 10 | F-008 | Automatic back-off | SF-01 | 4.50 |
+| 10 | F-010 | Therapist-only unlock | SF-01 | 4.50 |
+| 10 | F-027 | Guided calibration mode | MF-03 | 4.50 |
+| 10 | F-031 | Labeled test points | MF-02 | 4.50 |
+| 10 | F-034 | Live readings to a computer | MF-02 | 4.50 |
+| 10 | F-041 | Sliding adjustable handle | HW-01 | 4.50 |
+| 10 | F-042 | Multi-position locking grip | HW-01 | 4.50 |
+| 10 | F-061 | EEPROM session storage | SW-03 | 4.50 |
+| 10 | F-081 | Peak grip strength threshold rule | CU-03 | 4.50 |
+| 10 | F-086 | Three-field OLED dashboard | UX-03 | 4.50 |
+| 10 | F-096 | Piezoelectric buzzer | UX-05 | 4.50 |
+
+The two ratings differed by two or more points for four features, listed in Table 4. As with the user-needs rating, the raters discussed each of these and recorded the agreed outcome.
+
+**Table 4. Features where the two ratings differed by two or more points.**
+
+| ID | Feature | Zice | Duotao | Resolution |
+|---|---|---|---|---|
+| F-025 | Phone camera counting | 1 | 3 | Too inconsistent, removed |
+| F-053 | Rechargeable battery power | 3 | 5 | Impractical with current battery technology,removed |
+| F-058 | Single-controller architecture | 2 | 4 | Not sure about actual hardware yet, removed |
+| F-093 | Voice activation | 1 | 3 | Pressing buttons might interfere with the exercise process, kept |
+
+The original spreadsheet can be [downloaded here](https://egr304-2026-f-103.github.io/docs/Feature-Ranking.xlsx).
 
 ### 4.3 New Features from Discussion
 
@@ -541,3 +578,7 @@ Generative AI tools, including Claude, were used by Zice Sun to interpret the as
 Full query text:
 
 1. EGR 304 team assignment: build a complete skeleton file, write clearly in English comments what each section should do and how to do it, fill 2 examples in each section, and divide the work among Zice Sun (me), Duotao Gao and Gabriel. [team repository link; assignment link]
+
+2. For 4.2, build an excel file for ranking. Raters are Zice Sun and Duotao Gao, similiar to the last team assignment
+
+3. Summarize on the result
