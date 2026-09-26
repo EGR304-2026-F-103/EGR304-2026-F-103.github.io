@@ -2371,7 +2371,7 @@
      ![Features arranged into thematic groups with top features highlighted](image/ideation/stage2-grouped.png)
      **Figure 2. Stage 2 — features sorted into groups and ranked.**
 -->
-
+<p>Figure 1 shows hand sketches made during the in-person brainstorm, before any sorting. Figure 2 shows the full feature set after it was regrouped by function and ranked; it was generated from the feature tables on this page.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/05-design-ideation-pic1.jpg" data-desc-position="bottom"><img alt="Raw brainstorming product prototype" src="../image/05-design-ideation-pic1.jpg"></a>
      **Figure 1. Stage 1 — all features as first captured, before sorting.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/05-design-ideation-pic2.png" data-desc-position="bottom"><img alt="Product prototype idea collection" src="../image/05-design-ideation-pic2.png"></a>
@@ -2412,7 +2412,8 @@
      EXAMPLE direction: "Clinic Precision" — accuracy-first unit that
      doubles as a dynamometer. Replace name and pitch with the team's. -->
 
-<p><strong>Pitch:</strong> {one sentence}</p>
+<p><strong>Pitch:</strong> A tabletop trainer for the clinic that measures grip force accurately, applies the prescribed resistance automatically, and is set up and read out from the therapist's computer over a single USB cable.</p>
+<p><strong>Table 6. Features selected for Concept A.</strong></p>
 <table>
 <thead>
 <tr>
@@ -2423,26 +2424,47 @@
 </thead>
 <tbody>
 <tr>
-<td>F-001</td>
-<td>Bar load cell + instrumentation amplifier</td>
-<td>SW-06, SW-04</td>
+<td>F-016</td>
+<td>Force sensor between the handles</td>
+<td>SW-06</td>
+</tr>
+<tr>
+<td>F-N01</td>
+<td>One force reading for limit, count and display</td>
+<td>SF-01, SW-04, UX-03</td>
 </tr>
 <tr>
 <td>F-036</td>
 <td>Motor-driven spring preload</td>
-<td>SW-01, CU-01</td>
+<td>SW-01</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
+<td>F-N02</td>
+<td>Force-triggered back-off</td>
+<td>SF-01</td>
+</tr>
+<tr>
+<td>F-077</td>
+<td>USB prescription editor</td>
+<td>CU-01</td>
+</tr>
+<tr>
+<td>F-066</td>
+<td>USB CSV export</td>
+<td>SW-05</td>
+</tr>
+<tr>
+<td>F-N06</td>
+<td>Calibration through the computer link</td>
+<td>MF-03, MF-02</td>
 </tr>
 </tbody>
 </table>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/concept-a.svg" data-desc-position="bottom"><img alt="Annotated cutaway side view of the Concept A tabletop unit and clinic computer, with a labeled box and arrow for each selected feature" src="../image/concept-a.svg"></a></p>
 <!-- ![Concept A annotated sketch](image/ideation/concept-a.svg)
      **Figure 4. Concept A — {name}, with each selected feature labeled.** -->
 
-<p>{1 paragraph: what the concept does and how its features satisfy the needs and requirements.}</p>
+<p>Concept A is built around the therapist's visit. The patient squeezes a pair of handles fitted with removable, washable sleeves (F-011), and the handle span is locked in one of several positions to suit the hand (F-042). A force sensor between the handles (F-016) measures the squeeze directly, and that single reading is used to enforce the resistance limit, count repetitions and drive the display (F-N01), which serves the measurement needs as well as the highest-weighted Resistance and Progression category. Resistance comes from a motor and lead screw that set the preload of the return spring (F-036). If the measured force passes the authorized maximum, the same motor eases the resistance off (F-N02), and a quick-release cam lever (F-001) lets the patient or therapist drop the load by hand without power, which together answer SF-01 and SF-02. The spring, screw and motor are fully enclosed (F-046). A color screen (F-090) is chosen over the smaller OLED dashboard because the therapist reads the live force curve during testing, and a buzzer marks the end of a set (F-096). Everything specific to the clinic happens over one USB cable: the therapist writes the prescription on a computer (F-077), exports session records as a CSV file (F-066) and calibrates the sensor by hanging a known weight while watching the live reading (F-N06). Compared with the home-based Concept C, this concept gives up portability in exchange for measurement accuracy and a workflow that fits the therapist's desk.</p>
 <h3 id="52-concept-b-placeholder-gabriel">5.2 Concept B — {Placeholder} (Gabriel)</h3>
 <!-- OWNER: Gabriel
      EXAMPLE direction: "Home Companion" — lightest, simplest unit for
@@ -2528,7 +2550,7 @@
 </table>
 <!-- ![Concept C storyboard](image/ideation/concept-c.svg)
      **Figure 6. Concept C — {name}, storyboard of a home session.** -->
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="file:///Users/gaoduotao/Downloads/concept_c_adaptive_coach_v2.svg" data-desc-position="bottom"><img alt="concept_c_adaptive_coach" src="file:///Users/gaoduotao/Downloads/concept_c_adaptive_coach_v2.svg"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="image/concept_c_adaptive_coach_v2.svg" data-desc-position="bottom"><img alt="concept_c_adaptive_coach" src="image/concept_c_adaptive_coach_v2.svg"></a></p>
 <p>The therapist sets the patient's training resistance and target repetitions through a password-protected menu. At home, the patient swips the identity card to load the training plan and then presses the effortless large button to start the training. During training, the OLED screen displays resistance, completed times and target times. When the goal is reached, the device will remind the patient by voice. The equipment refers to the recent training results to determine the resistance setting for subsequent training and makes adjustments through a motor-driven spring mechanism. If the patient needs to release the resistance immediately, they can manually pull the quick release rod. </p>
 <h2 id="6-ideation-process">6. Ideation Process</h2>
 <!-- OWNER: Zice drafts, Gabriel and Duotao review.
