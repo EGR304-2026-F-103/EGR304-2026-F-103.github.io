@@ -537,7 +537,7 @@ Comparing the top-rated features of different groups showed that several of them
 
 <!-- ![Concept C storyboard](image/ideation/concept-c.svg)
      **Figure 6. Concept C — {name}, storyboard of a home session.** -->
-![Annotated Concept C — Adaptive Coach](file:///Users/gaoduotao/Downloads/concept_c_adaptive_coach_v2.svg)
+![concept_c_adaptive_coach](file:///Users/gaoduotao/Downloads/concept_c_adaptive_coach_v2.svg)
 
 The therapist sets the patient's training resistance and target repetitions through a password-protected menu. At home, the patient swips the identity card to load the training plan and then presses the effortless large button to start the training. During training, the OLED screen displays resistance, completed times and target times. When the goal is reached, the device will remind the patient by voice. The equipment refers to the recent training results to determine the resistance setting for subsequent training and makes adjustments through a motor-driven spring mechanism. If the patient needs to release the resistance immediately, they can manually pull the quick release rod. 
 
