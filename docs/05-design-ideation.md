@@ -187,7 +187,40 @@ Tables 2 to 4 are the raw output of the brainstorm, recorded in the order the id
 |---|---|---|---|
 | F-036 | SW-01 | Motor-driven spring preload | A gear motor turns a lead screw that compresses the return spring, so resistance changes with spring preload |
 | F-037 | SW-01 | Magnetorheological brake | A fluid brake whose resistance changes with coil current, giving smooth resistance with no moving preload mechanism |
-| F-038 | | | |
+| F-038 | SW-01 | Motor-adjusted elastic tension | A motor changes the stretch of an elastic resistance element automatically to match the therapist's prescribed resistance |
+| F-039 | SW-01 | Servo-positioned resistance lever | A servo moves the attachment point of the resistance mechanism to automatically increase or decrease mechanical resistance |
+| F-040 | SW-01 | Electromagnetic resistance system | An electromagnet changes opposing force electronically so the controller can automatically apply the prescribed resistance level |
+| F-041 | HW-01 | Sliding adjustable handle | One grip slides along a guided track so the distance between handles can be adjusted for different hand sizes |
+| F-042 | HW-01 | Multi-position locking grip | The handle locks into several predefined positions covering a range of hand sizes |
+| F-043 | HW-01 | Threaded grip-span adjustment | A screw mechanism moves the handle inward or outward to provide fine adjustment of grip span |
+| F-044 | HW-01 | Interchangeable grip inserts | Different-sized grip inserts change the effective handle size to accommodate different users |
+| F-045 | HW-01 | Self-adjusting grip | A spring-loaded sliding grip automatically conforms to the user's hand span within its allowable range |
+| F-046 | HW-05 | Enclosed moving mechanism | A protective housing surrounds gears, springs and linkages so fingers cannot reach moving components |
+| F-047 | HW-05 | Flexible joint guards | Flexible covers close gaps around moving joints while still allowing the mechanism to move |
+| F-048 | HW-05 | Minimum-gap mechanical stops | Mechanical stops prevent moving surfaces from closing far enough to create a finger pinch point |
+| F-049 | HW-05 | Internal linkage system | Linkages and pivot points are placed inside the housing rather than near the user's hand |
+| F-050 | HW-05 | Pinch-detection cutoff | A sensor detects unexpected resistance near a moving mechanism and immediately stops its motion |
+| F-051 | HW-03 | Integrated carrying handle | A handle built into the housing allows the entire device to be carried comfortably with one hand |
+| F-052 | HW-03 | Compact tabletop enclosure | All mechanical and electronic components fit inside one compact housing that can be placed directly on a table |
+| F-053 | HW-03 | Rechargeable battery power | An internal rechargeable battery allows operation without requiring a permanent power connection |
+| F-054 | HW-03 | Foldable grip assembly | The grip mechanism folds into the housing to reduce the device's size during transportation |
+| F-055 | HW-03 | Non-slip freestanding base | Rubber feet stabilize the device during use without clamps, screws or permanent installation |
+| F-056 | MF-05 | Injection-moldable housing | The enclosure uses simple molded plastic parts suitable for inexpensive high-volume manufacturing |
+| F-057 | MF-05 | Standard off-the-shelf motor | A commonly available motor reduces cost compared with a custom actuator |
+| F-058 | MF-05 | Single-controller architecture | One microcontroller handles sensing, control and data functions to reduce electronic component count |
+| F-059 | MF-05 | Shared mechanical components | Identical fasteners, bearings and other repeated components reduce the number of unique parts required |
+| F-060 | MF-05 | Modular optional features | The base device includes essential rehabilitation functions while more expensive capabilities can be added as optional modules |
+| F-061 | SW-03 | EEPROM session storage | Session results are saved to nonvolatile EEPROM so they remain available after power is removed |
+| F-062 | SW-03 | MicroSD data storage | Each completed session is written to a removable microSD card that retains information without power |
+| F-063 | SW-03 | Flash memory autosave | The controller automatically saves session progress to internal flash memory during training |
+| F-064 | SW-03 | Backup capacitor save | Stored electrical energy gives the controller enough time to save the active session when power is suddenly lost |
+| F-065 | SW-03 | Incremental session logging | Exercise results are saved after each repetition instead of waiting until the entire session is completed |
+| F-066 | SW-05 | USB CSV export | Connecting the device by USB provides session records as standard CSV files readable by common spreadsheet programs |
+| F-067 | SW-05 | Removable microSD export | Session files are stored on a microSD card that can be inserted directly into a computer |
+| F-068 | SW-05 | USB mass-storage mode | The device appears as a standard flash drive when connected to a computer so records can be copied directly |
+| F-069 | SW-05 | QR-code session export | The display generates a QR code containing a session summary that can be scanned with a phone |
+| F-070 | SW-05 | Bluetooth standard-file transfer | The device transfers standard session files to a phone or computer using Bluetooth without requiring custom desktop software |
+
 
 ### 3.3 Interaction, Feedback and Prescription (Duotao)
 
