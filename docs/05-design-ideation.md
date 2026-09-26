@@ -218,7 +218,7 @@ Tables 2 to 4 are the raw output of the brainstorm, recorded in the order the id
 | F-090 | UX-03 | Color TFT information screen | The color screen delineates a fixed area and simultaneously displays three types of data. |
 | F-091 | UX-04 | Large low-force key | The patient can start or pause the training by pressing the wide button with a very small force. |
 | F-092 | UX-04 | Capacitive touch area | It can be operated by simply touching the larger sensing area, without the need to press hard. |
-| F-093 | UX-04 | vice activation  | Patients can operate by giving simple commands without pressing buttons. |
+| F-093 | UX-04 | voice activation  | Patients can operate by giving simple commands without pressing buttons. |
 | F-094 | UX-04 | Optional foot switch | Patients can start or stop using the foot switch without having to use the hand being trained. |
 | F-095 | UX-04 | Palm-operated rocker | The patient pushes the wide control keys with the palm of their hand, without having to use a single finger flexibly. |
 | F-096 | UX-05 | piezoelectric buzzer | When the last action is recorded, the buzzer emits a prompt sound. |
