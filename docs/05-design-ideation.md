@@ -526,7 +526,7 @@ Once the board was full, the team rearranged the notes according to the job each
         features on fit, feasibility and cost, and the mean score weighted
         by requirement importance determined the ranking." -->
 
-{Approximately one page.}
+The brainstorm session was run in-person by Zice Sun and Duotao Gao, Gabriel brainstormed by himself at a different time and location. We settled on rules like no judgement
 
 ---
 
@@ -536,8 +536,8 @@ Once the board was full, the team rearranged the notes according to the job each
      Update the description and the query list before export if more
      queries are made on this page (by anyone on the team). -->
 
-Generative AI tools, including Claude, were used by Zice Sun to interpret the assignment requirements, propose the page structure, the prioritization method and the division of work, and provide example entries illustrating the expected format. {Describe any further use.} All brainstormed features, rankings, concept designs and the process description reflect the team's own session and were reviewed by the team before submission.
+Generative AI tools, including Claude, were used by Zice Sun to interpret the assignment requirements, propose the page structure, the prioritization method and the division of work, and provide example entries illustrating the expected format. All brainstormed features, rankings, concept designs and the process description reflect the team's own session and were reviewed by the team before submission.
 
-Full query text (translated from Chinese where applicable):
+Full query text:
 
 1. EGR 304 team assignment: build a complete skeleton file, write clearly in English comments what each section should do and how to do it, fill 2 examples in each section, and divide the work among Zice Sun (me), Duotao Gao and Gabriel. [team repository link; assignment link]
