@@ -442,6 +442,7 @@ Comparing the top-rated features of different groups showed that several of them
      ![Features arranged into thematic groups with top features highlighted](image/ideation/stage2-grouped.png)
      **Figure 2. Stage 2 — features sorted into groups and ranked.**
 -->
+Figure 1 shows hand sketches made during the in-person brainstorm, before any sorting. Figure 2 shows the full feature set after it was regrouped by function and ranked; it was generated from the feature tables on this page.
 
 ![Raw brainstorming product prototype](image/05-design-ideation-pic1.jpg)
      **Figure 1. Stage 1 — all features as first captured, before sorting.
@@ -487,18 +488,26 @@ Comparing the top-rated features of different groups showed that several of them
      EXAMPLE direction: "Clinic Precision" — accuracy-first unit that
      doubles as a dynamometer. Replace name and pitch with the team's. -->
 
-**Pitch:** {one sentence}
+**Pitch:** A tabletop trainer for the clinic that measures grip force accurately, applies the prescribed resistance automatically, and is set up and read out from the therapist's computer over a single USB cable.
+
+**Table 6. Features selected for Concept A.**
 
 | ID | Feature | Satisfies |
 |---|---|---|
-| F-001 | Bar load cell + instrumentation amplifier | SW-06, SW-04 |
-| F-036 | Motor-driven spring preload | SW-01, CU-01 |
-| | | |
+| F-016 | Force sensor between the handles | SW-06 |
+| F-N01 | One force reading for limit, count and display | SF-01, SW-04, UX-03 |
+| F-036 | Motor-driven spring preload | SW-01 |
+| F-N02 | Force-triggered back-off | SF-01 |
+| F-077 | USB prescription editor | CU-01 |
+| F-066 | USB CSV export | SW-05 |
+| F-N06 | Calibration through the computer link | MF-03, MF-02 |
+
+![Annotated cutaway side view of the Concept A tabletop unit and clinic computer, with a labeled box and arrow for each selected feature](image/concept-a.svg)
 
 <!-- ![Concept A annotated sketch](image/ideation/concept-a.svg)
      **Figure 4. Concept A — {name}, with each selected feature labeled.** -->
 
-{1 paragraph: what the concept does and how its features satisfy the needs and requirements.}
+Concept A is built around the therapist's visit. The patient squeezes a pair of handles fitted with removable, washable sleeves (F-011), and the handle span is locked in one of several positions to suit the hand (F-042). A force sensor between the handles (F-016) measures the squeeze directly, and that single reading is used to enforce the resistance limit, count repetitions and drive the display (F-N01), which serves the measurement needs as well as the highest-weighted Resistance and Progression category. Resistance comes from a motor and lead screw that set the preload of the return spring (F-036). If the measured force passes the authorized maximum, the same motor eases the resistance off (F-N02), and a quick-release cam lever (F-001) lets the patient or therapist drop the load by hand without power, which together answer SF-01 and SF-02. The spring, screw and motor are fully enclosed (F-046). A color screen (F-090) is chosen over the smaller OLED dashboard because the therapist reads the live force curve during testing, and a buzzer marks the end of a set (F-096). Everything specific to the clinic happens over one USB cable: the therapist writes the prescription on a computer (F-077), exports session records as a CSV file (F-066) and calibrates the sensor by hanging a known weight while watching the live reading (F-N06). Compared with the home-based Concept C, this concept gives up portability in exchange for measurement accuracy and a workflow that fits the therapist's desk.
 
 ### 5.2 Concept B — {Placeholder} (Gabriel)
 
@@ -537,7 +546,7 @@ Comparing the top-rated features of different groups showed that several of them
 
 <!-- ![Concept C storyboard](image/ideation/concept-c.svg)
      **Figure 6. Concept C — {name}, storyboard of a home session.** -->
-![Annotated Concept C — Adaptive Coach](file:///Users/gaoduotao/Downloads/concept_c_adaptive_coach_v2.svg)
+![Annotated Concept C — Adaptive Coach](image/concept_c_adaptive_coach_v2.svg)
 
 The therapist sets the patient's training resistance and target repetitions through a password-protected menu. At home, the patient swips the identity card to load the training plan and then presses the effortless large button to start the training. During training, the OLED screen displays resistance, completed times and target times. When the goal is reached, the device will remind the patient by voice. The equipment refers to the recent training results to determine the resistance setting for subsequent training and makes adjustments through a motor-driven spring mechanism. If the patient needs to release the resistance immediately, they can manually pull the quick release rod. 
 
