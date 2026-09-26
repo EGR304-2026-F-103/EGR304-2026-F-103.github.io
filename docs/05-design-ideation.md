@@ -209,8 +209,8 @@ Tables 2 to 4 are the raw output of the brainstorm, recorded in the order the id
 | F-081 | CU-03 | Peak grip strength threshold rule | If the measured peak grip strength differs from the set value by more than 10%, the equipment should be adjusted within the range specified by the therapist in the next training session. |
 | F-082 | CU-03 | Two-direction progression | When the grip strength is too high or too low, increase or decrease the resistance as prescribed in the next training session. |
 | F-083 | CU-03 | Patient-exclusive advanced table | Therapists preset different resistance adjustment magnitudes for different rehabilitation stages. |
-| F-084 | CU-04 | Adjust according to the training trend | Refer to the recent training results of the equipment to select a more stable adjustment range for the next training. |
-| F-085 | CU-05 | Pre-approved advanced rules | The therapist pre-approves the adjustment rules. When the measured grip strength meets the conditions, the device will automatically execute. |
+| F-084 | CU-03 | Adjust according to the training trend | Refer to the recent training results of the equipment to select a more stable adjustment range for the next training. |
+| F-085 | CU-03 | Pre-approved advanced rules | The therapist pre-approves the adjustment rules. When the measured grip strength meets the conditions, the device will automatically execute. |
 | F-086 | UX-03 | Three-field OLED dashboard | The screen is divided into three columns, simultaneously displaying resistance, completed times and target times. |
 | F-087 | UX-03 | Segmented LCD panel | Three fixed number areas make the three items of data in training always visible. |
 | F-088 | UX-03 | Large-print e-paper panel | Display three sets of data in large characters and high contrast, and update the number of times each action is completed |
