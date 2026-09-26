@@ -314,13 +314,22 @@ Once the board was full, the team rearranged the notes according to the job each
 
      Group names below are examples only. -->
 
-**Table 2. Feature groups and the top-ranked features in each.**
+The 100 features were sorted into ten groups according to their function. Because several prompts ask for the same kind of function, every group combines features written for at least two different requirements, and four of the groups also combine ideas from different members. Grouping in this way let the team compare different solutions to the same job directly. Table 2 lists the groups, and the last column identifies the highest-rated feature in each group using the average ratings from Section 4.2.
 
-| Group | Theme | Feature IDs | Top feature(s) |
-|---|---|---|---|
-| G1 | Force sensing front end | F-001, F-002, … | **F-001** |
-| G2 | Resistance mechanism | F-036, F-037, … | **F-036** |
-| G3 | | | |
+**Table 2. Feature groups and the top-rated feature(s) in each.**
+
+| Group | Theme | Count | Features | Top feature(s) (average) |
+|---|---|---|---|---|
+| G1 | Resistance generation | 6 | F-036–F-040, F-057 | **F-036** Motor-driven spring preload; **F-057** Standard off-the-shelf motor (5.00) |
+| G2 | Safety: limiting and releasing resistance | 11 | F-001–F-010, F-050 | **F-007** Software resistance limit (5.00) |
+| G3 | Force sensing and calibration | 10 | F-016–F-020, F-026–F-030 | **F-016** Force sensor between the handles; **F-030** Automatic zero at startup (5.00) |
+| G4 | Repetition counting and session records | 10 | F-021–F-025, F-061–F-065 | **F-021** Force threshold counting (5.00) |
+| G5 | Data export and test access | 10 | F-031–F-035, F-066–F-070 | **F-031** Labeled test points; **F-034** Live readings to a computer (4.50) |
+| G6 | Prescription and progression | 10 | F-076–F-085 | **F-081** Peak grip strength threshold rule (4.50) |
+| G7 | Patient operation | 10 | F-071–F-075, F-091–F-095 | **F-071** Single start button; **F-091** Large low-force key (5.00) |
+| G8 | Training feedback and display | 10 | F-086–F-090, F-096–F-100 | **F-086** Three-field OLED dashboard; **F-096** Piezoelectric buzzer (4.50) |
+| G9 | Hand contact: fit and hygiene | 10 | F-011–F-015, F-041–F-045 | **F-041** Sliding adjustable handle; **F-042** Multi-position locking grip (4.50) |
+| G10 | Enclosure, portability and cost | 13 | F-046–F-049, F-051–F-056, F-058–F-060 | **F-046** Enclosed moving mechanism (5.00) |
 
 ### 4.2 Ranking Method and Results
 
@@ -519,24 +528,6 @@ The original spreadsheet can be [downloaded here](https://egr304-2026-f-103.gith
      **Figure 6. Concept C — {name}, storyboard of a home session.** -->
 
 The therapist sets the patient's training resistance and target repetitions through a password-protected menu. At home, the patient swips the identity card to load the training plan and then presses the effortless large button to start the training. During training, the OLED screen displays resistance, completed times and target times. When the goal is reached, the device will remind the patient by voice. The equipment refers to the recent training results to determine the resistance setting for subsequent training and makes adjustments through a motor-driven spring mechanism. If the patient needs to release the resistance immediately, they can manually pull the quick release rod. 
-
-### 5.4 Concept Comparison
-
-<!-- OWNER: Everyone (fill after all three concepts exist)
-     WHAT: Not strictly required, but it is the fastest way to show the
-     reviewer the three concepts really are "alternative visions", and the
-     team will need this comparison for the next assignment anyway.
-     HOW: 5-7 rows, each a top-weighted need category or key requirement.
-     Short words only (Strong / Partial / Weak, or a 1-5 score). -->
-
-| Criterion | Concept A | Concept B | Concept C |
-|---|---|---|---|
-| Resistance accuracy (SW-01) | Strong | Partial | Partial |
-| Home usability (UX-01) | Partial | Strong | Strong |
-| | | | |
-
-<!-- The ratings in the two rows above are placeholders that illustrate the
-     format; set them once the concepts are finalized. -->
 
 ## 6. Ideation Process
 
