@@ -505,7 +505,7 @@ The original spreadsheet can be [downloaded here](https://egr304-2026-f-103.gith
 
 {1 paragraph.}
 
-### 5.3 Concept C — {name} (Duotao)
+### 5.3 Concept C — "Adaptive Coach" (Duotao)
 
 <!-- OWNER: Duotao
      EXAMPLE direction: "Adaptive Coach" — motivation and automatic
