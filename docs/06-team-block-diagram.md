@@ -86,7 +86,7 @@ This page defines how the three subsystem boards of Team 103's prescription-base
 | Board | Owner | Main function | Sensor / actuator | Key ICs (Manufacturer, Part #) |
 |---|---|---|---|---|
 | Force board (center) | Zice Sun | Measures grip force, runs the session logic, relays messages between the other two boards | Sensor: load cell, [FILL: Manufacturer, Part #] | Texas Instruments INA125P; [FILL: op-amp for active low-pass filter] |
-| Motor board | Gabriel Toneser Facchin | [FILL] | [FILL] | [FILL] |
+| Motor board | Gabriel Toneser Facchin | Receives resistance setpoints. Drives the DC gear motor (lead-screw spring preload) through an H-bridge driver. Reports its state. | Actuator: DC gear motor driven bidirectionally through an H-bridge driver IC. | Microchip PIC18F57Q43; onsemi FAN8100N; gear motor manufacturer/part # TBD |
 | UI board | Duotao Gao | [FILL] | [FILL] | [FILL] |
 
 ## 3. Connection Arrangement
@@ -152,13 +152,13 @@ The editable source of Figure 1 is available as a [draw.io file](image/team-bloc
 
 | Pin | Type | Signal | Direction | Zice MCU pin | Gabriel MCU pin |
 |---|---|---|---|---|---|
-| 1 | Digital | [FILL] | [FILL] | [FILL] | [FILL] |
-| 2 | Digital | [FILL] | [FILL] | [FILL] | [FILL] |
-| 3 | Digital | [FILL] | [FILL] | [FILL] | [FILL] |
-| 4 | Digital | [FILL] | [FILL] | [FILL] | [FILL] |
-| 5 | Digital | [FILL] | [FILL] | [FILL] | [FILL] |
-| 6 | Analog | [FILL] | [FILL] | [FILL] | [FILL] |
-| 7 | Analog | [FILL] | [FILL] | [FILL] | [FILL] |
+| 1 | Digital | [FILL] | [FILL] | [FILL] | RB7 (U2RX) |
+| 2 | Digital | [FILL] | [FILL] | [FILL] | RB6 (U2TX) |
+| 3 | Digital | [FILL] | [FILL] | [FILL] | RB5 (FORCE_OK) |
+| 4 | Digital | [FILL] | [FILL] | [FILL] | --- |
+| 5 | Digital | [FILL] | [FILL] | [FILL] | --- |
+| 6 | Analog | [FILL] | [FILL] | [FILL] | RA0 (FORCE_ANA) |
+| 7 | Analog | [FILL] | [FILL] | [FILL] | --- |
 | 8 | Ground | Common ground | — | GND | GND |
 
 ## 6. Design Decisions
