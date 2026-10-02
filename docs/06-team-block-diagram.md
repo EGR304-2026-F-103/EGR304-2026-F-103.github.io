@@ -152,13 +152,13 @@ The editable source of Figure 1 is available as a [draw.io file](image/team-bloc
 
 | Pin | Type | Signal | Direction | Zice MCU pin | Gabriel MCU pin |
 |---|---|---|---|---|---|
-| 1 | Digital | [FILL] | [FILL] | [FILL] | RB7 (U2RX) |
-| 2 | Digital | [FILL] | [FILL] | [FILL] | RB6 (U2TX) |
-| 3 | Digital | [FILL] | [FILL] | [FILL] | RB5 (FORCE_OK) |
-| 4 | Digital | [FILL] | [FILL] | [FILL] | --- |
-| 5 | Digital | [FILL] | [FILL] | [FILL] | --- |
-| 6 | Analog | [FILL] | [FILL] | [FILL] | RA0 (FORCE_ANA) |
-| 7 | Analog | [FILL] | [FILL] | [FILL] | --- |
+| 1 | Digital | UART F→M | Force → Motor | [FILL] | RB7 (U2RX) |
+| 2 | Digital | UART M→F | Motor → Force | [FILL] | RB6 (U2TX) |
+| 3 | Digital | FORCE_OK | Force → Motor | [FILL] | RB5 (FORCE_OK) |
+| 4 | Digital | Spare | --- | [FILL] | --- |
+| 5 | Digital | Spare | --- | [FILL] | --- |
+| 6 | Analog | FORCE_ANA | Force → Motor | [FILL] | RA0 (FORCE_ANA) |
+| 7 | Analog | Spare | --- | [FILL] | --- |
 | 8 | Ground | Common ground | — | GND | GND |
 
 ## 6. Design Decisions
