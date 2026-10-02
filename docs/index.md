@@ -23,6 +23,7 @@ Instructor: Zane Reynolds
 ## Report Pages
 
 - [Ideation and Concept Generation](05-design-ideation.md)
+- [Block Diagram, Process Diagram, and Message Structure](06-team-block-diagram.md)
 
 ## Team Members Datasheet links
 
