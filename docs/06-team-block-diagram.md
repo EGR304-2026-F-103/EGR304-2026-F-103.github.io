@@ -87,7 +87,7 @@ This page defines how the three subsystem boards of Team 103's prescription-base
 |---|---|---|---|---|
 | Force board (center) | Zice Sun | Measures grip force, runs the session logic, relays messages between the other two boards | Sensor: load cell, [FILL: Manufacturer, Part #] | Texas Instruments INA125P; [FILL: op-amp for active low-pass filter] |
 | Motor board | Gabriel Toneser Facchin | Receives resistance setpoints. Drives the DC gear motor (lead-screw spring preload) through an H-bridge driver. Reports its state. | Actuator: DC gear motor driven bidirectionally through an H-bridge driver IC. | Microchip PIC18F57Q43; onsemi FAN8100N; gear motor manufacturer/part # TBD |
-| UI board | Duotao Gao | [FILL] | [FILL] | [FILL] |
+| UI board | Duotao Gao | Read the start/stop, up and down buttons, control the display screen, generate sound feedback, and communicate with the force sensing board | Actuator: Speaker, driven by DAC1 output after passing through a low-pass filter and an audio amplifier. | Microchip PIC18F57Q43; The manufacturers and models of the low-pass filter operational amplifier and audio amplifier are yet to be determined. |
 
 ## 3. Connection Arrangement
 
