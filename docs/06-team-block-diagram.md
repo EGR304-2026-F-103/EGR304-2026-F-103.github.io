@@ -217,16 +217,26 @@ If the motor board were lost, the system could still measure force, count repeti
 
 ## AI Use Disclosure
 
-Generative AI (Claude) was used by Zice Sun to read and summarize the assignment requirements, propose a division of work and a draft connector pin plan, generate this page's structure, write draw.io guides for each member, troubleshooting wiring errors found during the merge. The board roles and connection arrangement were chosen by the team, each member drew their own board, and the team reviewed and edited the diagram, pin assignments and text before submission.
+Generative AI (Claude) was used by Zice Sun to read and summarize the assignment requirements; propose the division of work, the daisy-chain arrangement and a draft connector pin plan for team discussion; write step-by-step draw.io guides for each member; checking the three members' draw.io files and correcting two wiring errors (a missing UI_RUN wire and a reversed UART M→F wire); suggest product names; and draft the skeleton file of this page. The board roles and connection arrangement were chosen by the team, all team members drew their own boards, Zice tidied the merged wiring by hand, and the team reviewed and edited the diagram, pin assignments and text before submission.
 
-Full query text:
+<!-- TODO before export: add Gabriel's and Duotao's AI use here (their full
+     query text), or a sentence such as "Duotao Gao and Gabriel Toneser
+     Facchin did not use generative AI for this assignment." -->
 
-1. I need to do the EGR 304 team assignment: assign tasks to the three team members, and produce the detailed steps and an overview as PDFs. If needed, create a skeleton file like before. [team repository link; assignment link]
+Full query text (Zice Sun, translated from Chinese):
+
+1. I need to do the EGR 304 team assignment: assign tasks to the three team members, and produce the detailed steps and an overview as PDFs, in a Chinese and an English version. If needed, create a skeleton file like before. [team repository link; assignment link]
 
 2. For the draw.io part, generate a detailed step-by-step PDF for each person, including which keys to press, how to place parts and a rough explanation of the principles.
 
 3. What are the individual images for?
 
-4. Give me a few product names.
+4. I received my teammates' results. [Gabriel's and Duotao's .drawio files attached] Check if there are any issues.
 
-5. I tidied up the wiring a little; the changes are already in the merged file. Check if there are any issues.
+5. Give me a few product names.
+
+6. I tidied up the wiring a little; the changes are already in the merged file. Check if there are any issues.
+
+7. Should I upload the transparent team-block-diagram.png?
+
+8. Give me examples for filling out table 2.
