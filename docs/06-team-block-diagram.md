@@ -64,7 +64,7 @@ title: Block Diagram, Process Diagram, and Message Structure
 <!-- OWNER: Zice. 3–5 sentences. What this page is, what the three
      boards are, and how to read the rest of the page. Report tone. -->
 
-This page defines how the three subsystem boards of Team 103's prescription-based grip trainer connect and communicate. Each team member designs one board around a Microchip PIC18F57Q43 Curiosity Nano, and the boards are joined by 8-wire ribbon cables that follow the class connector standard. [FILL: one or two more sentences summarizing the arrangement and pointing the reader to Figure 1 and Tables 2–3.]
+This page defines how the three subsystem boards of Team 103's prescription-based grip trainer connect and communicate. Each team member designs one board around a Microchip PIC18F57Q43 Curiosity Nano, and the boards are joined by 8-wire ribbon cables that follow the class connector standard. The force board sits in the middle of a daisy chain: it measures the grip force, runs the training session, and exchanges messages with the UI board on connector J1 and with the motor board on connector J2. Figure 1 shows the complete system, and Tables 2 and 3 map every ribbon-cable pin to a specific microcontroller pin on both ends of each link.
 
 ## 2. Subsystem Roles
 
@@ -85,8 +85,8 @@ This page defines how the three subsystem boards of Team 103's prescription-base
 
 | Board | Owner | Main function | Sensor / actuator | Key ICs (Manufacturer, Part #) |
 |---|---|---|---|---|
-| Force board (center) | Zice Sun | Measures grip force, runs the session logic, relays messages between the other two boards | Sensor: load cell, [FILL: Manufacturer, Part #] | Texas Instruments INA125P; [FILL: op-amp for active low-pass filter] |
-| Motor board | Gabriel Toneser Facchin | Receives resistance setpoints. Drives the DC gear motor (lead-screw spring preload) through an H-bridge driver. Reports its state. | Actuator: DC gear motor driven bidirectionally through an H-bridge driver IC. | Microchip PIC18F57Q43; onsemi FAN8100N; gear motor manufacturer/part # TBD |
+| Force board (center) | Zice Sun | Measures grip force, runs the session logic, relays messages between the other two boards | Sensor: load cell (bridge output amplified by an instrumentation amplifier and an active low-pass filter); load cell manufacturer/part # TBD | Microchip PIC18F57Q43; Texas Instruments INA125P; low-pass filter op-amp manufacturer/part # TBD |
+| Motor board | Gabriel Toneser Facchin | Receives resistance setpoints. Drives the DC gear motor (lead-screw spring preload) through an H-bridge driver, with home and end limit switches for position feedback. Reports its state. | Actuator: DC gear motor driven bidirectionally through an H-bridge driver IC. | Microchip PIC18F57Q43; onsemi FAN8100N; gear motor manufacturer/part # TBD |
 | UI board | Duotao Gao | Read the start/stop, up and down buttons, control the display screen, generate sound feedback, and communicate with the force sensing board | Actuator: Speaker, driven by DAC1 output after passing through a low-pass filter and an audio amplifier. | Microchip PIC18F57Q43; The manufacturers and models of the low-pass filter operational amplifier and audio amplifier are yet to be determined. |
 
 ## 3. Connection Arrangement
@@ -103,7 +103,7 @@ This page defines how the three subsystem boards of Team 103's prescription-base
        - Each link uses only 3–4 of the 7 signal pins, leaving spares
          for changes before the External Design Review. -->
 
-The boards are connected in a daisy chain, with the force board in the middle: the UI board connects to connector J1 of the force board, and the motor board connects to connector J2. [FILL: 2–3 sentences on why the team chose this arrangement.]
+The boards are connected in a daisy chain, with the force board in the middle: the UI board connects to connector J1 of the force board, and the motor board connects to connector J2. Grip force is the one quantity that both other boards need: the UI board displays it and the motor board limits resistance with it. Placing the board that measures force in the middle therefore lets each end board talk only to its neighbour, and the UI and motor boards never need a direct connection. Both links also use the same pattern of signals (UART on pins 1–2 and a dedicated safety line on pin 3), so the force board's firmware for J1 and J2 is nearly identical, and each link leaves several pins spare for changes before the External Design Review.
 
 ## 4. Team Block Diagram
 
@@ -120,7 +120,7 @@ The boards are connected in a daisy chain, with the force board in the middle: t
      readable on the live page AND in the exported PDF. -->
 
 ![Team 103 block diagram: the UI board, force board and motor board, each built around a PIC18F57Q43 Curiosity Nano, linked in a daisy chain by two 8-pin ribbon cables with every ribbon pin mapped to a microcontroller pin](image/team-block-diagram.png)
-**Figure 1. Team 103 block diagram.** [FILL: one sentence on how to read it, e.g. what the yellow highlights mean.]
+**Figure 1. Team 103 block diagram.** Arrows show signal direction, plain lines are ground, and yellow highlights mark parts whose manufacturer and part number have not been selected yet.
 
 The editable source of Figure 1 is available as a [draw.io file](image/team-block-diagram.drawio).
 
@@ -139,27 +139,29 @@ The editable source of Figure 1 is available as a [draw.io file](image/team-bloc
 
 | Pin | Type | Signal | Direction | Zice MCU pin | Duotao MCU pin |
 |---|---|---|---|---|---|
-| 1 | Digital | UART data, force board to UI board | Zice -> Duotao | [FILL: U?TX pin] | [FILL: U?RX pin] |
-| 2 | Digital | [FILL] | [FILL] | [FILL] | [FILL] |
-| 3 | Digital | [FILL] | [FILL] | [FILL] | [FILL] |
-| 4 | Digital | [FILL] | [FILL] | [FILL] | [FILL] |
-| 5 | Digital | [FILL] | [FILL] | [FILL] | [FILL] |
-| 6 | Analog | [FILL] | [FILL] | [FILL] | [FILL] |
-| 7 | Analog | [FILL] | [FILL] | [FILL] | [FILL] |
+| 1 | Digital | UART F→U | Force → UI | RC2 (U1TX) | RC3 (U1RX) |
+| 2 | Digital | UART U→F | UI → Force | RC3 (U1RX) | RC2 (U1TX) |
+| 3 | Digital | UI_RUN | UI → Force | RD0 (input) | RD0 (output) |
+| 4 | Digital | Spare (not connected) | — | — | — |
+| 5 | Digital | Spare (not connected) | — | — | — |
+| 6 | Analog | Spare (not connected) | — | — | — |
+| 7 | Analog | Spare (not connected) | — | — | — |
 | 8 | Ground | Common ground | — | GND | GND |
 
 **Table 3. Connector J2: force board (Zice) to motor board (Gabriel).**
 
 | Pin | Type | Signal | Direction | Zice MCU pin | Gabriel MCU pin |
 |---|---|---|---|---|---|
-| 1 | Digital | UART F→M | Force → Motor | [FILL] | RB7 (U2RX) |
-| 2 | Digital | UART M→F | Motor → Force | [FILL] | RB6 (U2TX) |
-| 3 | Digital | FORCE_OK | Force → Motor | [FILL] | RB5 (FORCE_OK) |
-| 4 | Digital | Spare | --- | [FILL] | --- |
-| 5 | Digital | Spare | --- | [FILL] | --- |
-| 6 | Analog | FORCE_ANA | Force → Motor | [FILL] | RA0 (FORCE_ANA) |
-| 7 | Analog | Spare | --- | [FILL] | --- |
+| 1 | Digital | UART F→M | Force → Motor | RA3 (U3TX) | RC3 (U1RX) |
+| 2 | Digital | UART M→F | Motor → Force | RA4 (U3RX) | RC2 (U1TX) |
+| 3 | Digital | FORCE_OK | Force → Motor | RD1 (output) | RB5 (input) |
+| 4 | Digital | Spare (not connected) | — | — | — |
+| 5 | Digital | Spare (not connected) | — | — | — |
+| 6 | Analog | FORCE_ANA | Force → Motor | RA2 (DAC1) | RA0 (ADC, ANA0) |
+| 7 | Analog | Spare (not connected) | — | — | — |
 | 8 | Ground | Common ground | — | GND | GND |
+
+UART pins follow the default UART1 (RC2/RC3) and UART3 (RA3/RA4) locations shown on the Curiosity Nano pinout, which keeps the debugger pins RB6/RB7 and the USB serial pins RF0/RF1 free. Both safety lines, UI_RUN and FORCE_OK, are active-high with a 10 kΩ pull-down at the receiving board, so an unplugged or broken cable reads as "stop" or "release resistance". No power is passed between boards; pin 8 only shares ground.
 
 ## 6. Design Decisions
 
@@ -174,7 +176,7 @@ The editable source of Figure 1 is available as a [draw.io file](image/team-bloc
      functionality across the team in a way that minimizes
      interconnections between teammates?" -->
 
-[FILL: one paragraph.] For example: all data passes over a single UART pair on each link, so adding a new message later changes firmware, not wiring.
+Each board owns a complete function — sensing, user interface or actuation — so only results cross the ribbon cables, never raw sensor or actuator signals. All data on a link travels over a single UART pair, so adding a new message later changes firmware rather than wiring. The only extra wire on each link is a dedicated safety line (UI_RUN or FORCE_OK) that stops the session or releases resistance without waiting for a UART message, plus one optional analog copy of the force signal for the motor board. As a result each link uses three or four of its seven signal pins, and the two end boards are never wired to each other.
 
 ### 6.2 Meeting the minimum requirements
 
@@ -184,7 +186,7 @@ The editable source of Figure 1 is available as a [draw.io file](image/team-bloc
      chips, functions and design processes, and that the team as a
      whole mixes sensing and actuation. -->
 
-[FILL: one paragraph.]
+Every board has its own 5 V regulator, PIC18F57Q43 Curiosity Nano and at least one qualifying sensor or actuator. The force board's load cell produces a millivolt-level bridge signal that needs an INA125P instrumentation amplifier and an active low-pass filter before the ADC, which matches the course's list of acceptable analog sensors. The motor board drives a DC gear motor in both directions through an FAN8100N H-bridge driver IC, an acceptable actuator. The UI board drives a speaker from its DAC through a low-pass filter and an audio amplifier, also listed as an acceptable actuator. The three subsystems use different chips and design processes and do different jobs, and together the team combines sensing with two forms of actuation.
 
 ### 6.3 Risk if a teammate is lost
 
@@ -194,14 +196,16 @@ The editable source of Figure 1 is available as a [draw.io file](image/team-bloc
      Cover all three cases, including the honest one: the center board
      is the single point of failure. Say what the team does about it. -->
 
-[FILL: one paragraph.]
+If the motor board were lost, the system could still measure force, count repetitions and display progress, and the UI board's speaker would keep actuation in the team. If the UI board were lost, the force board could send its data to a computer over the Curiosity Nano's USB serial port, and therapist settings could be entered from the computer. The force board is the single point of failure, because it holds both the sensor and the session logic. To reduce that risk, every link is fully specified on this page, so any Curiosity Nano wired to the same pins can stand in as the center board during testing. Each end board can also be tested on its own with a UART loopback jumper between pins 1 and 2, or with a computer serial terminal.
 
 ## 7. Next Steps
 
 <!-- OWNER: Zice. 2–4 bullet points. -->
 
 - Each member's individual block diagram (due 10/5) will use exactly the connector pins and microcontroller pins listed in Tables 2 and 3.
-- [FILL]
+- Each member will confirm their pins in MCC's Pin Grid View and report any conflict to the team before the schematic stage.
+- Parts still highlighted in yellow (load cell, filter op-amps, display, audio amplifier, speaker and gear motor) will be selected during component selection, and the diagram will be updated before the External Design Review.
+- The process diagram and message structure for the UART links will be added to this page with the software proposal.
 
 <!-- RESERVED — later assignments add to this page (the page title
      already names them). Leave hidden until then:
@@ -213,18 +217,16 @@ The editable source of Figure 1 is available as a [draw.io file](image/team-bloc
 
 ## AI Use Disclosure
 
-<!-- REQUIRED for EGR 304: full query disclosure on every submission.
-     Add Gabriel's and Duotao's use (or a statement that they used none)
-     and any further queries before export. -->
-
-Generative AI (Claude) was used by Zice Sun to read and summarize the assignment requirements, propose a division of work and a draft connector pin plan for team discussion, and generate this page's blank structure with one example entry per section. The board roles, connection arrangement, pin assignments, block diagram and written answers were decided and produced by the team.
+Generative AI (Claude) was used by Zice Sun to read and summarize the assignment requirements, propose a division of work and a draft connector pin plan, generate this page's structure, write draw.io guides for each member, troubleshooting wiring errors found during the merge. The board roles and connection arrangement were chosen by the team, each member drew their own board, and the team reviewed and edited the diagram, pin assignments and text before submission.
 
 Full query text:
 
-1. I need to do the EGR 304 team assignment: assign tasks to the three team members, and produce the detailed steps and an overview as PDFs, in a Chinese and an English version. If needed, create a skeleton file like before. [team repository link; assignment link]
+1. I need to do the EGR 304 team assignment: assign tasks to the three team members, and produce the detailed steps and an overview as PDFs. If needed, create a skeleton file like before. [team repository link; assignment link]
 
-2. (Answer to "Which board does each member own?") Give me the most complex board, the one that ties all the boards together, and give Gabriel the simplest one.
+2. For the draw.io part, generate a detailed step-by-step PDF for each person, including which keys to press, how to place parts and a rough explanation of the principles.
 
-3. (Answer to "How are the three boards connected?") Force board in the center, daisy chain.
+3. What are the individual images for?
 
-[FILL: Gabriel's and Duotao's AI use, or a statement that they used none.]
+4. Give me a few product names.
+
+5. I tidied up the wiring a little; the changes are already in the merged file. Check if there are any issues.
