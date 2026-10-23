@@ -87,7 +87,7 @@ This page defines how the three subsystem boards of Team 103's prescription-base
 |---|---|---|---|---|
 | Force board (center) | Zice Sun | Measures grip force, runs the session logic, relays messages between the other two boards | Sensor: Phidgets 3135_0 (CZL635-50) 50 kg load cell; bridge output amplified by an instrumentation amplifier and an RC low-pass filter | Microchip PIC18F57Q43; Texas Instruments INA125P; STMicroelectronics L7805ABV-DG |
 | Motor board | Gabriel Toneser Facchin | Receives resistance setpoints. Drives the DC gear motor (lead-screw spring preload) through an H-bridge driver, with home and end limit switches for position feedback. Reports its state. | Actuator: DFRobot FIT0492-A DC gear motor driven bidirectionally through an H-bridge driver IC; Omron D2F-01L limit switches | Microchip PIC18F57Q43; Texas Instruments DRV8871DDAR; STMicroelectronics L7805ABV-DG |
-| UI board | Duotao Gao | Reads the Start/Stop, Up and Down buttons, drives the display, generates sound feedback, and communicates with the force sensing board | Actuator: Same Sky CMS-3652-28L200 speaker, driven by the DAC1 output through a low-pass filter and an audio amplifier | Microchip PIC18F57Q43; Microchip MCP6004-I/P (filter); Texas Instruments LM386N-1; Newhaven NHD-0216K1Z-FSW-FBW-L LCD; STMicroelectronics L7805ABV-DG |
+| UI board | Duotao Gao | Reads the Start/Stop, Up and Down buttons, drives the display, generates sound feedback, and communicates with the force sensing board | Actuator: Same Sky CMS-3652-28L200 speaker, driven by the DAC1 output through a single op-amp inverting amplifier | Microchip PIC18F57Q43; Microchip MCP6004-I/P (amplifier); Newhaven NHD-0216K1Z-FSW-FBW-L LCD; STMicroelectronics L7805ABV-DG |
 
 ## 3. Connection Arrangement
 
@@ -186,7 +186,7 @@ Each board owns a complete function — sensing, user interface or actuation —
      chips, functions and design processes, and that the team as a
      whole mixes sensing and actuation. -->
 
-Every board has its own 5 V regulator, PIC18F57Q43 Curiosity Nano and at least one qualifying sensor or actuator. The force board's load cell produces a millivolt-level bridge signal that needs an INA125P instrumentation amplifier and a low-pass filter before the ADC, which matches the course's list of acceptable analog sensors. The motor board drives a DC gear motor in both directions through a DRV8871 H-bridge driver IC, an acceptable actuator. The UI board drives a speaker from its DAC through a low-pass filter and an audio amplifier, also listed as an acceptable actuator. The three subsystems use different chips and design processes and do different jobs, and together the team combines sensing with two forms of actuation.
+Every board has its own 5 V regulator, PIC18F57Q43 Curiosity Nano and at least one qualifying sensor or actuator. The force board's load cell produces a millivolt-level bridge signal that needs an INA125P instrumentation amplifier and a low-pass filter before the ADC, which matches the course's list of acceptable analog sensors. The motor board drives a DC gear motor in both directions through a DRV8871 H-bridge driver IC, an acceptable actuator. The UI board drives a speaker from its DAC through an op-amp amplifier stage; on the instructor's advice this is a single MCP6004 stage, with no separate buffer, low-pass filter or power amplifier. The three subsystems use different chips and design processes and do different jobs, and together the team combines sensing with two forms of actuation.
 
 ### 6.3 Risk if a teammate is lost
 
@@ -209,7 +209,7 @@ We structured the diagram around one rule: each board owns one complete function
 <!-- OWNER: Zice. 2–4 bullet points. -->
 
 - All parts that were highlighted in yellow in the first version (load cell, filter op amps, display, audio amplifier, speaker, gear motor and H-bridge driver) were selected during component selection, and Figure 1 and Table 1 now show the selected parts.
-- Following instructor feedback, the force board's active (op-amp) filter and buffers were replaced by an INA125P on its own followed by an RC low-pass filter, and the motor board's FAN8100N was replaced by the DRV8871, which sets a hardware current limit with one resistor.
+- Following instructor feedback, each board was simplified. The force board's active (op-amp) filter and buffers were replaced by an INA125P on its own followed by an RC low-pass filter. The UI board's Sallen-Key filter and LM386 power amplifier were replaced by a single MCP6004 inverting amplifier. The motor board's FAN8100N was replaced by the DRV8871, which sets a hardware current limit with one resistor.
 - The process diagrams and the message structure for the UART links are on the [Software Proposal](07-Software%20Proposal.md) page.
 - Next, each member lays out their PCB from the schematic, keeping the connector pin order in Tables 2 and 3.
 
