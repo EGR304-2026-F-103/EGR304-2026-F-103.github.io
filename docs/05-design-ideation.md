@@ -445,10 +445,10 @@ Comparing the top-rated features of different groups showed that several of them
 Figure 1 shows hand sketches made during the in-person brainstorm, before any sorting. Figure 2 shows the full feature set after it was regrouped by function and ranked; it was generated from the feature tables on this page.
 
 ![Raw brainstorming product prototype](image/05-design-ideation-pic1.jpg)
-     **Figure 1. Stage 1 — all features as first captured, before sorting.
+**Figure 1. Stage 1 — all features as first captured, before sorting.**
 
 ![Product prototype idea collection](image/05-design-ideation-pic2.png)
-     **Figure 2. Stage 2 — features sorted into groups and ranked.
+**Figure 2. Stage 2 — features sorted into groups and ranked.**
      
 ## 5. Product Concepts
 
@@ -482,7 +482,7 @@ Figure 1 shows hand sketches made during the in-person brainstorm, before any so
      Suggested tools: Inkscape, Figma, Affinity Designer, PowerPoint
      shapes exported as SVG, Onshape/Fusion render + vector labels. -->
 
-### 5.1 Concept A — {name} (Zice)
+### 5.1 Concept A — "Clinic Precision" (Zice)
 
 <!-- OWNER: Zice
      EXAMPLE direction: "Clinic Precision" — accuracy-first unit that
@@ -503,27 +503,42 @@ Figure 1 shows hand sketches made during the in-person brainstorm, before any so
 | F-N06 | Calibration through the computer link | MF-03, MF-02 |
 
 ![Annotated cutaway side view of the Concept A tabletop unit and clinic computer, with a labeled box and arrow for each selected feature](image/concept-a.svg)
+**Figure 3. Concept A — "Clinic Precision", with each selected feature labeled.**
 
 <!-- ![Concept A annotated sketch](image/ideation/concept-a.svg)
      **Figure 4. Concept A — {name}, with each selected feature labeled.** -->
 
 Concept A is built around the therapist's visit. The patient squeezes a pair of handles fitted with removable, washable sleeves (F-011), and the handle span is locked in one of several positions to suit the hand (F-042). A force sensor between the handles (F-016) measures the squeeze directly, and that single reading is used to enforce the resistance limit, count repetitions and drive the display (F-N01), which serves the measurement needs as well as the highest-weighted Resistance and Progression category. Resistance comes from a motor and lead screw that set the preload of the return spring (F-036). If the measured force passes the authorized maximum, the same motor eases the resistance off (F-N02), and a quick-release cam lever (F-001) lets the patient or therapist drop the load by hand without power, which together answer SF-01 and SF-02. The spring, screw and motor are fully enclosed (F-046). A color screen (F-090) is chosen over the smaller OLED dashboard because the therapist reads the live force curve during testing, and a buzzer marks the end of a set (F-096). Everything specific to the clinic happens over one USB cable: the therapist writes the prescription on a computer (F-077), exports session records as a CSV file (F-066) and calibrates the sensor by hanging a known weight while watching the live reading (F-N06). Compared with the home-based Concept C, this concept gives up portability in exchange for measurement accuracy and a workflow that fits the therapist's desk.
 
-### 5.2 Concept B — {Placeholder} (Gabriel)
+### 5.2 Concept B — "Carry-Home Trainer" (Gabriel)
 
-<!-- OWNER: Gabriel
-     EXAMPLE direction: "Home Companion" — lightest, simplest unit for
-     unsupervised home use. -->
+<!-- OWNER: Gabriel. DRAFT written from Gabriel's §3.2 features so the
+     page is complete for the EDR — Gabriel: edit the wording and the
+     feature list so it is your concept, then add the figure:
+       TODO: annotated vector sketch (draw.io / Inkscape / CAD render),
+       every feature in the table labeled with a text box + arrow,
+       saved as docs/image/concept-b.svg (or .png), then uncomment the
+       two lines below and renumber nothing (it is Figure 4). -->
 
-**Pitch:** {Placeholder}
+**Pitch:** A light, self-contained trainer the patient carries home and sets on any table: one press starts the prescribed set, the device remembers every session, and the therapist reads the results at the next visit by scanning a code on the screen.
+
+**Table 7. Features selected for Concept B.**
 
 | ID | Feature | Satisfies |
 |---|---|---|
+| F-052 | Compact tabletop enclosure | HW-03 |
+| F-051 | Integrated carrying handle | HW-03 |
+| F-055 | Non-slip freestanding base | HW-03 |
+| F-045 | Self-adjusting grip | HW-01 |
+| F-038 | Motor-adjusted elastic tension | SW-01 |
+| F-071 | Single start button | UX-01 |
+| F-061 | EEPROM session storage | SW-03 |
+| F-069 | QR-code session export | SW-05 |
 
-<!-- ![Concept B annotated sketch](image/ideation/concept-b.svg)
-     **Figure 5. Concept B — {name}, with each selected feature labeled.** -->
+<!-- ![Concept B annotated sketch](image/concept-b.svg)
+**Figure 4. Concept B — "Carry-Home Trainer", with each selected feature labeled.** -->
 
-{1 paragraph.}
+Concept B is built around portability and the simplest possible home routine. Everything fits in one compact housing (F-052) with a built-in carrying handle (F-051) and rubber feet (F-055), so the patient can take it home and use it on any table without clamps or setup, which answers HW-03. A spring-loaded sliding grip conforms to the hand on its own (F-045), so there is no span to set. Resistance comes from a motor that changes the stretch of an elastic element (F-038), and the patient starts the prescribed set with a single large button (F-071). Every completed set is saved in non-volatile memory (F-061), and at the next visit the screen shows a QR code with the session summary that the therapist scans with a phone (F-069), so no computer or custom software is needed. Compared with Concept A, it gives up the clinic computer link and fine measurement for the lowest weight and the fewest steps at home.
 
 ### 5.3 Concept C — "Adaptive Coach" (Duotao)
 
@@ -547,8 +562,20 @@ Concept A is built around the therapist's visit. The patient squeezes a pair of 
 <!-- ![Concept C storyboard](image/ideation/concept-c.svg)
      **Figure 6. Concept C — {name}, storyboard of a home session.** -->
 ![concept_c_adaptive_coach](image/concept_c_5_3.png)
+**Figure 5. Concept C — "Adaptive Coach", storyboard of a home session.**
 
 The therapist sets the patient's training resistance and target repetitions through a password-protected menu. At home, the patient swips the identity card to load the training plan and then presses the effortless large button to start the training. During training, the OLED screen displays resistance, completed times and target times. When the goal is reached, the device will remind the patient by voice. The equipment refers to the recent training results to determine the resistance setting for subsequent training and makes adjustments through a motor-driven spring mechanism. If the patient needs to release the resistance immediately, they can manually pull the quick release rod. 
+
+### 5.4 Final Design Concept and How We Chose It
+
+<!-- NEW for the EDR: decision process + how the final design deviates
+     from the three concepts. Duotao presents this section. -->
+
+We did not pick one concept as it was. We met as a team, put the three concepts side by side, and checked each feature against two questions: does it serve a "Must" requirement, and can three people build it this semester on three boards with a $60 parts budget each? Features that passed both questions were combined into one design, which we named **GripRx**.
+
+From **Concept A** we kept the core that every concept shared and that the requirements depend on: one force sensor whose reading enforces the force limit, counts repetitions and drives the display (F-016, F-N01), a motor and lead screw that set the spring preload (F-036), and the automatic back-off when the force passes the limit (F-N02). Concepts A and C both had a quick-release lever that drops the load by hand without power (F-001), and we kept it because SF-02 requires it. From **Concept C** we kept what makes the device usable at home: a simple screen showing resistance and repetitions, large low-force buttons (F-091) and a sound at the end of a set. From **Concept B** we kept the compact, freestanding enclosure (F-052, F-055) and the single press to start a prescribed set (F-071).
+
+The final design deviates from the concepts in four places, each for a stated reason. The color screen, USB records and patient ID cards were dropped because they would not fit one semester, and the QR export needs a graphic display. The OLED dashboard became a 16 × 2 character LCD, which still shows force, level and repetitions at once (UX-03) and uses parts the team can test on a breadboard. The buzzer became a speaker driven by the DAC through a filter and an audio amplifier, so the UI board meets the course's actuator requirement. Finally, because the course requires one board per team member, the electronics were split into three boards linked by ribbon cables, as described on the [block diagram page](06-team-block-diagram.md).
 
 ## 6. Ideation Process
 

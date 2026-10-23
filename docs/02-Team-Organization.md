@@ -40,7 +40,7 @@ documented in [Appendix: Team Organization](Appendix/App-Team-Org.md).
 
 ## Product Mission Statement
 
-> "Our mission is to create a reliable, intuitive, and useful embedded-system product that helps activities related to rehabilitation or specific trainings."
+> "Our mission is to help people recovering hand strength train safely at home, with a grip trainer that applies exactly the resistance their therapist prescribes and measures every repetition."
 
 <!--
 2-4 sentences of supporting context. Things worth covering:
@@ -54,4 +54,4 @@ documented in [Appendix: Team Organization](Appendix/App-Team-Org.md).
   - What would have to be true for the product to be fulfilling this mission.
 -->
 
-At this early stage, the team is working with the assumption that the final product will be an embedded-system-centered physical device that helps with excercising/rehabilitation. It will be about handheld size and easy to use, mainly targeting athelets/rehabilitation professionals.
+When the team first wrote this statement, we only knew the product would be an embedded, hand-sized device for exercise or rehabilitation. After the user needs and ideation work, the direction became GripRx, a prescription-based grip trainer, so the mission now names the users (patients training at home, guided by their therapists) and the two things the product must do for them: apply the prescribed resistance and measure the result. The statement describes why the product should exist; the charter above describes what the team itself is here to achieve.
