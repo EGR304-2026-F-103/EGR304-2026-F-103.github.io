@@ -620,6 +620,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#64-how-the-block-diagram-meets-the-product-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.4 How the block diagram meets the product requirements
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -835,6 +844,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#64-how-the-block-diagram-meets-the-product-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.4 How the block diagram meets the product requirements
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -972,22 +990,22 @@
 <td>Force board (center)</td>
 <td>Zice Sun</td>
 <td>Measures grip force, runs the session logic, relays messages between the other two boards</td>
-<td>Sensor: load cell (bridge output amplified by an instrumentation amplifier and an active low-pass filter); load cell manufacturer/part # TBD</td>
-<td>Microchip PIC18F57Q43; Texas Instruments INA125P; low-pass filter op-amp manufacturer/part # TBD</td>
+<td>Sensor: Phidgets 3135_0 (CZL635-50) 50 kg load cell; bridge output amplified by an instrumentation amplifier and an RC low-pass filter</td>
+<td>Microchip PIC18F57Q43; Texas Instruments INA125P; STMicroelectronics L7805ABV-DG</td>
 </tr>
 <tr>
 <td>Motor board</td>
 <td>Gabriel Toneser Facchin</td>
 <td>Receives resistance setpoints. Drives the DC gear motor (lead-screw spring preload) through an H-bridge driver, with home and end limit switches for position feedback. Reports its state.</td>
-<td>Actuator: DC gear motor driven bidirectionally through an H-bridge driver IC.</td>
-<td>Microchip PIC18F57Q43; onsemi FAN8100N; gear motor manufacturer/part # TBD</td>
+<td>Actuator: DFRobot FIT0492-A DC gear motor driven bidirectionally through an H-bridge driver IC; Omron D2F-01L limit switches</td>
+<td>Microchip PIC18F57Q43; Texas Instruments DRV8871DDAR; STMicroelectronics L7805ABV-DG</td>
 </tr>
 <tr>
 <td>UI board</td>
 <td>Duotao Gao</td>
-<td>Read the start/stop, up and down buttons, control the display screen, generate sound feedback, and communicate with the force sensing board</td>
-<td>Actuator: Speaker, driven by DAC1 output after passing through a low-pass filter and an audio amplifier.</td>
-<td>Microchip PIC18F57Q43; The manufacturers and models of the low-pass filter operational amplifier and audio amplifier are yet to be determined.</td>
+<td>Reads the Start/Stop, Up and Down buttons, drives the display, generates sound feedback, and communicates with the force sensing board</td>
+<td>Actuator: Same Sky CMS-3652-28L200 speaker, driven by the DAC1 output through a low-pass filter and an audio amplifier</td>
+<td>Microchip PIC18F57Q43; Microchip MCP6004-I/P (filter); Texas Instruments LM386N-1; Newhaven NHD-0216K1Z-FSW-FBW-L LCD; STMicroelectronics L7805ABV-DG</td>
 </tr>
 </tbody>
 </table>
@@ -1019,8 +1037,8 @@
      readable on the live page AND in the exported PDF. -->
 
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/team-block-diagram.png" data-desc-position="bottom"><img alt="Team 103 block diagram: the UI board, force board and motor board, each built around a PIC18F57Q43 Curiosity Nano, linked in a daisy chain by two 8-pin ribbon cables with every ribbon pin mapped to a microcontroller pin" src="../image/team-block-diagram.png"></a>
-<strong>Figure 1. Team 103 block diagram.</strong> Arrows show signal direction, plain lines are ground, and yellow highlights mark parts whose manufacturer and part number have not been selected yet.</p>
-<p>The editable source of Figure 1 is available as a <a href="../image/team-block-diagram.drawio">draw.io file</a>.</p>
+<strong>Figure 1. Team 103 block diagram.</strong> Arrows show signal direction and plain lines are ground. Every IC shows its manufacturer and part number; no part is still unselected.</p>
+<p>The editable source of Figure 1 is available as a <a href="../image/team-block-diagram.drawio">draw.io file</a>, and the source and image files together as a <a href="../image/team-block-diagram-source.zip">zip archive</a>.</p>
 <h2 id="5-ribbon-cable-pin-assignments">5. Ribbon Cable Pin Assignments</h2>
 <!-- OWNER: Zice fills the Signal / Direction / Zice-pin columns;
      Duotao fills his pin column in Table 2, Gabriel in Table 3.
@@ -1209,7 +1227,7 @@
      chips, functions and design processes, and that the team as a
      whole mixes sensing and actuation. -->
 
-<p>Every board has its own 5 V regulator, PIC18F57Q43 Curiosity Nano and at least one qualifying sensor or actuator. The force board's load cell produces a millivolt-level bridge signal that needs an INA125P instrumentation amplifier and an active low-pass filter before the ADC, which matches the course's list of acceptable analog sensors. The motor board drives a DC gear motor in both directions through an FAN8100N H-bridge driver IC, an acceptable actuator. The UI board drives a speaker from its DAC through a low-pass filter and an audio amplifier, also listed as an acceptable actuator. The three subsystems use different chips and design processes and do different jobs, and together the team combines sensing with two forms of actuation.</p>
+<p>Every board has its own 5 V regulator, PIC18F57Q43 Curiosity Nano and at least one qualifying sensor or actuator. The force board's load cell produces a millivolt-level bridge signal that needs an INA125P instrumentation amplifier and a low-pass filter before the ADC, which matches the course's list of acceptable analog sensors. The motor board drives a DC gear motor in both directions through a DRV8871 H-bridge driver IC, an acceptable actuator. The UI board drives a speaker from its DAC through a low-pass filter and an audio amplifier, also listed as an acceptable actuator. The three subsystems use different chips and design processes and do different jobs, and together the team combines sensing with two forms of actuation.</p>
 <h3 id="63-risk-if-a-teammate-is-lost">6.3 Risk if a teammate is lost</h3>
 <!-- Question: "What are the risks to your system if you lose a
      teammate? How can you de-risk your system design by grouping and/or
@@ -1218,20 +1236,21 @@
      is the single point of failure. Say what the team does about it. -->
 
 <p>If the motor board were lost, the system could still measure force, count repetitions and display progress, and the UI board's speaker would keep actuation in the team. If the UI board were lost, the force board could send its data to a computer over the Curiosity Nano's USB serial port, and therapist settings could be entered from the computer. The force board is the single point of failure, because it holds both the sensor and the session logic. To reduce that risk, every link is fully specified on this page, so any Curiosity Nano wired to the same pins can stand in as the center board during testing. Each end board can also be tested on its own with a UART loopback jumper between pins 1 and 2, or with a computer serial terminal.</p>
+<h3 id="64-how-the-block-diagram-meets-the-product-requirements">6.4 How the block diagram meets the product requirements</h3>
+<!-- NEW for the EDR. -->
+
+<p>We structured the diagram around one rule: each board owns one complete function, and only results travel between boards. That rule decided the layout. The force board is in the center because grip force is the input to most of our "Must" requirements: it enforces the force limit (SF-01, SW-02), counts repetitions (SW-04) and feeds the live display (UX-02, UX-03). The motor board turns the prescribed level into spring preload (SW-01) and has its own limit switches, so the mechanism can never be driven past either end. The UI board holds everything the patient touches (UX-01, UX-04, UX-05). Two requirements shaped the wiring itself. SF-01 asks for release within 500 ms, so the release path is a dedicated hardware line (FORCE_OK, with UI_RUN feeding it) rather than a UART message that could be lost. MF-01 and MF-02 ask for independent testing and test access, so every board has its own power input and regulator, and every link is a plain UART that a computer terminal can stand in for.</p>
 <h2 id="7-next-steps">7. Next Steps</h2>
 <!-- OWNER: Zice. 2–4 bullet points. -->
 
 <ul>
-<li>Each member's individual block diagram (due 10/5) will use exactly the connector pins and microcontroller pins listed in Tables 2 and 3.</li>
-<li>Each member will confirm their pins in MCC's Pin Grid View and report any conflict to the team before the schematic stage.</li>
-<li>Parts still highlighted in yellow (load cell, filter op-amps, display, audio amplifier, speaker and gear motor) will be selected during component selection, and the diagram will be updated before the External Design Review.</li>
-<li>The process diagram and message structure for the UART links will be added to this page with the software proposal.</li>
+<li>All parts that were highlighted in yellow in the first version (load cell, filter op amps, display, audio amplifier, speaker, gear motor and H-bridge driver) were selected during component selection, and Figure 1 and Table 1 now show the selected parts.</li>
+<li>Following instructor feedback, the force board's active (op-amp) filter and buffers were replaced by an INA125P on its own followed by an RC low-pass filter, and the motor board's FAN8100N was replaced by the DRV8871, which sets a hardware current limit with one resistor.</li>
+<li>The process diagrams and the message structure for the UART links are on the <a href="../07-Software%20Proposal/">Software Proposal</a> page.</li>
+<li>Next, each member lays out their PCB from the schematic, keeping the connector pin order in Tables 2 and 3.</li>
 </ul>
-<!-- RESERVED — later assignments add to this page (the page title
-     already names them). Leave hidden until then:
-## Process Diagram
-## Message Structure
--->
+<!-- The process diagrams and message structure live on the
+     Software Proposal page (07-Software Proposal.md). -->
 
 <hr>
 <h2 id="ai-use-disclosure">AI Use Disclosure</h2>

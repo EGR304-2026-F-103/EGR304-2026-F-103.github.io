@@ -91,13 +91,13 @@
         <mxCell id="force-J2-p8" parent="force-J2-grp" style="rounded=0;whiteSpace=wrap;html=1;" value="8" vertex="1">
           <mxGeometry height="20" width="20" x="140" as="geometry" />
         </mxCell>
-        <mxCell id="zs-loadcell" parent="board-force" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=11;" value="&lt;div&gt;&lt;b&gt;Load Cell (sensor)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 102);&quot;&gt;Manufacturer&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 102);&quot;&gt;Part #&lt;/span&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="zs-loadcell" parent="board-force" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=11;" value="&lt;div&gt;&lt;b&gt;Load Cell (sensor)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Phidgets&lt;/div&gt;&lt;div&gt;3135_0 (CZL635-50)&lt;/div&gt;" vertex="1">
           <mxGeometry height="46" width="130" x="20" y="60" as="geometry" />
         </mxCell>
         <mxCell id="zs-ina" parent="board-force" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=11;" value="&lt;div&gt;&lt;b&gt;Instrumentation Amp&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Texas Instruments&lt;/div&gt;&lt;div&gt;INA125P&lt;/div&gt;" vertex="1">
           <mxGeometry height="46" width="130" x="20" y="128" as="geometry" />
         </mxCell>
-        <mxCell id="zs-lpf" parent="board-force" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=11;" value="&lt;div&gt;&lt;b&gt;Active Low-Pass Filter&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 102);&quot;&gt;Manufacturer&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 102);&quot;&gt;Part #&lt;/span&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="zs-lpf" parent="board-force" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=11;" value="&lt;div&gt;&lt;b&gt;RC Low-Pass Filter&lt;/b&gt;&lt;/div&gt;&lt;div&gt;3.3 kΩ + 4.7 µF&lt;/div&gt;&lt;div&gt;(fc ≈ 10 Hz)&lt;/div&gt;" vertex="1">
           <mxGeometry height="46" width="130" x="20" y="196" as="geometry" />
         </mxCell>
         <mxCell id="zs-adc" connectable="0" parent="board-force" style="group" value="" vertex="1">
@@ -423,7 +423,7 @@
         <mxCell id="ILOQDE0bCbjp8sYh5ZDV-152" edge="1" parent="board-ui" source="ILOQDE0bCbjp8sYh5ZDV-109" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.031;entryY=0.667;entryDx=0;entryDy=0;entryPerimeter=0;" target="ILOQDE0bCbjp8sYh5ZDV-81">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ILOQDE0bCbjp8sYh5ZDV-154" parent="board-ui" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Display&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 102);&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Manufacturer&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 102);&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Part #&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="ILOQDE0bCbjp8sYh5ZDV-154" parent="board-ui" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Display&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Newhaven&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;NHD-0216K1Z-FSW-FBW-L&lt;/font&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="45" width="70" x="100" y="107.5" as="geometry" />
         </mxCell>
         <mxCell id="ILOQDE0bCbjp8sYh5ZDV-160" edge="1" parent="board-ui" source="ILOQDE0bCbjp8sYh5ZDV-158" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ILOQDE0bCbjp8sYh5ZDV-156">
@@ -436,10 +436,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ILOQDE0bCbjp8sYh5ZDV-158" parent="board-ui" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;LP Filter (Op Amp)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 102);&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Manufacturer&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 102);&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Part #&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="ILOQDE0bCbjp8sYh5ZDV-158" parent="board-ui" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;LP Filter (Op Amp)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Microchip&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;MCP6004-I/P&lt;/font&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="45" width="100" x="40" y="50" as="geometry" />
         </mxCell>
-        <mxCell id="ILOQDE0bCbjp8sYh5ZDV-157" parent="board-ui" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Speaker (actuator)&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: light-dark(rgb(255, 255, 102), rgb(37, 37, 0)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Manufacturer&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 102);&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Part #&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="ILOQDE0bCbjp8sYh5ZDV-157" parent="board-ui" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;div&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Speaker (actuator)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Same Sky&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;CMS-3652-28L200&lt;/font&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="50" width="100" x="10" y="370" as="geometry" />
         </mxCell>
         <mxCell id="ILOQDE0bCbjp8sYh5ZDV-162" edge="1" parent="board-ui" source="ILOQDE0bCbjp8sYh5ZDV-156" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ILOQDE0bCbjp8sYh5ZDV-157" value="">
@@ -450,7 +450,7 @@
             <mxPoint x="20" y="5" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ILOQDE0bCbjp8sYh5ZDV-156" parent="board-ui" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Audio&lt;br&gt;Amplifier&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 102);&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Manufacturer&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 102);&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Part #&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="ILOQDE0bCbjp8sYh5ZDV-156" parent="board-ui" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Audio&lt;br&gt;Amplifier&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Texas Instruments&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;LM386N-1&lt;/font&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="100" x="10" y="285" as="geometry" />
         </mxCell>
         <mxCell id="board-motor" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;container=1;collapsible=0;recursiveResize=0;fontStyle=1;fontSize=13;fillColor=none;" value="Motor Board — Gabriel Toneser Facchin" vertex="1">
@@ -538,20 +538,20 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="SJ2N1sTU_Gu2RDAtupJR-26" parent="board-motor" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;div&gt;H-Bridge Driver&lt;/div&gt;&lt;div&gt;onsemi&lt;/div&gt;&lt;div&gt;FAN8100N&lt;/div&gt;" vertex="1">
+        <mxCell id="SJ2N1sTU_Gu2RDAtupJR-26" parent="board-motor" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;div&gt;H-Bridge Driver&lt;/div&gt;&lt;div&gt;Texas Instruments&lt;/div&gt;&lt;div&gt;DRV8871DDAR&lt;/div&gt;" vertex="1">
           <mxGeometry height="50" width="120" x="350" y="50" as="geometry" />
         </mxCell>
-        <mxCell id="SJ2N1sTU_Gu2RDAtupJR-28" parent="board-motor" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;code&gt;Limit Switch (home)&lt;/code&gt;" vertex="1">
-          <mxGeometry height="45" width="60" x="380" y="190" as="geometry" />
+        <mxCell id="SJ2N1sTU_Gu2RDAtupJR-28" parent="board-motor" style="rounded=0;whiteSpace=wrap;html=1;fontSize=8;" value="Limit switch&lt;br&gt;(home)&lt;br&gt;Omron&lt;br&gt;D2F-01L" vertex="1">
+          <mxGeometry height="54" width="60" x="380" y="186" as="geometry" />
         </mxCell>
         <mxCell id="SJ2N1sTU_Gu2RDAtupJR-29" parent="board-motor" style="rounded=0;whiteSpace=wrap;html=1;" value="GND" vertex="1">
           <mxGeometry height="30" width="60" x="380" y="310" as="geometry" />
         </mxCell>
-        <mxCell id="SJ2N1sTU_Gu2RDAtupJR-30" parent="board-motor" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;div&gt;Gear Motor (actuator)&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 102);&quot;&gt;Manufacturer&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 102);&quot;&gt;Part #&lt;/span&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="SJ2N1sTU_Gu2RDAtupJR-30" parent="board-motor" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;div&gt;Gear Motor (actuator)&lt;/div&gt;&lt;div&gt;DFRobot&lt;/div&gt;&lt;div&gt;FIT0492-A&lt;/div&gt;" vertex="1">
           <mxGeometry height="50" width="120" x="350" y="130" as="geometry" />
         </mxCell>
-        <mxCell id="SJ2N1sTU_Gu2RDAtupJR-31" parent="board-motor" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;code&gt;Limit Switch (end)&lt;/code&gt;" vertex="1">
-          <mxGeometry height="45" width="60" x="380" y="250" as="geometry" />
+        <mxCell id="SJ2N1sTU_Gu2RDAtupJR-31" parent="board-motor" style="rounded=0;whiteSpace=wrap;html=1;fontSize=8;" value="Limit switch&lt;br&gt;(end)&lt;br&gt;Omron&lt;br&gt;D2F-01L" vertex="1">
+          <mxGeometry height="54" width="60" x="380" y="246" as="geometry" />
         </mxCell>
         <mxCell id="SJ2N1sTU_Gu2RDAtupJR-34" edge="1" parent="board-motor" source="SJ2N1sTU_Gu2RDAtupJR-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="SJ2N1sTU_Gu2RDAtupJR-26" value="">
           <mxGeometry relative="1" as="geometry">
