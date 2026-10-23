@@ -423,36 +423,32 @@
         <mxCell id="ILOQDE0bCbjp8sYh5ZDV-152" edge="1" parent="board-ui" source="ILOQDE0bCbjp8sYh5ZDV-109" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.031;entryY=0.667;entryDx=0;entryDy=0;entryPerimeter=0;" target="ILOQDE0bCbjp8sYh5ZDV-81">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ILOQDE0bCbjp8sYh5ZDV-154" parent="board-ui" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Display&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Newhaven&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;NHD-0216K1Z-FSW-FBW-L&lt;/font&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="ILOQDE0bCbjp8sYh5ZDV-154" parent="board-ui" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=9;" value="LCD, Newhaven&lt;br&gt;NHD-0216K1Z-&lt;br&gt;FSW-FBW-L" vertex="1">
           <mxGeometry height="45" width="70" x="100" y="107.5" as="geometry" />
         </mxCell>
-        <mxCell id="ILOQDE0bCbjp8sYh5ZDV-160" edge="1" parent="board-ui" source="ILOQDE0bCbjp8sYh5ZDV-158" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ILOQDE0bCbjp8sYh5ZDV-156">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="95.03" y="110" />
-              <mxPoint x="30" y="110" />
-              <mxPoint x="30" y="190" />
-              <mxPoint x="60" y="190" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="ILOQDE0bCbjp8sYh5ZDV-158" parent="board-ui" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;LP Filter (Op Amp)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Microchip&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;MCP6004-I/P&lt;/font&gt;&lt;/div&gt;" vertex="1">
+        
+        <mxCell id="ILOQDE0bCbjp8sYh5ZDV-158" parent="board-ui" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=9;" value="Inverting Amp (Op Amp)&lt;br&gt;Microchip&lt;br&gt;MCP6004-I/P" vertex="1">
           <mxGeometry height="45" width="100" x="40" y="50" as="geometry" />
         </mxCell>
         <mxCell id="ILOQDE0bCbjp8sYh5ZDV-157" parent="board-ui" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;div&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Speaker (actuator)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Same Sky&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;CMS-3652-28L200&lt;/font&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="50" width="100" x="10" y="370" as="geometry" />
+          <mxGeometry height="50" width="100" x="10" y="300" as="geometry" />
         </mxCell>
-        <mxCell id="ILOQDE0bCbjp8sYh5ZDV-162" edge="1" parent="board-ui" source="ILOQDE0bCbjp8sYh5ZDV-156" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ILOQDE0bCbjp8sYh5ZDV-157" value="">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="ILOQDE0bCbjp8sYh5ZDV-162" edge="1" parent="board-ui" source="ILOQDE0bCbjp8sYh5ZDV-158" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ILOQDE0bCbjp8sYh5ZDV-157" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="90" y="110" />
+              <mxPoint x="30" y="110" />
+              <mxPoint x="30" y="200" />
+              <mxPoint x="60" y="200" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="ILOQDE0bCbjp8sYh5ZDV-163" connectable="0" parent="ILOQDE0bCbjp8sYh5ZDV-162" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="audio" vertex="1">
           <mxGeometry relative="1" x="0.1455" as="geometry">
             <mxPoint x="20" y="5" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ILOQDE0bCbjp8sYh5ZDV-156" parent="board-ui" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Audio&lt;br&gt;Amplifier&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Texas Instruments&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;LM386N-1&lt;/font&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="100" x="10" y="285" as="geometry" />
-        </mxCell>
+        
         <mxCell id="board-motor" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;container=1;collapsible=0;recursiveResize=0;fontStyle=1;fontSize=13;fillColor=none;" value="Motor Board — Gabriel Toneser Facchin" vertex="1">
           <mxGeometry height="420" width="500" x="1180" y="120" as="geometry" />
         </mxCell>

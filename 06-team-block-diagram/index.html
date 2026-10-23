@@ -1004,8 +1004,8 @@
 <td>UI board</td>
 <td>Duotao Gao</td>
 <td>Reads the Start/Stop, Up and Down buttons, drives the display, generates sound feedback, and communicates with the force sensing board</td>
-<td>Actuator: Same Sky CMS-3652-28L200 speaker, driven by the DAC1 output through a low-pass filter and an audio amplifier</td>
-<td>Microchip PIC18F57Q43; Microchip MCP6004-I/P (filter); Texas Instruments LM386N-1; Newhaven NHD-0216K1Z-FSW-FBW-L LCD; STMicroelectronics L7805ABV-DG</td>
+<td>Actuator: Same Sky CMS-3652-28L200 speaker, driven by the DAC1 output through a single op-amp inverting amplifier</td>
+<td>Microchip PIC18F57Q43; Microchip MCP6004-I/P (amplifier); Newhaven NHD-0216K1Z-FSW-FBW-L LCD; STMicroelectronics L7805ABV-DG</td>
 </tr>
 </tbody>
 </table>
@@ -1227,7 +1227,7 @@
      chips, functions and design processes, and that the team as a
      whole mixes sensing and actuation. -->
 
-<p>Every board has its own 5 V regulator, PIC18F57Q43 Curiosity Nano and at least one qualifying sensor or actuator. The force board's load cell produces a millivolt-level bridge signal that needs an INA125P instrumentation amplifier and a low-pass filter before the ADC, which matches the course's list of acceptable analog sensors. The motor board drives a DC gear motor in both directions through a DRV8871 H-bridge driver IC, an acceptable actuator. The UI board drives a speaker from its DAC through a low-pass filter and an audio amplifier, also listed as an acceptable actuator. The three subsystems use different chips and design processes and do different jobs, and together the team combines sensing with two forms of actuation.</p>
+<p>Every board has its own 5 V regulator, PIC18F57Q43 Curiosity Nano and at least one qualifying sensor or actuator. The force board's load cell produces a millivolt-level bridge signal that needs an INA125P instrumentation amplifier and a low-pass filter before the ADC, which matches the course's list of acceptable analog sensors. The motor board drives a DC gear motor in both directions through a DRV8871 H-bridge driver IC, an acceptable actuator. The UI board drives a speaker from its DAC through an op-amp amplifier stage; on the instructor's advice this is a single MCP6004 stage, with no separate buffer, low-pass filter or power amplifier. The three subsystems use different chips and design processes and do different jobs, and together the team combines sensing with two forms of actuation.</p>
 <h3 id="63-risk-if-a-teammate-is-lost">6.3 Risk if a teammate is lost</h3>
 <!-- Question: "What are the risks to your system if you lose a
      teammate? How can you de-risk your system design by grouping and/or
@@ -1245,7 +1245,7 @@
 
 <ul>
 <li>All parts that were highlighted in yellow in the first version (load cell, filter op amps, display, audio amplifier, speaker, gear motor and H-bridge driver) were selected during component selection, and Figure 1 and Table 1 now show the selected parts.</li>
-<li>Following instructor feedback, the force board's active (op-amp) filter and buffers were replaced by an INA125P on its own followed by an RC low-pass filter, and the motor board's FAN8100N was replaced by the DRV8871, which sets a hardware current limit with one resistor.</li>
+<li>Following instructor feedback, each board was simplified. The force board's active (op-amp) filter and buffers were replaced by an INA125P on its own followed by an RC low-pass filter. The UI board's Sallen-Key filter and LM386 power amplifier were replaced by a single MCP6004 inverting amplifier. The motor board's FAN8100N was replaced by the DRV8871, which sets a hardware current limit with one resistor.</li>
 <li>The process diagrams and the message structure for the UART links are on the <a href="../07-Software%20Proposal/">Software Proposal</a> page.</li>
 <li>Next, each member lays out their PCB from the schematic, keeping the connector pin order in Tables 2 and 3.</li>
 </ul>
