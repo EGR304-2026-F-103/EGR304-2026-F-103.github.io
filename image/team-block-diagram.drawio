@@ -97,7 +97,7 @@
         <mxCell id="zs-ina" parent="board-force" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=11;" value="&lt;div&gt;&lt;b&gt;Instrumentation Amp&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Texas Instruments&lt;/div&gt;&lt;div&gt;INA125P&lt;/div&gt;" vertex="1">
           <mxGeometry height="46" width="130" x="20" y="128" as="geometry" />
         </mxCell>
-        <mxCell id="zs-lpf" parent="board-force" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=11;" value="&lt;div&gt;&lt;b&gt;RC Low-Pass Filter&lt;/b&gt;&lt;/div&gt;&lt;div&gt;3.3 kΩ + 4.7 µF&lt;/div&gt;&lt;div&gt;(fc ≈ 10 Hz)&lt;/div&gt;" vertex="1">
+        <mxCell id="zs-lpf" parent="board-force" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=11;" value="&lt;div&gt;&lt;b&gt;RC Low-Pass Filter&lt;/b&gt;&lt;/div&gt;&lt;div&gt;15 kΩ + 1 µF&lt;/div&gt;&lt;div&gt;(fc ≈ 10.6 Hz)&lt;/div&gt;" vertex="1">
           <mxGeometry height="46" width="130" x="20" y="196" as="geometry" />
         </mxCell>
         <mxCell id="zs-adc" connectable="0" parent="board-force" style="group" value="" vertex="1">
