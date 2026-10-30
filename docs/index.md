@@ -37,5 +37,5 @@ Team 103 is three engineering students in EGR 304 at ASU Polytechnic. Each of us
 | **Team Member**       | **Ind Datasheet Links**   |
 | --------------------- | ------------------------- |
 | Duotao Gao            | [duotaoga.github](https://duotaogao.github.io/duotaogao_EGR304_Fall-26-.github.io/)|
-| Gabriel Toneser Facchin | [GabrielFacchin22.github](https://gabrielfacchin22.github.io/EGR304DataSheetTemplate/) |
+| Gabriel Toneser Facchin | [GabrielFacchin22.github](https://gabrielfacchin22.github.io/EGR304-IndividualTemplate/) |
 | Zice Sun              | [empcity21.github](https://empcity21.github.io/Empcity21_EGR304_F26_Datasheet.github.io/) |
