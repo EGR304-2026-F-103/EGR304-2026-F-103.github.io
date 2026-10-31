@@ -7,7 +7,7 @@
 **Team 103**  
 Duotao Gao · Gabriel Toneser Facchin · Zice Sun  
 
-**Prepared:** September 3, 2026  
+**Updated:** October 30, 2026  
 **Fall 2026**  
 Arizona State University  
 **EGR 304**  

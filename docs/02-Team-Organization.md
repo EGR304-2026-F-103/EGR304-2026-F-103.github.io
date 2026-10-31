@@ -38,6 +38,16 @@ During our initial team meeting, each member shared their goal that they wanted 
 The full set of shared goals from which this charter was distilled is
 documented in [Appendix: Team Organization](Appendix/App-Team-Org.md).
 
+## Team Members
+
+Each member designs one of the three boards of GripRx and documents it in an individual datasheet.
+
+| Member | Subsystem | Individual Datasheet |
+| --- | --- | --- |
+| Duotao Gao | User interface (UI) board | [Datasheet](https://duotaogao.github.io/duotaogao_EGR304_Fall-26-.github.io/) |
+| Zice Sun | Force sensing board (center of the daisy chain) | [Datasheet](https://empcity21.github.io/Empcity21_EGR304_F26_Datasheet.github.io/) |
+| Gabriel Toneser Facchin | Motor board | [Datasheet](https://gabrielfacchin22.github.io/EGR304-IndividualTemplate/) |
+
 ## Product Mission Statement
 
 > "Our mission is to help people recovering hand strength train safely at home, with a grip trainer that applies exactly the resistance their therapist prescribes and measures every repetition."

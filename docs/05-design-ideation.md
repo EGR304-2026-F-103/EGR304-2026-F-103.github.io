@@ -482,6 +482,8 @@ Figure 1 shows hand sketches made during the in-person brainstorm, before any so
      Suggested tools: Inkscape, Figma, Affinity Designer, PowerPoint
      shapes exported as SVG, Onshape/Fusion render + vector labels. -->
 
+The source files for the three concept drawings (Concept A is a vector SVG), the brainstorm snapshots from Section 4.4 and the feature-ranking spreadsheet are available together as a [zip archive](image/design-ideation-files.zip).
+
 ### 5.1 Concept A — "Clinic Precision" (Zice)
 
 <!-- OWNER: Zice
